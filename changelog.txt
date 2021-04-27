@@ -1,0 +1,142 @@
+@ 3.41
++ Added Crystal Spear
+
+@ 3.4
++ Added More Swords
++ Added More Claws
++ Added More Scythes
++ Added Broadsword Type + 2 Broadswords
++ Added Bow Type + Multiple Bows
++ Added Several Artifacts
+
+@ 3.3
++ Reconfigured Weapon Damage (+11 DMG)
++ Added More Weapons
++ Added 3 Pill Types
++ Added Artifact Category
+
+@ 3.2
++ Reconfigured Energy Attacks
++ Added Rasengan
++ Added a lot of new weapons
+
+@ 3.1
++ Added Dark Energy Blocks
++ Reconfigured Custom Weapon DMG
+
+@ 3.0
++ Added a Burrito
+
+@ 2.9
++ Added Energy Catalyst
+
+@ 2.8
++ Added MedKit
++ Added Burrito
++ Added Bells
++ Added Leaf Staff
++ Added Dark Rasengan
++ Added Spinning Dark Rasengan
++ Added Massive Rasengan
+
+@ 2.7
+-> Fixed Keybinds not Saving
++ Added an Official ChangeLog
+
+@ 2.6
+-> Fixed Glass Textures
+-> Energized Dagger can now Reverse and Remain Energized
+-> Increased Size of Rasenshuriken
++ Added Energized Glass Pan
++ Added Spirit Knife (Reverseable)
++ Added Hunter Knife (Reverseable)
++ Added Eternal Knife (Reverseable)
++ Added Glass Dagger (Reverseable)
+- Removed Rando Blade
+
+@ 2.5
++ Added Debug Dagger
+- Removed Ore Dictionary Support
+
+@ 2.4
+-> Reworked Transform Class
+-> Reworked Orient Class
+-> Completed Tool Recipes
++ Added Rando Blade
+
+@ 2.3
+-> Fixed Minor Bugs to Weapon Sizes
+
+@ 2.2
++ Added Throwable Entity for Kunai
+-> Added Ore Dictionary Support
+
+
+@ 2.1
+-> Bug Fixes to KeyHandler/Transformation
+
+@ 2.0
++ Created Network Handler
++ Added Transform KeyBind
++ Added Orient KeyBind
++ Added Energized Weapons
++ Added Glass Weapons
++ Added Kunai
++ Added Scythe
++ Added Broken Weapon Varients
++ Added Custom Weapon Parts
+-> Renamed Cobalt to Codium
+-> Renamed Steel to Damascus
+-> Renamed Void to Deep
+-> Bug Fixes
+
+@ 1.9
+- Added Earth Token
+- Added Weapon Interface
+- Added Dagger
+- Added Reverse Dagger
+- Added Custom Dark Dagger
+- Added Custom Blue Longsword
+- Added Custom Glass Pan
+- Added Custom Jungle Axe
+- Added Cobalt Ingot
+- Added Steel Ingot
+- Added Jungle Ingot
+- Added Energy Quartz
+- Added Glass Shard
+- Added Blue Steel Ingot
+- Added Dark Metal Ingot
+- Added Void Ingot
+- Added Tool Materials
+- Bug Fixes and File Compression
+
+@ 1.8
+- Added Radiance Card
+
+@ 1.7
+- Added Debug Tool
+
+@ 1.6
+- Fixed Bug Improvements
+
+@ 1.5
+- Added Joker Card
+- Added Coins
+
+@ 1.4
+- Added TreasureMap
+- Added PaperBomb
+
+@ 1.3
+- Added Pills
+
+@ 1.2
+- Added Custom Cards
+- Added Eyes
+- Added Dragon Balls
+
+@ 1.1
+- Added Playing Cards
+
+@ 1.0
+- Added Rasenshuriken
