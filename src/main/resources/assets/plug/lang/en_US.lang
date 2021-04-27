@@ -1,0 +1,397 @@
+# Tabs
+itemGroup.plug:playingCardTab=Cards [Plugin]
+itemGroup.plug:misc=Misc [Plugin]
+itemGroup.plug:weapons=Weapons [Plugin]
+
+# Blocks
+tile.plug:dark_signature.name=Signature Dark
+tile.plug:dark_puresignature.name=Signature Pure Dark
+tile.plug:dark_impure.name=Impure Dark
+tile.plug:dark_pure.name=Pure Dark
+
+# Card's Mod
+item.plug:clubs_ace.name=Ace of Clubs
+item.plug:clubs_two.name=Two of Clubs
+item.plug:clubs_three.name=Three of Clubs
+item.plug:clubs_four.name=Four of Clubs
+item.plug:clubs_five.name=Five of Clubs
+item.plug:clubs_six.name=Six of Clubs
+item.plug:clubs_seven.name=Seven of Clubs
+item.plug:clubs_eight.name=Eight of Clubs
+item.plug:clubs_nine.name=Nine of Clubs
+item.plug:clubs_ten.name=Ten of Clubs
+item.plug:clubs_jack.name=Jack of Clubs
+item.plug:clubs_queen.name=Queen of Clubs
+item.plug:clubs_king.name=King of Clubs
+item.plug:spade_ace.name=Ace of Spades
+item.plug:spade_two.name=Two of Spades
+item.plug:spade_three.name=Three of Spades
+item.plug:spade_four.name=Four of Spades
+item.plug:spade_five.name=Five of Spades
+item.plug:spade_six.name=Six of Spades
+item.plug:spade_seven.name=Seven of Spades
+item.plug:spade_eight.name=Eight of Spades
+item.plug:spade_nine.name=Nine of Spades
+item.plug:spade_ten.name=Ten of Spades
+item.plug:spade_jack.name=Jack of Spades
+item.plug:spade_queen.name=Queen of Spades
+item.plug:spade_king.name=King of Spades
+item.plug:diamond_ace.name=Ace of Diamonds
+item.plug:diamond_two.name=Two of Diamonds
+item.plug:diamond_three.name=Three of Diamonds
+item.plug:diamond_four.name=Four of Diamonds
+item.plug:diamond_five.name=Five of Diamonds
+item.plug:diamond_six.name=Six of Diamonds
+item.plug:diamond_seven.name=Seven of Diamonds
+item.plug:diamond_eight.name=Eight of Diamonds
+item.plug:diamond_nine.name=Nine of Diamonds
+item.plug:diamond_ten.name=Ten of Diamonds
+item.plug:diamond_jack.name=Jack of Diamonds
+item.plug:diamond_queen.name=Queen of Diamonds
+item.plug:diamond_king.name=King of Diamonds
+item.plug:hearts_ace.name=Ace of Hearts
+item.plug:hearts_two.name=Two of Hearts
+item.plug:hearts_three.name=Three of Hearts
+item.plug:hearts_four.name=Four of Hearts
+item.plug:hearts_five.name=Five of Hearts
+item.plug:hearts_six.name=Six of Hearts
+item.plug:hearts_seven.name=Seven of Hearts
+item.plug:hearts_eight.name=Eight of Hearts
+item.plug:hearts_nine.name=Nine of Hearts
+item.plug:hearts_ten.name=Ten of Hearts
+item.plug:hearts_jack.name=Jack of Hearts
+item.plug:hearts_queen.name=Queen of Hearts
+item.plug:hearts_king.name=King of Hearts
+item.plug:joker_black.name=Black Joker
+item.plug:joker_red.name=Red Joker
+item.plug:plugincard.name=Plugin Card
+item.plug:cards_whisperer.name=Whisperer Card
+item.plug:cards_daybreak.name=Daybreak Card
+item.plug:cards_awen.name=Awen Card
+item.plug:cards_radiance.name=Radiance Card
+
+# Coins
+item.plug:coins_wood.name=Wood Coin
+item.plug:coins_stone.name=Stone Coin
+item.plug:coins_zinc.name=Zinc Coin
+item.plug:coins_bronze.name=Bronze Coin
+item.plug:coins_iron.name=Iron Coin
+item.plug:coins_obsidian.name=Obsidian Coin
+item.plug:coins_gold.name=Gold Coin
+item.plug:coins_platinum.name=Platinum Coin
+item.plug:coins_emerald.name=Emerald Coin
+item.plug:coins_ruby.name=Ruby Coin
+item.plug:coins_diamond.name=Diamond Coin
+item.plug:coins_amethyst.name=Amethyst Coin
+item.plug:coins_earth.name=Earth Token
+
+# Pills
+item.plug:pills_basic.name=Basic Pill
+item.plug:pills_advanced.name=Advanced Pill
+item.plug:pills_pioneer.name=Pioneer Pill
+item.plug:pills_expertise.name=Expertise Pill
+item.plug:pills_arcane.name=Arcane Pill
+item.plug:pills_mystical.name=Mystical Pill
+item.plug:pills_godly.name=Godly Pill
+item.plug:pills_split.name=Split Pill
+item.plug:pills_fissure.name=Fissure Pill
+item.plug:pills_shift.name=Shift Pill
+item.plug:pills_aqua.name=Aqua Pill
+item.plug:pills_aura.name=Aspect Pill
+item.plug:pills_core.name=Core Pill
+item.plug:pills_corrupt.name=Corrupt Pill
+item.plug:pills_dark.name=Dark Pill
+item.plug:pills_fiery.name=Fiery Pill
+item.plug:pills_freeze.name=Freeze Pill
+item.plug:pills_heart.name=Heart Pill
+item.plug:pills_rebound.name=Rebound Pill
+item.plug:pills_spirit.name=Spirit Pill
+item.plug:pills_nature.name=Nature Pill
+item.plug:pills_desert.name=Desert Pill
+item.plug:pills_magma.name=Magma Pill
+item.plug:pills_extraone.name=Extra Pill 1
+item.plug:pills_extratwo.name=Extra Pill 2
+item.plug:pills_extrathree.name=Extra Pill 3
+item.plug:pills_extrafour.name=Extra Pill 4
+item.plug:pills_extrafive.name=Extra Pill 5
+item.plug:pills_extrasix.name=Extra Pill 6
+item.plug:pills_extraseven.name=Extra Pill 7
+item.plug:pills_extraeight.name=Extra Pill 8
+item.plug:pills_extranine.name=Extra Pill 9
+item.plug:pills_extraten.name=Extra Pill 10
+item.plug:pills_native.name=Native Pill
+item.plug:pills_foreign.name=Foreign Pill
+item.plug:pills_auraenergy.name=Aura Pill
+
+# Artifacts
+item.plug:artifact_stoneegg.name=Stone Egg
+item.plug:artifact_primary.name=The Primary
+item.plug:artifact_amulet.name=Amulet Artifact
+item.plug:artifact_book.name=Book Artifact
+item.plug:artifact_totem.name=Totem Artifact
+item.plug:artifact_necklace.name=Necklace Artifact
+item.plug:artifact_doll.name=Corrupt Doll
+item.plug:artifact_tooth.name=Ancient Tooth
+item.plug:artifact_resonant_pearl.name=Resonant Pearl
+item.plug:artifact_energy_amplifier.name=Energy Amplifier
+item.plug:artifact_divinity.name=Divinity
+item.plug:artifact_trinity.name=Trinity
+item.plug:artifact_magic_stew.name=Magic Stew
+item.plug:artifact_luck.name=Luck Artifact
+item.plug:void_lasso.name=Void Lasso
+item.plug:dark_orb.name=Dark Orb
+item.plug:diamond_atom.name=Diamond Atom
+item.plug:dungeon_chest_key.name=Dungeon Key
+item.plug:seal_scroll.name=Seal Scroll
+item.plug:charge_crystal.name=Charge Crystal
+item.plug:journal_entry.name=Journal Entry
+item.plug:eyes_of_remnant.name=Eyes of Remnant
+item.plug:lasr_eye.name=Laser Eye
+item.plug:dark_pendant.name=Dark Pendant
+item.plug:magical_map.name=Magical Map
+item.plug:mimic_fragment.name=Mimic Fragment
+item.plug:ward.name=Ward
+item.plug:chalice.name=Chalice
+item.plug:warped_stone.name=Warped Stone
+item.plug:health_cube.name=Health Cube
+item.plug:power_cube.name=Power Cube
+item.plug:poison_cube.name=Poison Cube
+item.plug:midas_jewel.name=Midas Jewel
+item.plug:necromancer.name=Necromancer
+item.plug:ancient_rose.name=Ancient Rose
+item.plug:shark_fin.name=Shark Fin
+item.plug:shark_necklace.name=Shark Necklace
+item.plug:villium.name=Villium
+item.plug:glacite_jewel.name=Glacite Gem
+item.plug:goblin_egg.name=Goblin Egg
+item.plug:petrified_stone.name=Petrified Stone
+item.plug:crystal_geode.name=Crystal Geode
+item.plug:plasma_nucleus.name=Plasma Nucleus
+item.plug:kat_flower.name=Kat Flower
+item.plug:balance_scroll.name=Balance Scroll
+item.plug:dark_scroll.name=Dark Scroll
+item.plug:demon_scroll.name=Demon Scroll
+item.plug:gold_scroll.name=Gold Scroll
+
+
+# Eyes
+item.plug:eyes_sharinganone.name=Basic Sharingan
+item.plug:eyes_sharingantwo.name=Evolved Sharingan
+item.plug:eyes_sharinganthree.name=Evolved Sharingan 2
+item.plug:eyes_rinnegan.name=Rinnegan
+item.plug:eyes_byakugan.name=Byakugan
+
+# Balls
+item.plug:balls_one.name=One Star Ball
+item.plug:balls_two.name=Two Star Ball
+item.plug:balls_three.name=Three Star Ball
+item.plug:balls_four.name=Four Star Ball
+item.plug:balls_five.name=Five Star Ball
+item.plug:balls_six.name=Six Star Ball
+item.plug:balls_seven.name=Seven Star Ball
+
+# Extras
+item.plug:treasuremap.name=Treasure Map
+item.plug:medkit.name=Medkit
+item.plug:bell.name=Bell
+item.plug:burrito.name=Burrito
+item.plug:paperbomb.name=Paper Bomb
+item.plug:voidrasenshuriken.name=Void Rasenshuriken
+item.plug:massiverasengan.name=Massive Rasengan
+item.plug:massiverasengan_spin.name=Massive Rasengan
+item.plug:dark_rasengan.name=Shadow Rasengan
+item.plug:dark_rasengan_spin.name=Shadow Rasengan
+item.plug:rasengan.name=Rasengan
+item.plug:rasengan_spin.name=Rasengan
+
+# Weapons
+item.plug:dark_dagger.name=Dark Metal Dagger
+item.plug:reverse_dark_dagger.name=Reversed Dark Metal Dagger
+item.plug:hunter_knife.name=Hunter Knife
+item.plug:reverse_hunter_knife.name=Reversed Hunter Knife
+item.plug:spirit_knife.name=Spirit Knife
+item.plug:reverse_spirit_knife.name=Reversed Spirit Knife
+item.plug:eternal_knife.name=Eternal Knife
+item.plug:reverse_eternal_knife.name=Reversed Eternal Knife
+item.plug:leaf_staff.name=Leaf Staff
+item.plug:blood_scythe.name=Blood Scythe
+item.plug:dark_scythe.name=Dark Scythe
+item.plug:dark_scythe_energized.name=Energized Dark Scythe
+item.plug:amethyst_sword.name=Amethyst Sword
+item.plug:dragon_sword.name=Dragon Sword
+item.plug:cleaver.name=Cleaver
+item.plug:edible_mace.name=Edible Mace
+item.plug:ember_mace.name=Ember Mace
+item.plug:emerald_sword.name=Emerald Sword
+item.plug:endstone_sword.name=End Sword
+item.plug:dark_metal_sword.name=Dark Metal Sword
+item.plug:onyx_sword.name=Onyx Sword
+item.plug:ivar_sword.name=Ivar Sword
+item.plug:resin_sword.name=Resin Sword
+item.plug:flame_sword.name=Flame Sword
+item.plug:golem_sword.name=Golem Club
+item.plug:kitchen_knife.name=Kitchen Knife
+item.plug:spider_sword.name=Spider Sword
+item.plug:holy_sword.name=Holy Sword
+item.plug:bronze_cutlass.name=Bronze Cutlass
+item.plug:prismarine_sword.name=Prismarine Sword
+item.plug:midnight_fang.name=Midnight Fang
+item.plug:rogue_sword.name=Rogue Katana
+item.plug:scorpion_foil.name=Scorpion Foil
+item.plug:shaman_sword.name=Magic Shaman
+item.plug:silk_edge.name=Silk Edge
+item.plug:zero_sword.name=Zero Sword
+item.plug:tactical_sword.name=Tactician
+item.plug:undead_sword.name=Undead Sword
+item.plug:ice_sword.name=Ice Sword
+item.plug:crimson_cutlass.name=Crimson Cutlass
+item.plug:golden_cutlass.name=Golden Cutlass
+item.plug:void_sword.name=Void Sword
+item.plug:raider_axe.name=Raider Axe
+item.plug:silver_fang.name=Silver Fang
+item.plug:reverse_silver_fang.name=Reversed Silver Fang
+item.plug:earth_shard.name=Earth Shard
+item.plug:reverse_earth_shard.name=Reversed Earth Shard
+item.plug:livid_dagger.name=Livid Dagger
+item.plug:reverse_livid_dagger.name=Reversed Livid Dagger
+item.plug:fury_sword.name=Fury Sword
+item.plug:chaos_sword.name=Chaos Sword
+item.plug:aspect_sword.name=Aspect Sword
+item.plug:fiery_wand.name=Fiery Wand
+item.plug:jade_dagger.name=Jade Dagger
+item.plug:dark_steel_sword.name=Dark Steel Sword
+item.plug:silver_rapier.name=Silver Rapier
+item.plug:ingite.name=The Ignite
+item.plug:golem_sword_2.name=Golem Sword
+item.plug:thorn_knife.name=Thorn Knife
+item.plug:leaping_sword.name=Leaping Sword
+item.plug:glass_reaper.name=Glass Reaper
+item.plug:something_sword.name=Something Sword
+item.plug:casian.name=The Casian
+item.plug:prismarine_cutlass.name=Prismarine Cutlass
+item.plug:sacred_reaper.name=Sacred Reaper
+item.plug:revenant_sword.name=Revenant Sword
+item.plug:injection.name=The Injection
+item.plug:white_light.name=White Light
+item.plug:weaver_sword.name=Weaver Sword
+item.plug:rotten_sword.name=Rotten Sword
+item.plug:ooze_sword.name=Ooze Sword
+item.plug:crystal_sword.name=Crystal Sword
+item.plug:energy_saber.name=Energy Saber
+item.plug:astraea.name=Astraea
+item.plug:dreadlord_sword.name=Dreadlord Sword
+item.plug:fel_sword.name=Fel Sword
+item.plug:hyperion.name=Hyperion
+item.plug:necromancer_sword.name=Necromancer Sword
+item.plug:necron_blade.name=Necron Blade
+item.plug:silent_death.name=Silent Death
+item.plug:knight_cutlass.name=Knight Cutlass
+item.plug:poison_cutlass.name=Poison Cutlass
+item.plug:cryptic_sword.name=Cryptic Sword
+item.plug:dreadlord_broadsword.name=Dreadlord Broadsword
+item.plug:fel_broadsword.name=Fel Broadsword
+item.plug:trinity_wand.name=Trinity Wand
+item.plug:revenant_pickaxe.name=Revenant Pickaxe
+item.plug:mithril_pickaxe.name=Mithril Pickaxe
+item.plug:mayan_pickaxe.name=Mayan Pickaxe
+item.plug:woodsman.name=The Woodsman
+item.plug:dark_metal_axe.name=Dark Metal Axe
+item.plug:floral_axe.name=Floral Axe
+item.plug:leaf_axe.name=Leaf Axe
+item.plug:rusty_axe.name=Rusty Axe
+item.plug:mayan_axe.name=Mayan Axe
+item.plug:mythic_axe.name=Mythic Axe
+item.plug:melon_dicer.name=Melon Dicer
+item.plug:blood_axe.name=Blood Axe
+item.plug:darkwood_axe.name=Dark Wood Axe
+item.plug:quartz_claw.name=Quartz Claw
+item.plug:gold_claws.name=Gold Claw
+item.plug:serrated_claws.name=Serrated Claw
+item.plug:iron_claws.name=Iron Claw
+item.plug:ice_scyte.name=Ice Scythe
+item.plug:frozen_scythe.name=Frozen Scythe
+item.plug:energy_scyte.name=Energy Scythe
+item.plug:mayan_scythe.name=Mayan Scythe
+item.plug:carrot_scythe.name=Carrot Scythe
+item.plug:mythic_scythe.name=Mythic Scythe
+item.plug:newton_scythe.name=Newton Scythe
+item.plug:evil_scythe.name=Evil Scythe
+item.plug:crystal_spear.name=Crystal Spear
+
+# Bows
+item.plug:dark_metal_bow.name=Dark Metal Bow
+item.plug:death_bow.name=Death Bow
+item.plug:end_stone_bow.name=End Stone Bow
+item.plug:explosive_bow.name=Explosive Bow
+item.plug:hurricane_bow.name=Hurricane Bow
+item.plug:magma_bow.name=Magma Bow
+item.plug:mosquito_bow.name=Mosquito Bow
+item.plug:scorpion_bow.name=Scorpion Bow
+item.plug:spider_bow.name=Spider Bow
+
+# Customs
+item.plug:dark_dagger_custom_broken.name=Broken Dark Dagger
+item.plug:reverse_dark_dagger_custom_broken.name=Broken Reversed Dark Dagger
+item.plug:dark_dagger_custom.name=Dark Dagger
+item.plug:reverse_dark_dagger_custom.name=Reversed Dark Dagger
+item.plug:dark_dagger_custom_energized.name=Energized Dark Dagger
+item.plug:reverse_dark_dagger_custom_energized.name=Energized Reversed Dark Dagger
+
+item.plug:blue_longsword_custom_broken.name=Broken Blue Longsword
+item.plug:blue_longsword_custom.name=Blue Longsword
+item.plug:blue_longsword_custom_energized.name=Energized Blue Longsword
+
+item.plug:jungle_axe_custom_broken.name=Broken Jungle Axe
+item.plug:jungle_axe_custom.name=Jungle Axe
+item.plug:jungle_axe_custom_energized.name=Energized Jungle Axe
+
+
+
+item.plug:glass_pan_custom_broken.name=Broken Glass Pan
+item.plug:glass_pan_custom.name=Glass Pan
+item.plug:glass_pan_custom_energized.name=Energized Glass Pan
+item.plug:glass_blade.name=Glass Blade
+item.plug:glass_cutlass.name=Glass Cutlass
+item.plug:glass_kunai.name=Glass Kunai
+item.plug:reverse_glass_kunai.name=Reveresed Glass Kunai
+item.plug:glass_dagger.name=Glass Dagger
+item.plug:reverse_glass_dagger.name=Reveresed Glass Dagger
+
+# Materials
+item.plug:dark_metal.name=Dark Metal Ingot
+item.plug:blue_steel.name=Blue Steel Ingot
+item.plug:jungle_ingot.name=Jungle Ingot
+item.plug:codium_ingot.name=Codium Ingot
+item.plug:deep_ingot.name=Deep Ingot
+item.plug:damascus_ingot.name=Damascus Ingot
+item.plug:energy_quartz.name=Energy Quartz
+item.plug:energy_catalyst.name=Energy Catalyst
+item.plug:glass_shard.name=Glass Shard
+
+# Parts
+item.plug:blue_longsword_custom_blade.name=Blue Longsword Blade
+item.plug:blue_longsword_custom_guard.name=Blue Longsword Guard
+item.plug:blue_longsword_custom_rod.name=Blue Longsword Rod
+item.plug:dark_dagger_custom_blade.name=Dark Dagger Blade
+item.plug:dark_dagger_custom_handle.name=Dark Dagger Handle
+item.plug:void_charm.name=Void Charm
+item.plug:glass_disc.name=Glass Disc
+item.plug:glass_pan_handle.name=Glass Pan Handle
+item.plug:glass_pan_binding.name=Glass Weapon Binding
+item.plug:jungle_axe_head.name=Jungle Axe Head
+item.plug:jungle_axe_binding.name=Vine Binding
+item.plug:jungle_axe_rod.name=Jungle Axe Rod
+
+
+# Keybinds
+key.plug.orient=Orient
+key.plug.transform=Transform
+key.categories.plugin=The Plugin
+
+# Debug
+item.plug:debug_dagger_broken.name=Broken Debug Dagger
+item.plug:reverse_debug_dagger_broken.name=Broken Reversed Debug Dagger
+item.plug:debug_dagger.name=Debug Dagger
+item.plug:reverse_debug_dagger.name=Reversed Debug Dagger
+item.plug:debug_dagger_energized.name=Energized Debug Dagger
+item.plug:reverse_debug_dagger_energized.name=Energized Reversed Debug Dagger
