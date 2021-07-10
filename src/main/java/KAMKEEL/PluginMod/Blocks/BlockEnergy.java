@@ -1,7 +1,6 @@
 package KAMKEEL.PluginMod.Blocks;
 
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockColored;
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockConcrete;
+import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockEnergy;
 import KAMKEEL.PluginMod.CommonProxy;
 import KAMKEEL.PluginMod.LocalizationHelper;
 import KAMKEEL.PluginMod.PluginMod;
@@ -24,7 +23,7 @@ import java.util.List;
 
 public class BlockEnergy extends Block
 {
-    public static final int META_MAX = 1;
+    public static final int META_MAX = 15;
 
     private IIcon[] iicons = new IIcon[META_MAX + 1];
 
@@ -51,19 +50,19 @@ public class BlockEnergy extends Block
         return getLightLevel(world.getBlockMetadata(x, y, z));
     }
 
-    @SideOnly(Side.CLIENT)
-    public int getRenderColor(final int p_149741_1_) {
-        if (p_149741_1_ == 15) {
-            return 0;
-        }
-        final float[] col = BlockEnergy.cols[p_149741_1_ & 0xF];
-        return (int)(col[0] * 255.0f) << 16 | (int)(col[1] * 255.0f) << 8 | (int)(col[2] * 255.0f);
-    }
-
-    @SideOnly(Side.CLIENT)
-    public int colorMultiplier(final IBlockAccess world, final int x, final int y, final int z) {
-        return this.getRenderColor(world.getBlockMetadata(x, y, z));
-    }
+//    @SideOnly(Side.CLIENT)
+//    public int getRenderColor(final int p_149741_1_) {
+//        if (p_149741_1_ == 15) {
+//            return 0;
+//        }
+//        final float[] col = BlockEnergy.cols[p_149741_1_ & 0xF];
+//        return (int)(col[0] * 255.0f) << 16 | (int)(col[1] * 255.0f) << 8 | (int)(col[2] * 255.0f);
+//    }
+//
+//    @SideOnly(Side.CLIENT)
+//    public int colorMultiplier(final IBlockAccess world, final int x, final int y, final int z) {
+//        return this.getRenderColor(world.getBlockMetadata(x, y, z));
+//    }
 
     public boolean renderAsNormalBlock() {
         return false;
@@ -79,7 +78,7 @@ public class BlockEnergy extends Block
 
     public void register() {
         this.setBlockName(LocalizationHelper.MOD_PREFIX + "energyBlock");
-        GameRegistry.registerBlock(this, ItemBlockColored.class, "energyBlock");
+        GameRegistry.registerBlock(this, ItemBlockEnergy.class, "energyBlock");
     }
 
     @SideOnly(Side.CLIENT)

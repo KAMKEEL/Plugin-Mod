@@ -6,16 +6,58 @@ public class ColorUtil {
     private ColorUtil() {}
 
     public static final int
-            RED = 0,
-            ORANGE = 1;
+            BLOOD_RED = 0,
+            BABY_BLUE = 1,
+            DARK_BLUE = 2,
+            DEEP_BLUE = 3,
+            GREEN = 4,
+            HOT_PINK = 5,
+            LEMON = 6,
+            LIGHT_BLUE = 7,
+            LIME = 8,
+            MAGENTA = 9,
+            ORANGE = 10,
+            PURPLE = 11,
+            RED = 12,
+            TEAL = 13,
+            TURQUOISE = 14,
+            YELLOW = 15;
 
 
     public static String energyToString(int meta) {
         switch(meta) {
-            case RED:
-                return "red";
+            case BLOOD_RED:
+                return "blood_red";
+            case BABY_BLUE:
+                return "baby_blue";
+            case DARK_BLUE:
+                return "dark_blue";
+            case DEEP_BLUE:
+                return "deep_blue";
+            case GREEN:
+                return "green";
+            case HOT_PINK:
+                return "hot_pink";
+            case LEMON:
+                return "lemon";
+            case LIGHT_BLUE:
+                return "light_blue";
+            case LIME:
+                return "lime";
+            case MAGENTA:
+                return "magenta";
             case ORANGE:
                 return "orange";
+            case PURPLE:
+                return "purple";
+            case RED:
+                return "red";
+            case TEAL:
+                return "teal";
+            case TURQUOISE:
+                return "turquoise";
+            case YELLOW:
+                return "yellow";
 
             default: return "unknown_color";
         }
@@ -23,10 +65,38 @@ public class ColorUtil {
 
     public static MapColor metaToMapColorEnergy(int meta) {
         switch(meta) {
-            case RED:
+            case BLOOD_RED:
                 return MapColor.redColor;
+            case BABY_BLUE:
+                return MapColor.lightBlueColor;
+            case DARK_BLUE:
+                return MapColor.blueColor;
+            case DEEP_BLUE:
+                return MapColor.blueColor;
+            case GREEN:
+                return MapColor.greenColor;
+            case HOT_PINK:
+                return MapColor.pinkColor;
+            case LEMON:
+                return MapColor.yellowColor;
+            case LIGHT_BLUE:
+                return MapColor.lightBlueColor;
+            case LIME:
+                return MapColor.limeColor;
+            case MAGENTA:
+                return MapColor.magentaColor;
             case ORANGE:
                 return MapColor.clayColor;
+            case PURPLE:
+                return MapColor.purpleColor;
+            case RED:
+                return MapColor.redColor;
+            case TEAL:
+                return MapColor.waterColor;
+            case TURQUOISE:
+                return MapColor.waterColor;
+            case YELLOW:
+                return MapColor.sandColor;
 
             default: return MapColor.airColor;
         }

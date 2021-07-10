@@ -18,7 +18,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "3.41")
+@Mod(modid = "plug", name = "The Plugin Mod", version = "3.5")
 public class PluginMod {
 
     @SidedProxy(clientSide = "KAMKEEL.PluginMod.Client.ClientProxy", serverSide = "KAMKEEL.PluginMod.CommonProxy")

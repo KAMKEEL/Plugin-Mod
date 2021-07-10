@@ -5,9 +5,9 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlockWithMetadata;
 import net.minecraft.item.ItemStack;
 
-public class ItemBlockColored extends ItemBlockWithMetadata {
+public class ItemBlockEnergy extends ItemBlockWithMetadata {
 
-    public ItemBlockColored(Block block) {
+    public ItemBlockEnergy(Block block) {
         super(block, block);
     }
 

@@ -9,6 +9,80 @@ tile.plug:dark_puresignature.name=Signature Pure Dark
 tile.plug:dark_impure.name=Impure Dark
 tile.plug:dark_pure.name=Pure Dark
 
+tile.plug:jungle_barrel.name=Jungle Barrel
+tile.plug:spruce_barrel.name=Spruce Barrel
+tile.plug:birch_barrel.name=Birch Barrel
+tile.plug:dark_oak_barrel.name=Dark Oak Barrel
+tile.plug:oak_barrel.name=Oak Barrel
+tile.plug:acacia_barrel.name=Acacia Barrel
+tile.plug:cherry_barrel.name=Cherry Barrel
+tile.plug:ethereal_barrel.name=Ethereal Barrel
+tile.plug:warped_barrel.name=Warped Barrel
+tile.plug:crimson_barrel.name=Crimson Barrel
+tile.plug:mahogany_barrel.name=Mahogany Barrel
+tile.plug:jacaranda_barrel.name=Jacaranda Barrel
+tile.plug:mangrove_barrel.name=Mangrove Barrel
+tile.plug:willow_barrel.name=Willow Barrel
+tile.plug:magic_barrel.name=Magic Barrel
+tile.plug:palm_barrel.name=Palm Barrel
+tile.plug:redwood_barrel.name=Redwood Barrel
+tile.plug:hellbark_barrel.name=Hellbark Barrel
+tile.plug:fir_barrel.name=Fir Barrel
+
+tile.plug:concrete.burgundy.name=Burgundy Concrete
+tile.plug:concrete.caramel.name=Caramel Concrete
+tile.plug:concrete.chocolate.name=Chocolate Concrete
+tile.plug:concrete.denim.name=Denim Concrete
+tile.plug:concrete.haze.name=Haze Concrete
+tile.plug:concrete.mint.name=Mint Concrete
+tile.plug:concrete.peanut.name=Peanut Concrete
+tile.plug:concrete.clover.name=Clover Concrete
+tile.plug:concrete.pearl.name=Pearl Concrete
+tile.plug:concrete.mustard.name=Mustard Concrete
+tile.plug:concrete.sky_blue.name=Sky Blue Concrete
+tile.plug:concrete.periwinkle.name=Periwinkle Concrete
+tile.plug:concrete.peach.name=Peach Concrete
+tile.plug:concrete.plum.name=Plum Concrete
+tile.plug:concrete.avocado.name=Avocado Concrete
+tile.plug:concrete.red_brown.name=Red Brown Concrete
+
+tile.plug:concrete_powder.burgundy.name=Burgundy Concrete Powder
+tile.plug:concrete_powder.caramel.name=Caramel Concrete Powder
+tile.plug:concrete_powder.chocolate.name=Chocolate Concrete Powder
+tile.plug:concrete_powder.denim.name=Denim Concrete Powder
+tile.plug:concrete_powder.haze.name=Haze Concrete Powder
+tile.plug:concrete_powder.mint.name=Mint Concrete Powder
+tile.plug:concrete_powder.peanut.name=Peanut Concrete Powder
+tile.plug:concrete_powder.clover.name=Clover Concrete Powder
+tile.plug:concrete_powder.pearl.name=Pearl Concrete Powder
+tile.plug:concrete_powder.mustard.name=Mustard Concrete Powder
+tile.plug:concrete_powder.sky_blue.name=Sky Blue Concrete Powder
+tile.plug:concrete_powder.periwinkle.name=Periwinkle Concrete Powder
+tile.plug:concrete_powder.peach.name=Peach Concrete Powder
+tile.plug:concrete_powder.plum.name=Plum Concrete Powder
+tile.plug:concrete_powder.avocado.name=Avocado Concrete Powder
+tile.plug:concrete_powder.red_brown.name=Red Brown Concrete Powder
+
+tile.plug:energyBlock.blood_red.name=Blood Red Energy
+tile.plug:energyBlock.baby_blue.name=Baby Blue Energy
+tile.plug:energyBlock.dark_blue.name=Dark Blue Energy
+tile.plug:energyBlock.deep_blue.name=Deep Blue Energy
+tile.plug:energyBlock.green.name=Green Energy
+tile.plug:energyBlock.hot_pink.name=Hot Pink Energy
+tile.plug:energyBlock.lemon.name=Lemon Energy
+tile.plug:energyBlock.light_blue.name=Light Blue Energy
+tile.plug:energyBlock.lime.name=Lime Energy
+tile.plug:energyBlock.magenta.name=Magenta Energy
+tile.plug:energyBlock.orange.name=Orange Energy
+tile.plug:energyBlock.purple.name=Purple Energy
+tile.plug:energyBlock.red.name=Red Energy
+tile.plug:energyBlock.teal.name=Teal Energy
+tile.plug:energyBlock.turquoise.name=Turquoise Energy
+tile.plug:energyBlock.yellow.name=Yellow Energy
+
+
+
+
 # Card's Mod
 item.plug:clubs_ace.name=Ace of Clubs
 item.plug:clubs_two.name=Two of Clubs
