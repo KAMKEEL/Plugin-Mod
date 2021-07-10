@@ -1,59 +1,60 @@
 package KAMKEEL.PluginMod.Client;
 
-import KAMKEEL.PluginMod.Client.Render.ItemBowRenderer;
-import KAMKEEL.PluginMod.Client.Render.PluginItemRenderer;
-import KAMKEEL.PluginMod.Client.Render.RenderProjectile;
-import KAMKEEL.PluginMod.Client.Render.TransparentItemRenderer;
+import KAMKEEL.PluginMod.Client.Render.*;
 import KAMKEEL.PluginMod.CommonProxy;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Items.ModItems;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
-import net.minecraftforge.common.MinecraftForge;
 
 public class ClientProxy extends CommonProxy {
 
     ClientEvents clientEvents;
 
     @Override
-    public void registerItem(Item item) { MinecraftForgeClient.registerItemRenderer(item, new PluginItemRenderer()); }
+    public int getNewRenderId() {
+        return RenderingRegistry.getNextAvailableRenderId();
+    }
 
     @Override
-    public void registerBow(Item item) { MinecraftForgeClient.registerItemRenderer(item, new ItemBowRenderer()); }
+    public void preInnit() {
+        super.preInnit();
 
-    @Override
-    public void load() {
         // Register KeyHandler
-
         for(Keybindings key : Keybindings.values()) {
             ClientRegistry.registerKeyBinding(key.getKeybind());
         }
 
         FMLCommonHandler.instance().bus().register(new KeyInputHandler());
-
         RenderingRegistry.registerEntityRenderingHandler(EntityProjectile.class, new RenderProjectile());
-
     }
 
     @Override
-    public void doOnLoadRegistration() {
+    public void load() {
+        super.load();
+
+        setRenderIDs();
+
+        renderItems();
+
+        renderBlocks();
+    }
+
+    @Override
+    public EntityPlayer getPlayer(){
+        return Minecraft.getMinecraft().thePlayer;
+    }
+
+    public void renderItems(){
         // Get Client
         Minecraft mc = FMLClientHandler.instance().getClient();
-
-
-        /** Not Fixed Bow **/
-        /*
-        clientEvents = new ClientEvents();
-        MinecraftForge.EVENT_BUS.register(clientEvents);
-        */
 
         // Transparent Item Renderer
         TransparentItemRenderer transparentItemRenderer = new TransparentItemRenderer(mc.gameSettings, mc.getTextureManager());
@@ -80,11 +81,25 @@ public class ClientProxy extends CommonProxy {
         MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerReversedBroken, transparentItemRenderer);
         MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerEnergized, transparentItemRenderer);
         MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerReversedEnergized, transparentItemRenderer);
+
+    }
+
+    public void renderBlocks(){
+        // Render Blocks
+        RenderingRegistry.registerBlockHandler((ISimpleBlockRenderingHandler)new RenderBlockFullBright());
+    }
+
+    public void setRenderIDs(){
+        CommonProxy.fullBrightBlockID = getNewRenderId();
     }
 
     @Override
-    public EntityPlayer getPlayer(){
-        return Minecraft.getMinecraft().thePlayer;
-    }
+    public void registerItem(Item item) { MinecraftForgeClient.registerItemRenderer(item, new PluginItemRenderer()); }
+
+    @Override
+    public void registerBow(Item item) { MinecraftForgeClient.registerItemRenderer(item, new ItemBowRenderer()); }
+
+    @Override
+    public void registerTileEntities() { }
 
 }

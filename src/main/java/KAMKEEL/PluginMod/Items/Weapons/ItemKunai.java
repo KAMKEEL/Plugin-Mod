@@ -38,7 +38,6 @@ public class ItemKunai extends ItemPluginWeaponInterface{
         }
 
         worldObj.spawnEntityInWorld(projectile);
-        System.out.println("We spawned an Entity");
     }
 
     @Override

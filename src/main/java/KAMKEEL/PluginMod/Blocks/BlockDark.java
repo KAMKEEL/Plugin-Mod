@@ -12,17 +12,17 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class Dark extends Block {
+public class BlockDark extends Block {
 
     protected IIcon[] icons;
 
-    public Dark(){
+    public BlockDark(){
         super(Material.rock);
 
         this.setHardness(3.0f);
         this.setResistance(15.0f);
         this.setStepSound(Block.soundTypeStone);
-        this.setCreativeTab(PluginMod.miscTab);
+        this.setCreativeTab(PluginMod.blocksTab);
 
         for(EnumDark dark : EnumDark.values()){
             this.setHarvestLevel("pickaxe", dark.getHarvestLevel(), dark.getMeta());

@@ -36,32 +36,22 @@ public class PluginMod {
     }
 
     @Mod.EventHandler
-    public void load(FMLPreInitializationEvent ev) {
+    public void preInit(FMLPreInitializationEvent event) {
+
         Channel = NetworkRegistry.INSTANCE.newEventDrivenChannel("PluginMod");
         ChannelPlayer = NetworkRegistry.INSTANCE.newEventDrivenChannel("PluginModPlayer");
-        proxy.load();
+
         NetworkHandler.init();
-    }
 
-    @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-        //Item/Block init Registering
-        //Config Handling
-
-        ModBlocks.init();
-        ModItems.init();
-
-        ModItems.initRecipes();
-        ModBlocks.initRecipes();
-
-        registerNewEntity(EntityProjectile.class, "throwableitem", 64, 3, true);
-
+        proxy.preInnit();
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         //Proxy, TitleEntity, Entity, GUI and Packet Register
-        proxy.doOnLoadRegistration();
+        proxy.load();
+
+        registerNewEntity(EntityProjectile.class, "throwableitem", 64, 3, true);
     }
 
     @Mod.EventHandler
@@ -90,8 +80,14 @@ public class PluginMod {
         }
     };
 
+    public static CreativeTabs blocksTab = new CreativeTabs(LocalizationHelper.MOD_PREFIX + "blocks") {
+        @Override
+        public Item getTabIconItem() {
+            return new ItemStack(ModBlocks.Cherry_Barrel).getItem();
+        }
+    };
 
-    private void registerNewEntity(Class<? extends Entity> cl, String name, int range, int update, boolean velocity) {
+    public void registerNewEntity(Class<? extends Entity> cl, String name, int range, int update, boolean velocity) {
         EntityRegistry.registerModEntity(cl, name, NewEntityStartId++, this, range, update, velocity);
     }
 
