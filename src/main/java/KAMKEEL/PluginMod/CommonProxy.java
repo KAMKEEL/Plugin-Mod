@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 public class CommonProxy{
 
     public static int fullBrightBlockID;
+    public static int colorBlockID;
 
     public void preInnit() {
         //Item/Block Initiating
@@ -53,6 +54,7 @@ public class CommonProxy{
 
     static {
         CommonProxy.fullBrightBlockID = 0;
+        CommonProxy.colorBlockID = 0;
     }
 
 }

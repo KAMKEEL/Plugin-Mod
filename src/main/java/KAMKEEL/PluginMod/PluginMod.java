@@ -1,8 +1,11 @@
 package KAMKEEL.PluginMod;
 
 import KAMKEEL.PluginMod.Blocks.ModBlocks;
+import KAMKEEL.PluginMod.Compat.CompatibilityBiomesOPlenty;
+import KAMKEEL.PluginMod.Compat.CompatibilityExtraUtilities;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Network.NetworkHandler;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -17,8 +20,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import org.lwjgl.Sys;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "3.5")
+@Mod(modid = "plug", name = "The Plugin Mod", version = "3.6")
 public class PluginMod {
 
     @SidedProxy(clientSide = "KAMKEEL.PluginMod.Client.ClientProxy", serverSide = "KAMKEEL.PluginMod.CommonProxy")
@@ -52,6 +56,9 @@ public class PluginMod {
         proxy.load();
 
         registerNewEntity(EntityProjectile.class, "throwableitem", 64, 3, true);
+
+        registerCompat(CompatibilityExtraUtilities.class, "ExtraUtilities");
+        registerCompat(CompatibilityBiomesOPlenty.class, "BiomesOPlenty");
     }
 
     @Mod.EventHandler
@@ -89,6 +96,16 @@ public class PluginMod {
 
     public void registerNewEntity(Class<? extends Entity> cl, String name, int range, int update, boolean velocity) {
         EntityRegistry.registerModEntity(cl, name, NewEntityStartId++, this, range, update, velocity);
+    }
+
+    public static void registerCompat(Class clazz, String modid) {
+        if (Loader.isModLoaded(modid)) {
+            try {
+                Class.forName(clazz.getCanonicalName());
+            } catch (ClassNotFoundException e) {
+                System.out.println("Could not find compatibility class for mod { " + modid + " }. Please report this.");
+            }
+        }
     }
 
 }

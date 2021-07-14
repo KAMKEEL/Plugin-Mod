@@ -1,9 +1,10 @@
-# Tabs
+################# Tabs
 itemGroup.plug:playingCardTab=Cards [Plugin]
 itemGroup.plug:misc=Misc [Plugin]
 itemGroup.plug:weapons=Weapons [Plugin]
+itemGroup.plug:blocks=Blocks [Plugin]
 
-# Blocks
+################# Blocks
 tile.plug:dark_signature.name=Signature Dark
 tile.plug:dark_puresignature.name=Signature Pure Dark
 tile.plug:dark_impure.name=Impure Dark
@@ -80,10 +81,144 @@ tile.plug:energyBlock.teal.name=Teal Energy
 tile.plug:energyBlock.turquoise.name=Turquoise Energy
 tile.plug:energyBlock.yellow.name=Yellow Energy
 
+tile.plug:colorBlock.0.name=Colored BLOCKNAME (White Frequency)
+tile.plug:colorBlock.1.name=Colored BLOCKNAME (Orange Frequency)
+tile.plug:colorBlock.2.name=Colored BLOCKNAME (Magenta Frequency)
+tile.plug:colorBlock.3.name=Colored BLOCKNAME (Light Blue Frequency)
+tile.plug:colorBlock.4.name=Colored BLOCKNAME (Yellow Frequency)
+tile.plug:colorBlock.5.name=Colored BLOCKNAME (Lime Frequency)
+tile.plug:colorBlock.6.name=Colored BLOCKNAME (Pink Frequency)
+tile.plug:colorBlock.7.name=Colored BLOCKNAME (Gray Frequency)
+tile.plug:colorBlock.8.name=Colored BLOCKNAME (Light Gray Frequency)
+tile.plug:colorBlock.9.name=Colored BLOCKNAME (Cyan Frequency)
+tile.plug:colorBlock.10.name=Colored BLOCKNAME (Purple Frequency)
+tile.plug:colorBlock.11.name=Colored BLOCKNAME (Blue Frequency)
+tile.plug:colorBlock.12.name=Colored BLOCKNAME (Brown Frequency)
+tile.plug:colorBlock.13.name=Colored BLOCKNAME (Green Frequency)
+tile.plug:colorBlock.14.name=Colored BLOCKNAME (Red Frequency)
+tile.plug:colorBlock.15.name=Colored BLOCKNAME (Black Frequency)
 
+# Biome's O Plenty
 
+tile.plug:stair_limestone.name=Limestone Stair
+tile.plug:stair_limestonesmooth.name=Polished Limestone Stair
+tile.plug:stair_siltstone.name=Siltstone Stair
+tile.plug:stair_siltstonesmooth.name=Polished Siltstone Stair
+tile.plug:stair_shale.name=Shale Stair
+tile.plug:stair_shalesmooth.name=Polished Shale Stair
 
-# Card's Mod
+tile.plug:bopSingleSlab.limestone.name=Limestone Slab
+tile.plug:bopSingleSlab.limestonesmooth.name=Polished Limestone Slab
+tile.plug:bopSingleSlab.siltstone.name=Siltstone Slab
+tile.plug:bopSingleSlab.siltstonesmooth.name=Polished Siltstone Slab
+tile.plug:bopSingleSlab.shale.name=Shale Slab
+tile.plug:bopSingleSlab.shalesmooth.name=Polished Shale Slab
+
+# Extra Utilities
+
+tile.plug:euCobbleStair.0.name=Colored Cobblestone Stair (White Frequency)
+tile.plug:euCobbleStair.1.name=Colored Cobblestone Stair (Orange Frequency)
+tile.plug:euCobbleStair.2.name=Colored Cobblestone Stair (Magenta Frequency)
+tile.plug:euCobbleStair.3.name=Colored Cobblestone Stair (Light Blue Frequency)
+tile.plug:euCobbleStair.4.name=Colored Cobblestone Stair (Yellow Frequency)
+tile.plug:euCobbleStair.5.name=Colored Cobblestone Stair (Lime Frequency)
+tile.plug:euCobbleStair.6.name=Colored Cobblestone Stair (Pink Frequency)
+tile.plug:euCobbleStair.7.name=Colored Cobblestone Stair (Gray Frequency)
+tile.plug:euCobbleStair.8.name=Colored Cobblestone Stair (Light Gray Frequency)
+tile.plug:euCobbleStair.9.name=Colored Cobblestone Stair (Cyan Frequency)
+tile.plug:euCobbleStair.10.name=Colored Cobblestone Stair (Purple Frequency)
+tile.plug:euCobbleStair.11.name=Colored Cobblestone Stair (Blue Frequency)
+tile.plug:euCobbleStair.12.name=Colored Cobblestone Stair (Brown Frequency)
+tile.plug:euCobbleStair.13.name=Colored Cobblestone Stair (Green Frequency)
+tile.plug:euCobbleStair.14.name=Colored Cobblestone Stair (Red Frequency)
+tile.plug:euCobbleStair.15.name=Colored Cobblestone Stair (Black Frequency)
+
+tile.plug:euStoneBrickStair.0.name=Colored Stone Brick Stair (White Frequency)
+tile.plug:euStoneBrickStair.1.name=Colored Stone Brick Stair (Orange Frequency)
+tile.plug:euStoneBrickStair.2.name=Colored Stone Brick Stair (Magenta Frequency)
+tile.plug:euStoneBrickStair.3.name=Colored Stone Brick Stair (Light Blue Frequency)
+tile.plug:euStoneBrickStair.4.name=Colored Stone Brick Stair (Yellow Frequency)
+tile.plug:euStoneBrickStair.5.name=Colored Stone Brick Stair (Lime Frequency)
+tile.plug:euStoneBrickStair.6.name=Colored Stone Brick Stair (Pink Frequency)
+tile.plug:euStoneBrickStair.7.name=Colored Stone Brick Stair (Gray Frequency)
+tile.plug:euStoneBrickStair.8.name=Colored Stone Brick Stair (Light Gray Frequency)
+tile.plug:euStoneBrickStair.9.name=Colored Stone Brick Stair (Cyan Frequency)
+tile.plug:euStoneBrickStair.10.name=Colored Stone Brick Stair (Purple Frequency)
+tile.plug:euStoneBrickStair.11.name=Colored Stone Brick Stair (Blue Frequency)
+tile.plug:euStoneBrickStair.12.name=Colored Stone Brick Stair (Brown Frequency)
+tile.plug:euStoneBrickStair.13.name=Colored Stone Brick Stair (Green Frequency)
+tile.plug:euStoneBrickStair.14.name=Colored Stone Brick Stair (Red Frequency)
+tile.plug:euStoneBrickStair.15.name=Colored Stone Brick Stair (Black Frequency)
+
+tile.plug:euCobbleSSlab.0.0.name=Colored Cobblestone Slab (White Frequency)
+tile.plug:euCobbleSSlab.1.0.name=Colored Cobblestone Slab (Orange Frequency)
+tile.plug:euCobbleSSlab.2.0.name=Colored Cobblestone Slab (Magenta Frequency)
+tile.plug:euCobbleSSlab.3.0.name=Colored Cobblestone Slab (Light Blue Frequency)
+tile.plug:euCobbleSSlab.4.0.name=Colored Cobblestone Slab (Yellow Frequency)
+tile.plug:euCobbleSSlab.5.0.name=Colored Cobblestone Slab (Lime Frequency)
+tile.plug:euCobbleSSlab.6.0.name=Colored Cobblestone Slab (Pink Frequency)
+tile.plug:euCobbleSSlab.7.0.name=Colored Cobblestone Slab (Gray Frequency)
+tile.plug:euCobbleSSlab.8.0.name=Colored Cobblestone Slab (Light Gray Frequency)
+tile.plug:euCobbleSSlab.9.0.name=Colored Cobblestone Slab (Cyan Frequency)
+tile.plug:euCobbleSSlab.10.0.name=Colored Cobblestone Slab (Purple Frequency)
+tile.plug:euCobbleSSlab.11.0.name=Colored Cobblestone Slab (Blue Frequency)
+tile.plug:euCobbleSSlab.12.0.name=Colored Cobblestone Slab (Brown Frequency)
+tile.plug:euCobbleSSlab.13.0.name=Colored Cobblestone Slab (Green Frequency)
+tile.plug:euCobbleSSlab.14.0.name=Colored Cobblestone Slab (Red Frequency)
+tile.plug:euCobbleSSlab.15.0.name=Colored Cobblestone Slab (Black Frequency)
+
+tile.plug:euStoneBrickSSlab.0.0.name=Colored Stone Brick Slab (White Frequency)
+tile.plug:euStoneBrickSSlab.1.0.name=Colored Stone Brick Slab (Orange Frequency)
+tile.plug:euStoneBrickSSlab.2.0.name=Colored Stone Brick Slab (Magenta Frequency)
+tile.plug:euStoneBrickSSlab.3.0.name=Colored Stone Brick Slab (Light Blue Frequency)
+tile.plug:euStoneBrickSSlab.4.0.name=Colored Stone Brick Slab (Yellow Frequency)
+tile.plug:euStoneBrickSSlab.5.0.name=Colored Stone Brick Slab (Lime Frequency)
+tile.plug:euStoneBrickSSlab.6.0.name=Colored Stone Brick Slab (Pink Frequency)
+tile.plug:euStoneBrickSSlab.7.0.name=Colored Stone Brick Slab (Gray Frequency)
+tile.plug:euStoneBrickSSlab.8.0.name=Colored Stone Brick Slab (Light Gray Frequency)
+tile.plug:euStoneBrickSSlab.9.0.name=Colored Stone Brick Slab (Cyan Frequency)
+tile.plug:euStoneBrickSSlab.10.0.name=Colored Stone Brick Slab (Purple Frequency)
+tile.plug:euStoneBrickSSlab.11.0.name=Colored Stone Brick Slab (Blue Frequency)
+tile.plug:euStoneBrickSSlab.12.0.name=Colored Stone Brick Slab (Brown Frequency)
+tile.plug:euStoneBrickSSlab.13.0.name=Colored Stone Brick Slab (Green Frequency)
+tile.plug:euStoneBrickSSlab.14.0.name=Colored Stone Brick Slab (Red Frequency)
+tile.plug:euStoneBrickSSlab.15.0.name=Colored Stone Brick Stair (Black Frequency)
+
+tile.plug:euCobbleDSlab.0.1.name=Colored Cobblestone Slab (White Frequency)
+tile.plug:euCobbleDSlab.1.1.name=Colored Cobblestone Slab (Orange Frequency)
+tile.plug:euCobbleDSlab.2.1.name=Colored Cobblestone Slab (Magenta Frequency)
+tile.plug:euCobbleDSlab.3.1.name=Colored Cobblestone Slab (Light Blue Frequency)
+tile.plug:euCobbleDSlab.4.1.name=Colored Cobblestone Slab (Yellow Frequency)
+tile.plug:euCobbleDSlab.5.1.name=Colored Cobblestone Slab (Lime Frequency)
+tile.plug:euCobbleDSlab.6.1.name=Colored Cobblestone Slab (Pink Frequency)
+tile.plug:euCobbleDSlab.7.1.name=Colored Cobblestone Slab (Gray Frequency)
+tile.plug:euCobbleDSlab.8.1.name=Colored Cobblestone Slab (Light Gray Frequency)
+tile.plug:euCobbleDSlab.9.1.name=Colored Cobblestone Slab (Cyan Frequency)
+tile.plug:euCobbleDSlab.10.1.name=Colored Cobblestone Slab (Purple Frequency)
+tile.plug:euCobbleDSlab.11.1.name=Colored Cobblestone Slab (Blue Frequency)
+tile.plug:euCobbleDSlab.12.1.name=Colored Cobblestone Slab (Brown Frequency)
+tile.plug:euCobbleDSlab.13.1.name=Colored Cobblestone Slab (Green Frequency)
+tile.plug:euCobbleDSlab.14.1.name=Colored Cobblestone Slab (Red Frequency)
+tile.plug:euCobbleDSlab.15.1.name=Colored Cobblestone Slab (Black Frequency)
+
+tile.plug:euStoneBrickDSlab.0.1.name=Colored Stone Brick Slab (White Frequency)
+tile.plug:euStoneBrickDSlab.1.1.name=Colored Stone Brick Slab (Orange Frequency)
+tile.plug:euStoneBrickDSlab.2.1.name=Colored Stone Brick Slab (Magenta Frequency)
+tile.plug:euStoneBrickDSlab.3.1.name=Colored Stone Brick Slab (Light Blue Frequency)
+tile.plug:euStoneBrickDSlab.4.1.name=Colored Stone Brick Slab (Yellow Frequency)
+tile.plug:euStoneBrickDSlab.5.1.name=Colored Stone Brick Slab (Lime Frequency)
+tile.plug:euStoneBrickDSlab.6.1.name=Colored Stone Brick Slab (Pink Frequency)
+tile.plug:euStoneBrickDSlab.7.1.name=Colored Stone Brick Slab (Gray Frequency)
+tile.plug:euStoneBrickDSlab.8.1.name=Colored Stone Brick Slab (Light Gray Frequency)
+tile.plug:euStoneBrickDSlab.9.1.name=Colored Stone Brick Slab (Cyan Frequency)
+tile.plug:euStoneBrickDSlab.10.1.name=Colored Stone Brick Slab (Purple Frequency)
+tile.plug:euStoneBrickDSlab.11.1.name=Colored Stone Brick Slab (Blue Frequency)
+tile.plug:euStoneBrickDSlab.12.1.name=Colored Stone Brick Slab (Brown Frequency)
+tile.plug:euStoneBrickDSlab.13.1.name=Colored Stone Brick Slab (Green Frequency)
+tile.plug:euStoneBrickDSlab.14.1.name=Colored Stone Brick Slab (Red Frequency)
+tile.plug:euStoneBrickDSlab.15.1.name=Colored Stone Brick Stair (Black Frequency)
+
+################# Card's Mod
 item.plug:clubs_ace.name=Ace of Clubs
 item.plug:clubs_two.name=Two of Clubs
 item.plug:clubs_three.name=Three of Clubs
@@ -144,7 +279,7 @@ item.plug:cards_daybreak.name=Daybreak Card
 item.plug:cards_awen.name=Awen Card
 item.plug:cards_radiance.name=Radiance Card
 
-# Coins
+################# Coins
 item.plug:coins_wood.name=Wood Coin
 item.plug:coins_stone.name=Stone Coin
 item.plug:coins_zinc.name=Zinc Coin
@@ -159,7 +294,7 @@ item.plug:coins_diamond.name=Diamond Coin
 item.plug:coins_amethyst.name=Amethyst Coin
 item.plug:coins_earth.name=Earth Token
 
-# Pills
+################# Pills
 item.plug:pills_basic.name=Basic Pill
 item.plug:pills_advanced.name=Advanced Pill
 item.plug:pills_pioneer.name=Pioneer Pill
@@ -248,14 +383,14 @@ item.plug:demon_scroll.name=Demon Scroll
 item.plug:gold_scroll.name=Gold Scroll
 
 
-# Eyes
+################# Eyes
 item.plug:eyes_sharinganone.name=Basic Sharingan
 item.plug:eyes_sharingantwo.name=Evolved Sharingan
 item.plug:eyes_sharinganthree.name=Evolved Sharingan 2
 item.plug:eyes_rinnegan.name=Rinnegan
 item.plug:eyes_byakugan.name=Byakugan
 
-# Balls
+################# Balls
 item.plug:balls_one.name=One Star Ball
 item.plug:balls_two.name=Two Star Ball
 item.plug:balls_three.name=Three Star Ball
@@ -264,7 +399,7 @@ item.plug:balls_five.name=Five Star Ball
 item.plug:balls_six.name=Six Star Ball
 item.plug:balls_seven.name=Seven Star Ball
 
-# Extras
+################# Extras
 item.plug:treasuremap.name=Treasure Map
 item.plug:medkit.name=Medkit
 item.plug:bell.name=Bell
@@ -278,7 +413,7 @@ item.plug:dark_rasengan_spin.name=Shadow Rasengan
 item.plug:rasengan.name=Rasengan
 item.plug:rasengan_spin.name=Rasengan
 
-# Weapons
+################# Weapons
 item.plug:dark_dagger.name=Dark Metal Dagger
 item.plug:reverse_dark_dagger.name=Reversed Dark Metal Dagger
 item.plug:hunter_knife.name=Hunter Knife
@@ -392,7 +527,7 @@ item.plug:newton_scythe.name=Newton Scythe
 item.plug:evil_scythe.name=Evil Scythe
 item.plug:crystal_spear.name=Crystal Spear
 
-# Bows
+################# Bows
 item.plug:dark_metal_bow.name=Dark Metal Bow
 item.plug:death_bow.name=Death Bow
 item.plug:end_stone_bow.name=End Stone Bow
@@ -403,7 +538,7 @@ item.plug:mosquito_bow.name=Mosquito Bow
 item.plug:scorpion_bow.name=Scorpion Bow
 item.plug:spider_bow.name=Spider Bow
 
-# Customs
+################# Customs
 item.plug:dark_dagger_custom_broken.name=Broken Dark Dagger
 item.plug:reverse_dark_dagger_custom_broken.name=Broken Reversed Dark Dagger
 item.plug:dark_dagger_custom.name=Dark Dagger
@@ -419,8 +554,6 @@ item.plug:jungle_axe_custom_broken.name=Broken Jungle Axe
 item.plug:jungle_axe_custom.name=Jungle Axe
 item.plug:jungle_axe_custom_energized.name=Energized Jungle Axe
 
-
-
 item.plug:glass_pan_custom_broken.name=Broken Glass Pan
 item.plug:glass_pan_custom.name=Glass Pan
 item.plug:glass_pan_custom_energized.name=Energized Glass Pan
@@ -431,7 +564,7 @@ item.plug:reverse_glass_kunai.name=Reveresed Glass Kunai
 item.plug:glass_dagger.name=Glass Dagger
 item.plug:reverse_glass_dagger.name=Reveresed Glass Dagger
 
-# Materials
+################# Materials
 item.plug:dark_metal.name=Dark Metal Ingot
 item.plug:blue_steel.name=Blue Steel Ingot
 item.plug:jungle_ingot.name=Jungle Ingot
@@ -442,7 +575,7 @@ item.plug:energy_quartz.name=Energy Quartz
 item.plug:energy_catalyst.name=Energy Catalyst
 item.plug:glass_shard.name=Glass Shard
 
-# Parts
+################# Parts
 item.plug:blue_longsword_custom_blade.name=Blue Longsword Blade
 item.plug:blue_longsword_custom_guard.name=Blue Longsword Guard
 item.plug:blue_longsword_custom_rod.name=Blue Longsword Rod
@@ -457,12 +590,12 @@ item.plug:jungle_axe_binding.name=Vine Binding
 item.plug:jungle_axe_rod.name=Jungle Axe Rod
 
 
-# Keybinds
+################# Keybinds
 key.plug.orient=Orient
 key.plug.transform=Transform
 key.categories.plugin=The Plugin
 
-# Debug
+################# Debug
 item.plug:debug_dagger_broken.name=Broken Debug Dagger
 item.plug:reverse_debug_dagger_broken.name=Broken Reversed Debug Dagger
 item.plug:debug_dagger.name=Debug Dagger

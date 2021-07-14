@@ -1,3 +1,11 @@
+@ 3.6
++ Added Biomes O Plenty Compatibility
++ Added Extra Utilities Compatibility
+
+@ 3.5
++ Added Barrels
++ Added Concrete
+
 @ 3.41
 + Added Crystal Spear
 

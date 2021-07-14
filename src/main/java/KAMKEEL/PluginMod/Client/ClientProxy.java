@@ -1,5 +1,8 @@
 package KAMKEEL.PluginMod.Client;
 
+import KAMKEEL.PluginMod.Blocks.BlockColor;
+import KAMKEEL.PluginMod.Blocks.BlockColorStair;
+import KAMKEEL.PluginMod.Blocks.ModBlocks;
 import KAMKEEL.PluginMod.Client.Render.*;
 import KAMKEEL.PluginMod.CommonProxy;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
@@ -9,14 +12,17 @@ import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 public class ClientProxy extends CommonProxy {
 
     ClientEvents clientEvents;
+    public static final RenderItemBlockColor renderItemBlockColor;
 
     @Override
     public int getNewRenderId() {
@@ -87,10 +93,17 @@ public class ClientProxy extends CommonProxy {
     public void renderBlocks(){
         // Render Blocks
         RenderingRegistry.registerBlockHandler((ISimpleBlockRenderingHandler)new RenderBlockFullBright());
+        RenderingRegistry.registerBlockHandler((ISimpleBlockRenderingHandler)new RenderBlockColor());
+
+//        for (final BlockColor b : ModBlocks.colorBlocks) {
+//            MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock((Block)b), (IItemRenderer)ClientProxy.renderItemBlockColor);
+//        }
+
     }
 
     public void setRenderIDs(){
         CommonProxy.fullBrightBlockID = getNewRenderId();
+        CommonProxy.colorBlockID = getNewRenderId();
     }
 
     @Override
@@ -101,5 +114,9 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void registerTileEntities() { }
+
+    static {
+        renderItemBlockColor = new RenderItemBlockColor();
+    }
 
 }

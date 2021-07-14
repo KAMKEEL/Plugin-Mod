@@ -1,8 +1,20 @@
 package KAMKEEL.PluginMod.Blocks;
 
+import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockColor;
 import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockDark;
+import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockSlab;
+import KAMKEEL.PluginMod.LocalizationHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.tileentity.TileEntity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static cpw.mods.fml.common.registry.GameRegistry.registerBlock;
 
 
 /**
@@ -10,18 +22,28 @@ import net.minecraft.block.Block;
  */
 public class ModBlocks {
 
+
     // Tab Icon
     public static Block Cherry_Barrel;
 
     // Blocks
     public static Block Dark;
     public static Block Barrel;
+    public static Block ColoredCobble;
+    public static Block colorBlockData;
 
     // Sub-Blocks
     public static BlockConcrete concreteBlock;
     public static BlockConcretePowder concretePowder;
     public static BlockEnergy energyBlock;
 
+    // Stairs
+    public static BlockColorStair testStairBlock;
+    public static Block testStairs;
+
+    // Slabs
+    public static Block regularSingleSlab;
+    public static Block regularDoubleSlab;
 
     /**
      * Declare and register items. Do NOT add recipes here!
@@ -32,7 +54,6 @@ public class ModBlocks {
         Dark = new BlockDark();
         GameRegistry.registerBlock(Dark, ItemBlockDark.class, "dark");
 
-
         concreteBlock = new BlockConcrete();
         concreteBlock.register();
         concretePowder = new BlockConcretePowder();
@@ -40,6 +61,12 @@ public class ModBlocks {
 
         energyBlock = new BlockEnergy();
         energyBlock.register();
+
+//        BlockPlugSlab singleSlab = (BlockPlugSlab)new BlockPlugSlab(false, Material.wood, BlockPlugSlab.SlabCategory.REGULAR).setBlockName(LocalizationHelper.MOD_PREFIX + "regularSingleSlab");
+//        BlockPlugSlab doubleSlab = (BlockPlugSlab)new BlockPlugSlab(true, Material.wood, BlockPlugSlab.SlabCategory.REGULAR).setBlockName(LocalizationHelper.MOD_PREFIX + "regularDoubleSlab");
+//
+//        regularSingleSlab = BlockPlugSlab.registerBlock(singleSlab, ItemBlockSlab.class, singleSlab, doubleSlab);
+//        regularDoubleSlab = BlockPlugSlab.registerBlock(doubleSlab, ItemBlockSlab.class, singleSlab, doubleSlab);
 
         //////////////////////////////////////
         //             BARRELS
@@ -73,41 +100,29 @@ public class ModBlocks {
         Cherry_Barrel = new BlockBarrel("cherry");
         ((BlockBarrel)Cherry_Barrel).register();
 
-        Barrel = new BlockBarrel("ethereal");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("hellbark");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("fir");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("palm");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("willow");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("jacaranda");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("magic");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("mahogany");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("mangrove");
-        ((BlockBarrel)Barrel).register();
-
-        Barrel = new BlockBarrel("redwood");
-        ((BlockBarrel)Barrel).register();
-
         //////////////////////////////////////
 
     }
 
     public static void initRecipes() {
 
+    }
+
+    public static Block registerBlock(Block block) {
+        return registerBlock(block, ItemBlock.class);
+    }
+
+    public static Block registerBlock(Block block, Class<? extends ItemBlock> itemblock) {
+        String s = block.getUnlocalizedName().substring("tile.".length());
+        s = s.replace("plug:", "");
+        return GameRegistry.registerBlock(block, itemblock, s);
+    }
+
+    public static void registerTile(Class<? extends TileEntity> clazz, String name) {
+        GameRegistry.registerTileEntity(clazz, name);
+    }
+
+    public static void registerTile(Class<? extends TileEntity> clazz) {
+        GameRegistry.registerTileEntity(clazz, clazz.getSimpleName());
     }
 }
