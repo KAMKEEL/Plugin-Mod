@@ -13,6 +13,7 @@ public enum EnumArtifacts {
     Trinity(8, "artifact_trinity"),
     Resonant_Pearl(9, "artifact_resonant_pearl"),
     Energy_amplifier(10, "artifact_energy_amplifier"),
+
     Divinity(11, "artifact_divinity"),
     Magic_stew(12, "artifact_magic_stew"),
     Luck(13, "artifact_luck"),
@@ -23,6 +24,7 @@ public enum EnumArtifacts {
     Seal_scroll(18, "seal_scroll"),
     Charge_crystal(19, "charge_crystal"),
     Journal_entry(20, "journal_entry"),
+
     Eyes_of_remnant(21, "eyes_of_remnant"),
     lasr_eye(22, "lasr_eye"),
     Dark_pendant(23, "dark_pendant"),
@@ -33,6 +35,7 @@ public enum EnumArtifacts {
     Warped_stone(28, "warped_stone"),
     Health_cube(29, "health_cube"),
     Power_cube(30, "power_cube"),
+
     Poison_cube(31, "poison_cube"),
     Midas_jewel(32, "midas_jewel"),
     Necromancer(33, "necromancer"),
@@ -43,6 +46,7 @@ public enum EnumArtifacts {
     Glacite_jewel(38, "glacite_jewel"),
     Goblin_egg(39, "goblin_egg"),
     Petrified_stone(40, "petrified_stone"),
+
     Crystal_geode(41, "crystal_geode"),
     Plasma_nucleus(42, "plasma_nucleus"),
     Kat_flower(43, "kat_flower"),
@@ -53,6 +57,7 @@ public enum EnumArtifacts {
     Precursor_gem(48, "precursor_gem"),
     Sorrow(49, "sorrow"),
     Zem_orb(50, "zem_orb"),
+
     Forbidden_flower(51, "forbidden_flower"),
     Spirit_leap(52, "spirit_leap"),
     Blood_skull(53, "blood_skull"),
@@ -63,6 +68,8 @@ public enum EnumArtifacts {
     Codex(58, "codex"),
     Poison_blob(59, "poison_blob"),
     Void_scroll(60, "void_scroll"),
+
+    Blue_blood(61, "blue_blood"),
     Red_scarf(62, "red_scarf"),
     Veskin_hide(63, "veskin_hide"),
     Crimson_vortex(64, "crimson_vortex"),
@@ -72,6 +79,7 @@ public enum EnumArtifacts {
     Prehistoric_egg(68, "prehistoric_egg"),
     Queen_soul(69, "queen_soul"),
     Aspiring_leap(70, "aspiring_leap"),
+
     Reaper_orb(71, "reaper_orb"),
     Hidden_zone(72, "hidden_zone"),
     Lucky_dice(73, "lucky_dice"),
@@ -81,8 +89,7 @@ public enum EnumArtifacts {
     Magma_bucket(77, "magma_bucket"),
     Corleonite(78, "corleonite"),
     Jungle_heart(79, "jungle_heart"),
-    Wither_catalyst(80, "wither_catalyst"),
-    Blue_blood(81, "blue_blood");
+    Wither_catalyst(80, "wither_catalyst");
 
     private final int meta;
     private final String name;
