@@ -1,6 +1,7 @@
 package KAMKEEL.PluginMod.Blocks;
 
 import KAMKEEL.PluginMod.Compat.CompatibilityBiomesOPlenty;
+import KAMKEEL.PluginMod.LocalizationHelper;
 import KAMKEEL.PluginMod.PluginMod;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -225,7 +226,7 @@ public class BlockPlugSlab extends BlockSlab
 
     public static Block registerBlock(Block block, Class<? extends ItemBlock> itemBlockClass, Object... constructorArgs)
     {
-        GameRegistry.registerBlock(block, itemBlockClass, block.getUnlocalizedName().replace("tile.", ""), constructorArgs);
+        GameRegistry.registerBlock(block, itemBlockClass, block.getUnlocalizedName().replace("tile.", "").replace(LocalizationHelper.MOD_PREFIX, ""), constructorArgs);
 
         return block;
     }

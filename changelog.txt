@@ -1,3 +1,9 @@
+@ 3.7
+-- Fixed Compatibility Registry issue with Prefix
++ Added New Weapons
++ Added Plenty of New Artifacts
++ Added some Extra Items
+
 @ 3.6
 + Added Biomes O Plenty Compatibility
 + Added Extra Utilities Compatibility

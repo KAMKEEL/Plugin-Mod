@@ -53,7 +53,7 @@ public class BlockColor extends Block {
         setResistance((Float) ReflectionHelper.getPrivateValue(Block.class, b, new String[]{"blockResistance", "field_149781_w"}));
         setStepSound(b.stepSound);
         setBlockTextureName(texture);
-        setBlockName("plug:color_" + b.getUnlocalizedName().substring(5));
+        setBlockName("color_" + b.getUnlocalizedName().substring(5));
         setLightLevel(b.getLightValue() / 15.0F);
         setLightOpacity(b.getLightOpacity());
         this.setCreativeTab(PluginMod.blocksTab);

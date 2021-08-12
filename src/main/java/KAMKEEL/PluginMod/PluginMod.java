@@ -22,7 +22,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import org.lwjgl.Sys;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "3.6")
+@Mod(modid = "plug", name = "The Plugin Mod", version = "3.7")
 public class PluginMod {
 
     @SidedProxy(clientSide = "KAMKEEL.PluginMod.Client.ClientProxy", serverSide = "KAMKEEL.PluginMod.CommonProxy")

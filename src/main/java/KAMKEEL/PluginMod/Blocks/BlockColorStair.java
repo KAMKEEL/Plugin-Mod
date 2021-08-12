@@ -40,7 +40,8 @@ public class BlockColorStair extends BlockStairs
         super(b, metaData);
         this.curMetadata = metaData;
         this.setLightOpacity(0);
-        this.fullBlockName = LocalizationHelper.MOD_PREFIX + name + "Stair." + metaData;
+        // LocalizationHelper.MOD_PREFIX +
+        this.fullBlockName =  name + "Stair." + metaData;
         this.setBlockName(this.fullBlockName);
         this.setCreativeTab(PluginMod.blocksTab);
     }

@@ -70,11 +70,12 @@ public class BlockColorSlab extends BlockSlab
 
         if (!isDoubleSlab)
         {
-            this.setBlockName(LocalizationHelper.MOD_PREFIX + blockName + "SSlab." + _metaColor);
+            this.setBlockName(blockName + "SSlab." + _metaColor);
             this.setCreativeTab(PluginMod.blocksTab);
         }
         else{
-            this.setBlockName(LocalizationHelper.MOD_PREFIX + blockName + "DSlab." + _metaColor);
+            //LocalizationHelper.MOD_PREFIX +
+            this.setBlockName(blockName + "DSlab." + _metaColor);
         }
         this.doubleSlab = isDoubleSlab;
         this.blockName = textureLoc;

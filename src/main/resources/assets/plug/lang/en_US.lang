@@ -381,6 +381,41 @@ item.plug:balance_scroll.name=Balance Scroll
 item.plug:dark_scroll.name=Dark Scroll
 item.plug:demon_scroll.name=Demon Scroll
 item.plug:gold_scroll.name=Gold Scroll
+item.plug:precursor_gem.name=Precursor Gem
+item.plug:sorrow.name=Sorrow Soul
+item.plug:zem_orb.name=Zem Orb
+item.plug:forbidden_flower.name=Forbidden Flower
+item.plug:spirit_leap.name=Spirit Leap
+item.plug:blood_skull.name=Blood Skull
+item.plug:master_skull.name=Master Skull
+item.plug:krodo_orb.name=Krodo Orb
+item.plug:golden_lasso.name=Golden Whip
+item.plug:heat_core.name=Heat Core
+item.plug:codex.name=Codex
+item.plug:poison_blob.name=Poison Blob
+item.plug:void_scroll.name=Void Scroll
+item.plug:red_scarf.name=Red Scarf
+item.plug:veskin_hide.name=Veskin Hide
+item.plug:crimson_vortex.name=Crimson Vortex
+item.plug:saving_grace.name=Saving Grace
+item.plug:bonzo_fragment.name=Bonzo Fragment
+item.plug:livid_fragment.name=Livid Fragment
+item.plug:prehistoric_egg.name=Prehistoric Egg
+item.plug:queen_soul.name=Queen Shard
+item.plug:aspiring_leap.name=Aspiring Leap
+item.plug:reaper_orb.name=Reaper Orb
+item.plug:hidden_zone.name=Hidden Zone
+item.plug:lucky_dice.name=Dice of Fate
+item.plug:moon_gem.name=Moon Gem
+item.plug:holy_stone.name=Holy Stone
+item.plug:dark_auction.name=Dark Auction
+item.plug:magma_bucket.name=Magma Bucket
+item.plug:corleonite.name=Corleonite
+item.plug:jungle_heart.name=Jungle Heart
+item.plug:wither_catalyst.name=Wither Catalyst
+item.plug:blue_blood.name=Blue Blood
+
+
 
 
 ################# Eyes
@@ -402,6 +437,7 @@ item.plug:balls_seven.name=Seven Star Ball
 ################# Extras
 item.plug:treasuremap.name=Treasure Map
 item.plug:medkit.name=Medkit
+item.plug:bandages.name=Bandages
 item.plug:bell.name=Bell
 item.plug:burrito.name=Burrito
 item.plug:paperbomb.name=Paper Bomb
@@ -526,6 +562,12 @@ item.plug:mythic_scythe.name=Mythic Scythe
 item.plug:newton_scythe.name=Newton Scythe
 item.plug:evil_scythe.name=Evil Scythe
 item.plug:crystal_spear.name=Crystal Spear
+item.plug:the_necromancer.name=The Necromancer
+item.plug:earth_sword.name=Earth Sword
+item.plug:forest_roots.name=Forest Roots
+item.plug:the_vampire.name=The Vampire
+item.plug:crook.name=Crook
+item.plug:heavy_axe.name=Heavy Axe
 
 ################# Bows
 item.plug:dark_metal_bow.name=Dark Metal Bow
@@ -573,6 +615,7 @@ item.plug:deep_ingot.name=Deep Ingot
 item.plug:damascus_ingot.name=Damascus Ingot
 item.plug:energy_quartz.name=Energy Quartz
 item.plug:energy_catalyst.name=Energy Catalyst
+item.plug:hyper_catalyst.name=Hyper Catalyst
 item.plug:glass_shard.name=Glass Shard
 
 ################# Parts

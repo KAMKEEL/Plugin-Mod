@@ -151,7 +151,7 @@ public class ModItems {
         Item.ToolMaterial custom_glass = EnumHelper.addToolMaterial("GLASS", EnumToolMaterials.GLASS.getHarvestLevel(), 100000, EnumToolMaterials.GLASS.getEfficiencyOnProperMaterial(), 7, 0);
         Item.ToolMaterial random = EnumHelper.addToolMaterial("RANDOM", EnumToolMaterials.GLASS.getHarvestLevel(), 20, EnumToolMaterials.GLASS.getEfficiencyOnProperMaterial(), 7, 0);
 
-        Item.ToolMaterial PluginMaterial = EnumHelper.addToolMaterial("PluginMaterial", Item.ToolMaterial.IRON.getHarvestLevel(), 3000, Item.ToolMaterial.IRON.getEfficiencyOnProperMaterial(), 7, 0);
+        Item.ToolMaterial PluginMaterial = EnumHelper.addToolMaterial("PluginMaterial", Item.ToolMaterial.IRON.getHarvestLevel(), 20000, Item.ToolMaterial.IRON.getEfficiencyOnProperMaterial(), 7, 0);
 
         // Ingots/Materials:
         codium_ingot = new PluginItemInterface(26712).setUnlocalizedName("codium_ingot").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/codium_ingot");
@@ -265,6 +265,11 @@ public class ModItems {
         GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("knight_cutlass").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/knight_cutlass");
         GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("poison_cutlass").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/poison_cutlass");
         GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("cryptic_sword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/cryptic_sword");
+        GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("the_necromancer").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/the_necromancer");
+        GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("earth_sword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/earth_sword");
+        GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("forest_roots").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/forest_roots");
+        GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("the_vampire").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/the_vampire");
+
 
         GeneralBroadsword = new ItemBroadSword(PluginMaterial).setUnlocalizedName("dreadlord_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dreadlord_sword");
         GeneralBroadsword = new ItemBroadSword(PluginMaterial).setUnlocalizedName("fel_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/fel_sword");
@@ -283,7 +288,7 @@ public class ModItems {
         GeneralBattleAxe = new ItemBattleAxe(1, PluginMaterial).setUnlocalizedName("darkwood_axe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/darkwood_axe");
         GeneralBattleAxe = new ItemBattleAxe(1, PluginMaterial).setUnlocalizedName("mithril_pickaxe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/mithril_pickaxe");
         GeneralBattleAxe = new ItemBattleAxe(1, PluginMaterial).setUnlocalizedName("mayan_pickaxe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/mayan_pickaxe");
-
+        GeneralBattleAxe = new ItemBattleAxe(1, PluginMaterial).setUnlocalizedName("heavy_axe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/heavy_axe");
 
         GeneralClaw = new ItemClaw(1, PluginMaterial).setUnlocalizedName("quartz_claw").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/quartz_claw");
         GeneralClaw = new ItemClaw(1, PluginMaterial).setUnlocalizedName("gold_claws").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/gold_claws");
@@ -298,7 +303,7 @@ public class ModItems {
         GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("mythic_scythe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/mythic_scythe");
         GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("newton_scythe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/newton_scythe");
         GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("evil_scythe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/evil_scythe");
-
+        GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("crook").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/crook");
 
 
         // Bows
@@ -403,9 +408,11 @@ public class ModItems {
         GameRegistry.registerItem(PaperBomb, PaperBomb.getUnlocalizedName());
 
         Item miscItem = new PluginItemInterface(10001).setUnlocalizedName("medkit").setTextureName("plug:extra/medkit").setCreativeTab(PluginMod.miscTab);
+        miscItem = new PluginItemInterface(10001).setUnlocalizedName("bandages").setTextureName("plug:extra/bandages").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("bell").setTextureName("plug:extra/bell").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("burrito").setTextureName("plug:extra/burrito").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("energy_catalyst").setTextureName("plug:materials/catalyst").setCreativeTab(PluginMod.miscTab);
+        miscItem = new PluginItemInterface(10001).setUnlocalizedName("hyper_catalyst").setTextureName("plug:materials/hyper_catalyst").setCreativeTab(PluginMod.miscTab);
 
         VoidRasenshuriken = new VoidRasenshuriken(10001, random).setUnlocalizedName("VoidRasenshuriken").setTextureName("plug:energy/voidrasenshuriken");
         MassiveRasengan = new MassiveRasengan().setUnlocalizedName("massiverasengan").setTextureName("plug:energy/massive_rasengan");
