@@ -1,3 +1,9 @@
+@ 3.8
+-- Fixed Issue with Names
+-- Fixed Issue with Enums
+-- Collapsed and Reduced Spam Code
++ More Coins
+
 @ 3.7
 -- Fixed Compatibility Registry issue with Prefix
 + Added New Weapons

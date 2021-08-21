@@ -294,6 +294,27 @@ item.plug:coins_diamond.name=Diamond Coin
 item.plug:coins_amethyst.name=Amethyst Coin
 item.plug:coins_earth.name=Earth Token
 
+item.plug:coins_other_amethyst.name=Amethyst Bit
+item.plug:coins_other_bronze.name=Bronze Bit
+item.plug:coins_other_cobalt.name=Cobalt Bit
+item.plug:coins_other_diamond.name=Diamond Bit
+item.plug:coins_other_emerald.name=Emerald Bit
+item.plug:coins_other_gold.name=Gold Bit
+item.plug:coins_other_iron.name=Iron Bit
+item.plug:coins_other_obsidian.name=Obsidian Bit
+item.plug:coins_other_rose.name=Rose Bit
+item.plug:coins_other_ruby.name=Ruby Bit
+item.plug:coins_other_wood.name=Wood Bit
+
+item.plug:coins_other2_dark_steel.name=Dark Steel Piece
+item.plug:coins_other2_bronze.name=Bronze Piece
+item.plug:coins_other2_diamond.name=Diamond Piece
+item.plug:coins_other2_ruby.name=Ruby Piece
+item.plug:coins_other2_silver.name=Silver Piece
+item.plug:coins_other2_copper.name=Copper Piece
+item.plug:coins_other2_emerald.name=Emerald Piece
+item.plug:coins_other2_gold.name=Gold Piece
+
 ################# Pills
 item.plug:pills_basic.name=Basic Pill
 item.plug:pills_advanced.name=Advanced Pill
