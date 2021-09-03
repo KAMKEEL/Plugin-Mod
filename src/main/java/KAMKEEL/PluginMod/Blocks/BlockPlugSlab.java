@@ -217,9 +217,9 @@ public class BlockPlugSlab extends BlockSlab
         return meta & 7;
     }
 
-    public static Block registerBlock(Block block, Class<? extends ItemBlock> itemBlockClass)
+    public static Block registerBlock(Block block)
     {
-        GameRegistry.registerBlock(block, itemBlockClass, block.getUnlocalizedName().replace("tile.", ""));
+        GameRegistry.registerBlock(block, block.getUnlocalizedName().replace("tile.", "").replace(LocalizationHelper.MOD_PREFIX, ""));
 
         return block;
     }

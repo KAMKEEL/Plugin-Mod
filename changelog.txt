@@ -1,3 +1,6 @@
+@ 3.81
+-- Fixed Durability Issue
+
 @ 3.8
 -- Fixed Issue with Names
 -- Fixed Issue with Enums

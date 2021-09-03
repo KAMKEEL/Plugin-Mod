@@ -66,22 +66,22 @@ public class CompatibilityBiomesOPlenty {
         if(BOPRocks != null){
 
             BOPStair = new BlockPlugStair(BOPRocks, 0, "limestone").setHardness(1.8F);
-            registerBlock(BOPStair, "stair_limestone");
+            BlockPlugSlab.registerBlock(BOPStair);
 
             BOPStair = new BlockPlugStair(BOPRocks, 1, "limestonesmooth").setHardness(1.8F);
-            registerBlock(BOPStair, "stair_limestonesmooth");
+            BlockPlugSlab.registerBlock(BOPStair);
 
             BOPStair = new BlockPlugStair(BOPRocks, 2, "siltstone").setHardness(1.8F);
-            registerBlock(BOPStair, "stair_siltstone");
+            BlockPlugSlab.registerBlock(BOPStair);
 
             BOPStair = new BlockPlugStair(BOPRocks, 3, "siltstonesmooth").setHardness(1.8F);
-            registerBlock(BOPStair, "stair_siltstonesmooth");
+            BlockPlugSlab.registerBlock(BOPStair);
 
             BOPStair = new BlockPlugStair(BOPRocks, 4, "shale").setHardness(1.8F);
-            registerBlock(BOPStair, "stair_shale");
+            BlockPlugSlab.registerBlock(BOPStair);
 
             BOPStair = new BlockPlugStair(BOPRocks, 5, "shalesmooth").setHardness(1.8F);
-            registerBlock(BOPStair, "stair_shalesmooth");
+            BlockPlugSlab.registerBlock(BOPStair);
 
             BlockPlugSlab singleSlab = (BlockPlugSlab)new BlockPlugSlab(false, Material.rock, BlockPlugSlab.SlabCategory.BOP).setBlockName(LocalizationHelper.MOD_PREFIX + "bopSingleSlab");
             BlockPlugSlab doubleSlab = (BlockPlugSlab)new BlockPlugSlab(true, Material.rock, BlockPlugSlab.SlabCategory.BOP).setBlockName(LocalizationHelper.MOD_PREFIX + "bopDoubleSlab");

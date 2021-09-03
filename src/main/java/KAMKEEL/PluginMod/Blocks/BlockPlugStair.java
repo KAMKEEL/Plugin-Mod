@@ -1,6 +1,7 @@
 package KAMKEEL.PluginMod.Blocks;
 
 import KAMKEEL.PluginMod.CommonProxy;
+import KAMKEEL.PluginMod.LocalizationHelper;
 import KAMKEEL.PluginMod.PluginMod;
 import KAMKEEL.PluginMod.Util.ColorUtil;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -24,7 +25,7 @@ public class BlockPlugStair extends BlockStairs
     public BlockPlugStair(Block b, int meta, String name)
     {
         super(b, meta);
-        this.setBlockName("stair_" + name);
+        this.setBlockName(LocalizationHelper.MOD_PREFIX + "stair_" + name);
         this.setStepSound(b.stepSound);
         this.setLightOpacity(0);
         this.setCreativeTab(PluginMod.blocksTab);

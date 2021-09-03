@@ -15,7 +15,6 @@ public class BlockColorStair extends BlockStairs
 
     public static float[][] initColor = new float[16][3];
     public int curMetadata = 0;
-    public String fullBlockName;
 
     static {
         float saturation = 0.85F;
@@ -40,9 +39,7 @@ public class BlockColorStair extends BlockStairs
         super(b, metaData);
         this.curMetadata = metaData;
         this.setLightOpacity(0);
-        // LocalizationHelper.MOD_PREFIX +
-        this.fullBlockName =  name + "Stair." + metaData;
-        this.setBlockName(this.fullBlockName);
+        this.setBlockName(LocalizationHelper.MOD_PREFIX + name + "Stair." + metaData);
         this.setCreativeTab(PluginMod.blocksTab);
     }
 
@@ -58,7 +55,4 @@ public class BlockColorStair extends BlockStairs
         return (int)(col[0] * 255.0F) << 16 | (int)(col[1] * 255.0F) << 8 | (int)(col[2] * 255.0F);
     }
 
-    public String getFullBlockName() {
-        return fullBlockName;
-    }
 }

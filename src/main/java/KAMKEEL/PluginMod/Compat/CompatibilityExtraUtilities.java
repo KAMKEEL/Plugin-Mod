@@ -38,52 +38,52 @@ public class CompatibilityExtraUtilities {
         if(EUCobblestone != null){
 
             EUStair = new BlockColorStair(EUCobblestone, 0, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 1, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 2, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 3, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 4, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 5, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 6, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 7, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 8, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 9, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 10, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 11, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 12, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 13, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 14, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUCobblestone, 15, "euCobble");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
 
             // Slabs
@@ -203,52 +203,52 @@ public class CompatibilityExtraUtilities {
         if(EUStoneBrick != null){
 
             EUStair = new BlockColorStair(EUStoneBrick, 0, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 1, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 2, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 3, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 4, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 5, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 6, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 7, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 8, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 9, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 10, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 11, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 12, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 13, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 14, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             EUStair = new BlockColorStair(EUStoneBrick, 15, "euStoneBrick");
-            registerBlock(EUStair, EUStair.getFullBlockName());
+            BlockPlugSlab.registerBlock(EUStair);
 
             // Slabs
             BlockColorSlab singleSlab = (BlockColorSlab)new BlockColorSlab(false, Material.rock, "euStoneBrick","stonebrick", 0);

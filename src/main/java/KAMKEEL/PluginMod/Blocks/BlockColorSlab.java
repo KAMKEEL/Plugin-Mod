@@ -70,12 +70,12 @@ public class BlockColorSlab extends BlockSlab
 
         if (!isDoubleSlab)
         {
-            this.setBlockName(blockName + "SSlab." + _metaColor);
+            this.setBlockName(LocalizationHelper.MOD_PREFIX + blockName + "SSlab." + _metaColor);
             this.setCreativeTab(PluginMod.blocksTab);
         }
         else{
             //LocalizationHelper.MOD_PREFIX +
-            this.setBlockName(blockName + "DSlab." + _metaColor);
+            this.setBlockName(LocalizationHelper.MOD_PREFIX + blockName + "DSlab." + _metaColor);
         }
         this.doubleSlab = isDoubleSlab;
         this.blockName = textureLoc;
@@ -166,7 +166,7 @@ public class BlockColorSlab extends BlockSlab
 
     public static Block registerBlock(Block block, Class<? extends ItemBlock> itemBlockClass, Object... constructorArgs)
     {
-        GameRegistry.registerBlock(block, itemBlockClass, block.getUnlocalizedName().replace("tile.", ""), constructorArgs);
+        GameRegistry.registerBlock(block, itemBlockClass, block.getUnlocalizedName().replace("tile.", "").replace(LocalizationHelper.MOD_PREFIX, ""), constructorArgs);
 
         return block;
     }

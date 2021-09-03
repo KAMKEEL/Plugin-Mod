@@ -169,25 +169,25 @@ public class ModItems {
         HunterKnife = new ItemDagger(26701, PluginMaterial).setUnlocalizedName("hunter_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/hunter_knife");
         HunterKnifeReversed = new ItemDaggerReversed(26702, (ItemDagger) HunterKnife, PluginMaterial, HunterKnife).setUnlocalizedName("reverse_" + "hunter_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/hunter_knife");
         ((ItemDagger) HunterKnife).setReverseState(HunterKnifeReversed);
-        SpiritKnife = new ItemDagger(26701, Item.ToolMaterial.EMERALD).setUnlocalizedName("spirit_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/spirit_knife");
-        SpiritKnifeReversed = new ItemDaggerReversed(26702, (ItemDagger) SpiritKnife, Item.ToolMaterial.EMERALD, SpiritKnife).setUnlocalizedName("reverse_" + "spirit_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/spirit_knife");
+        SpiritKnife = new ItemDagger(26701, PluginMaterial).setUnlocalizedName("spirit_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/spirit_knife");
+        SpiritKnifeReversed = new ItemDaggerReversed(26702, (ItemDagger) SpiritKnife, PluginMaterial, SpiritKnife).setUnlocalizedName("reverse_" + "spirit_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/spirit_knife");
         ((ItemDagger) SpiritKnife).setReverseState(SpiritKnifeReversed);
-        EternalKnife = new ItemDagger(26701, Item.ToolMaterial.EMERALD).setUnlocalizedName("eternal_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/eternal_knife");
-        EternalKnifeReversed = new ItemDaggerReversed(26702, (ItemDagger) EternalKnife, Item.ToolMaterial.EMERALD, EternalKnife).setUnlocalizedName("reverse_" + "eternal_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/eternal_knife");
+        EternalKnife = new ItemDagger(26701, PluginMaterial).setUnlocalizedName("eternal_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/eternal_knife");
+        EternalKnifeReversed = new ItemDaggerReversed(26702, (ItemDagger) EternalKnife, PluginMaterial, EternalKnife).setUnlocalizedName("reverse_" + "eternal_knife").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/eternal_knife");
         ((ItemDagger) EternalKnife).setReverseState(EternalKnifeReversed);
-        DarkMetalDagger = new ItemDagger(26701, dark_metal).setUnlocalizedName("dark_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger");
-        DarkMetalDaggerReversed = new ItemDaggerReversed(26702, (ItemDagger) DarkMetalDagger, dark_metal, DarkMetalDagger).setUnlocalizedName("reverse_" + "dark_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger");
+        DarkMetalDagger = new ItemDagger(26701, PluginMaterial).setUnlocalizedName("dark_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger");
+        DarkMetalDaggerReversed = new ItemDaggerReversed(26702, (ItemDagger) DarkMetalDagger, PluginMaterial, DarkMetalDagger).setUnlocalizedName("reverse_" + "dark_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger");
         ((ItemDagger) DarkMetalDagger).setReverseState(DarkMetalDaggerReversed);
 
-        SilverFang = new ItemDagger(26701, dark_metal).setUnlocalizedName("silver_fang").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/silver_fang");
-        SilverFangReversed = new ItemDaggerReversed(26702, (ItemDagger) SilverFang, dark_metal, SilverFang).setUnlocalizedName("reverse_" + "silver_fang").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/silver_fang");
+        SilverFang = new ItemDagger(26701, PluginMaterial).setUnlocalizedName("silver_fang").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/silver_fang");
+        SilverFangReversed = new ItemDaggerReversed(26702, (ItemDagger) SilverFang, PluginMaterial, SilverFang).setUnlocalizedName("reverse_" + "silver_fang").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/silver_fang");
         ((ItemDagger) SilverFang).setReverseState(SilverFangReversed);
 
-        GeneralDagger = new ItemDagger(26701, dark_metal).setUnlocalizedName("earth_shard").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/earth_shard");
-        GeneralDaggerReversed = new ItemDaggerReversed(26702, (ItemDagger) GeneralDagger, dark_metal, GeneralDagger).setUnlocalizedName("reverse_" + "earth_shard").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/earth_shard");
+        GeneralDagger = new ItemDagger(26701, PluginMaterial).setUnlocalizedName("earth_shard").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/earth_shard");
+        GeneralDaggerReversed = new ItemDaggerReversed(26702, (ItemDagger) GeneralDagger, PluginMaterial, GeneralDagger).setUnlocalizedName("reverse_" + "earth_shard").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/earth_shard");
         ((ItemDagger) GeneralDagger).setReverseState(GeneralDaggerReversed);
-        GeneralDagger = new ItemDagger(26701, dark_metal).setUnlocalizedName("livid_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/livid_dagger");
-        GeneralDaggerReversed = new ItemDaggerReversed(26702, (ItemDagger) GeneralDagger, dark_metal, GeneralDagger).setUnlocalizedName("reverse_" + "livid_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/livid_dagger");
+        GeneralDagger = new ItemDagger(26701, PluginMaterial).setUnlocalizedName("livid_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/livid_dagger");
+        GeneralDaggerReversed = new ItemDaggerReversed(26702, (ItemDagger) GeneralDagger, PluginMaterial, GeneralDagger).setUnlocalizedName("reverse_" + "livid_dagger").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/livid_dagger");
         ((ItemDagger) GeneralDagger).setReverseState(GeneralDaggerReversed);
 
         // Scythe
