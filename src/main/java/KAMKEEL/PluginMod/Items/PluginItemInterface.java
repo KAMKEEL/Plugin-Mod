@@ -4,6 +4,7 @@ import KAMKEEL.PluginMod.LocalizationHelper;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemAppleGold;
 import net.minecraft.item.ItemStack;
 import KAMKEEL.PluginMod.PluginMod;
 

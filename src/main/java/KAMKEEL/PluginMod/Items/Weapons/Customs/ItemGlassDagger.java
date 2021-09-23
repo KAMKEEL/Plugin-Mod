@@ -4,6 +4,7 @@ import KAMKEEL.PluginMod.Items.ItemCustomTransparent;
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ItemPluginWeaponInterface;
 import KAMKEEL.PluginMod.Items.Weapons.ItemReversable;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -19,7 +20,7 @@ public class ItemGlassDagger extends ItemPluginWeaponInterface implements ItemRe
 
     public ItemGlassDagger(int par1, ToolMaterial tool) {
         super(par1, tool);
-        this.reversed = ModItems.HunterKnife;
+        this.reversed = ModWeapons.HunterKnife;
     }
 
     public ItemGlassDagger(int par1, ToolMaterial tool, Item rev) {

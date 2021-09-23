@@ -1,5 +1,6 @@
 package KAMKEEL.PluginMod.Items.Weapons;
 
+import KAMKEEL.PluginMod.Items.ItemRenderInterface;
 import KAMKEEL.PluginMod.LocalizationHelper;
 import KAMKEEL.PluginMod.PluginMod;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -19,7 +20,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 
-public class ItemPluginBowInterface extends ItemBow {
+public class ItemPluginBowInterface extends ItemBow implements ItemRenderInterface {
 
 
 	public ItemPluginBowInterface(String name){
@@ -156,4 +157,8 @@ public class ItemPluginBowInterface extends ItemBow {
 	}
 
 
+	@Override
+	public void renderSpecial() {
+
+	}
 }

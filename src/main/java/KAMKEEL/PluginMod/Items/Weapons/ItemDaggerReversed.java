@@ -13,7 +13,7 @@ public class ItemDaggerReversed extends ItemDagger{
     public ItemDaggerReversed(int par1, ItemDagger dagger, ToolMaterial tool) {
         super(par1,tool);
         this.dagger = dagger;
-        this.setReverseState(ModItems.HunterKnife);
+        this.setReverseState(ModWeapons.HunterKnife);
     }
 
     public ItemDaggerReversed(int par1, ItemDagger dagger, ToolMaterial tool, Item rev) {

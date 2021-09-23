@@ -2,6 +2,7 @@ package KAMKEEL.PluginMod.Items.Weapons.Customs;
 
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ItemDagger;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -15,7 +16,7 @@ public class ItemDarkDaggerReversed extends ItemDarkDagger {
     public ItemDarkDaggerReversed(int par1, ItemDagger dagger, ToolMaterial tool, Item broken) {
         super(par1, tool, broken);
         this.dagger = dagger;
-        this.setTransformItem(ModItems.DarkDaggerReversedEnergized);
+        this.setTransformItem(ModWeapons.DarkDaggerReversedEnergized);
     }
 
     public ItemDarkDaggerReversed(int par1, ItemDagger dagger, ToolMaterial tool, Item broken, Item transform) {

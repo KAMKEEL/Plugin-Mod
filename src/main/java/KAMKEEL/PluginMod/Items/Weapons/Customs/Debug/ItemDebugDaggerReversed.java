@@ -2,6 +2,7 @@ package KAMKEEL.PluginMod.Items.Weapons.Customs.Debug;
 
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ItemDagger;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
@@ -13,7 +14,7 @@ public class ItemDebugDaggerReversed extends ItemDebugDagger {
     public ItemDebugDaggerReversed(int par1, ItemDagger dagger, ToolMaterial tool, Item broken) {
         super(par1, tool, broken);
         this.dagger = dagger;
-        setTransformItem(ModItems.DebugDaggerReversedEnergized);
+        setTransformItem(ModWeapons.DebugDaggerReversedEnergized);
     }
 
     public ItemDebugDaggerReversed(int par1, ItemDagger dagger, ToolMaterial tool, Item broken, Item transform) {

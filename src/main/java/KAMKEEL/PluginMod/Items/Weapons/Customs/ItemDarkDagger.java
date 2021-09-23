@@ -4,6 +4,7 @@ import KAMKEEL.PluginMod.Items.ItemTransform;
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ItemDagger;
 import KAMKEEL.PluginMod.Items.Weapons.ItemReversable;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -17,7 +18,7 @@ public class ItemDarkDagger extends ItemDagger implements ItemReversable, ItemTr
     public ItemDarkDagger(int par1, ToolMaterial tool, Item broken) {
         super(par1, tool, broken);
         this.setMaxDamage(100000);
-        this.setTransformItem(ModItems.DarkDaggerEnergized);
+        this.setTransformItem(ModWeapons.DarkDaggerEnergized);
     }
 
     public ItemDarkDagger(int par1, ToolMaterial tool, Item broken, Item transform) {

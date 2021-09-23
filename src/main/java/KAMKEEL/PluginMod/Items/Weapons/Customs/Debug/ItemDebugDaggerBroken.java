@@ -4,6 +4,7 @@ import KAMKEEL.PluginMod.Items.ItemCustomTransparent;
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ItemReversable;
 import KAMKEEL.PluginMod.Items.Weapons.ItemWeaponBroken;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -21,7 +22,7 @@ public class ItemDebugDaggerBroken extends ItemWeaponBroken implements ItemRever
 
     @Override
     public Item getReverseState() {
-        return ModItems.DebugDaggerReversedBroken;
+        return ModWeapons.DebugDaggerReversedBroken;
     }
 
     @Override

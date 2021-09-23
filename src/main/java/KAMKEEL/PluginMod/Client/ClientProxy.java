@@ -7,6 +7,7 @@ import KAMKEEL.PluginMod.Client.Render.*;
 import KAMKEEL.PluginMod.CommonProxy;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Items.ModItems;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
@@ -65,28 +66,28 @@ public class ClientProxy extends CommonProxy {
         // Transparent Item Renderer
         TransparentItemRenderer transparentItemRenderer = new TransparentItemRenderer(mc.gameSettings, mc.getTextureManager());
 
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassBlade, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassKunai, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassKunaiReversed, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassDagger, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassDaggerReversed, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassBlade, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassKunai, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassKunaiReversed, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassDagger, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassDaggerReversed, transparentItemRenderer);
         MinecraftForgeClient.registerItemRenderer(ModItems.GlassDisc, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassPan, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassPanEnergized, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassPanBroken, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassCutlass, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPan, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPanEnergized, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPanBroken, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassCutlass, transparentItemRenderer);
         MinecraftForgeClient.registerItemRenderer(ModItems.glass_shard, transparentItemRenderer);
 
-        MinecraftForgeClient.registerItemRenderer(ModItems.CrystalSpear, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.CrystalSpear, transparentItemRenderer);
 
 
         // Debug Item
-        MinecraftForgeClient.registerItemRenderer(ModItems.DebugDagger, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerReversed, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerBroken, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerReversedBroken, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerEnergized, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.DebugDaggerReversedEnergized, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDagger, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerReversed, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerBroken, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerReversedBroken, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerEnergized, transparentItemRenderer);
+        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerReversedEnergized, transparentItemRenderer);
 
     }
 

@@ -2,6 +2,7 @@ package KAMKEEL.PluginMod.Items.Weapons.Customs;
 
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ItemDagger;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
@@ -13,7 +14,7 @@ public class ItemGlassDaggerReversed extends ItemGlassDagger {
     public ItemGlassDaggerReversed(int par1, ItemGlassDagger dagger, ToolMaterial tool) {
         super(par1,tool);
         this.dagger = dagger;
-        this.setReverseState(ModItems.HunterKnife);
+        this.setReverseState(ModWeapons.HunterKnife);
     }
 
     public ItemGlassDaggerReversed(int par1, ItemGlassDagger dagger, ToolMaterial tool, Item rev) {

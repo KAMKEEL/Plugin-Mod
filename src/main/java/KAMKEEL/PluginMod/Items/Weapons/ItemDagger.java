@@ -10,7 +10,7 @@ public class ItemDagger extends ItemPluginWeaponInterface implements ItemReversa
 
     public ItemDagger(int par1, ToolMaterial tool) {
         super(par1, tool);
-        this.reversed = ModItems.HunterKnife;
+        this.reversed = ModWeapons.HunterKnife;
     }
 
     public ItemDagger(int par1, ToolMaterial tool, Item rev) {

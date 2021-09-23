@@ -2,10 +2,7 @@ package KAMKEEL.PluginMod.Items.Weapons.Customs;
 
 import KAMKEEL.PluginMod.Items.ItemCustomTransparent;
 import KAMKEEL.PluginMod.Items.ModItems;
-import KAMKEEL.PluginMod.Items.Weapons.ItemDagger;
-import KAMKEEL.PluginMod.Items.Weapons.ItemKunai;
-import KAMKEEL.PluginMod.Items.Weapons.ItemPluginWeaponInterface;
-import KAMKEEL.PluginMod.Items.Weapons.ItemReversable;
+import KAMKEEL.PluginMod.Items.Weapons.*;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
@@ -27,7 +24,7 @@ public class ItemGlassKunaiReversed extends ItemGlassKunai implements ItemRevers
 
     @Override
     public Item getReverseState() {
-        return ModItems.GlassKunai;
+        return ModWeapons.GlassKunai;
     }
 
     @Override

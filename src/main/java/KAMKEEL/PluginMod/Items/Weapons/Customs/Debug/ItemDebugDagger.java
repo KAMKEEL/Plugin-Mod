@@ -5,6 +5,7 @@ import KAMKEEL.PluginMod.Items.ItemTransform;
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ItemDagger;
 import KAMKEEL.PluginMod.Items.Weapons.ItemReversable;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -18,7 +19,7 @@ public class ItemDebugDagger extends ItemDagger implements ItemReversable, ItemT
     public ItemDebugDagger(int par1, ToolMaterial tool, Item broken){
         super(par1, tool, broken);
         this.broke = broken;
-        setTransformItem(ModItems.DebugDaggerEnergized);
+        setTransformItem(ModWeapons.DebugDaggerEnergized);
     }
 
     public ItemDebugDagger(int par1, ToolMaterial tool, Item broken, Item transform){

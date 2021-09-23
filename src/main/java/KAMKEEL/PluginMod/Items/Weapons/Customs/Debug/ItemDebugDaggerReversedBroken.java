@@ -1,6 +1,7 @@
 package KAMKEEL.PluginMod.Items.Weapons.Customs.Debug;
 
 import KAMKEEL.PluginMod.Items.ModItems;
+import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
@@ -29,7 +30,7 @@ public class ItemDebugDaggerReversedBroken extends ItemDebugDaggerBroken {
 
     @Override
     public Item getReverseState() {
-        return ModItems.DebugDaggerBroken;
+        return ModWeapons.DebugDaggerBroken;
     }
 }
 
