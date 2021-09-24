@@ -3,26 +3,15 @@ package KAMKEEL.PluginMod.Items;
 import KAMKEEL.PluginMod.Items.Cards.*;
 import KAMKEEL.PluginMod.Items.Misc.*;
 import KAMKEEL.PluginMod.Items.Weapons.*;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.*;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDagger;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDaggerBroken;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDaggerReversed;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDaggerReversedBroken;
 import KAMKEEL.PluginMod.PluginMod;
-import KAMKEEL.PluginMod.Enum.Items.EnumToolMaterials;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.util.EnumHelper;
 
-import static KAMKEEL.PluginMod.Items.Misc.ToolMaterials.*;
+import static KAMKEEL.PluginMod.Util.PluginMaterials.*;
 
-/**
- * Stores, initializes, and registers items. Also adds recipes and ore dictionary entries. (Episode 4)
- */
 public class ModItems {
 
     // Cards
@@ -40,6 +29,7 @@ public class ModItems {
     public static Item Balls;
     public static Item Eyes;
     public static Item Artifacts;
+    public static Item Apples;
     public static Item TreasureMap;
     public static Item PaperBomb;
 
@@ -119,6 +109,9 @@ public class ModItems {
         GameRegistry.registerItem(Artifacts, "artifacts");
         EnergyAttacks = new Energy();
         GameRegistry.registerItem(EnergyAttacks, "energy");
+        Apples = new Apple(4, 1.2F, false);
+        GameRegistry.registerItem(Apples, "apples");
+
         TreasureMap = new TreasureMap().setUnlocalizedName("TreasureMap").setTextureName("plug:extra/treasuremap");
         GameRegistry.registerItem(TreasureMap, TreasureMap.getUnlocalizedName());
         PaperBomb = new PaperBomb().setUnlocalizedName("PaperBomb").setTextureName("plug:weapons/paperbomb");
@@ -130,6 +123,8 @@ public class ModItems {
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("burrito").setTextureName("plug:extra/burrito").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("energy_catalyst").setTextureName("plug:materials/catalyst").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("hyper_catalyst").setTextureName("plug:materials/hyper_catalyst").setCreativeTab(PluginMod.miscTab);
+        miscItem = new PluginItemInterface(10001).setUnlocalizedName("horn").setTextureName("plug:extra/horn").setCreativeTab(PluginMod.miscTab);
+
 
         VoidRasenshuriken = new VoidRasenshuriken(10001, random).setUnlocalizedName("VoidRasenshuriken").setTextureName("plug:energy/voidrasenshuriken");
         MassiveRasengan = new MassiveRasengan().setUnlocalizedName("massiverasengan").setTextureName("plug:energy/massive_rasengan");
@@ -175,5 +170,19 @@ public class ModItems {
         GameRegistry.addRecipe(new ItemStack(ModWeapons.JungleAxe), "  1", " 2 ", "34 ", '1', ModItems.JungleAxeHead, '2', ModItems.JungleAxeBinding, '3', ModItems.JungleAxeRod, '4', Items.lava_bucket);
         GameRegistry.addRecipe(new ItemStack(ModWeapons.DarkDagger), "  1", " 2 ", "34 ", '1', ModItems.DarkDaggerBlade, '2', ModItems.VoidCharm, '3', ModItems.DarkDaggerHandle, '4', Items.lava_bucket);
         GameRegistry.addRecipe(new ItemStack(ModWeapons.GlassPan), "  1", " 2 ", "34 ", '1', ModItems.GlassDisc, '2', ModItems.GlassPanBinding, '3', ModItems.GlassPanHandle, '4', Items.lava_bucket);
+
+        // Apple Recipes
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 0), new ItemStack(Items.golden_apple, 1, 1));
+
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 3), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.blaze_powder, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 4), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.ghast_tear, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 5), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.iron_ingot, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 6), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.glowstone_dust, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 7), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.sugar, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 8), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.speckled_melon, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 9), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.golden_carrot, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 10), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.magma_cream, 1, 0));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 11), new ItemStack(ModItems.Apples, 1, 1), new ItemStack(Items.bread, 1, 0));
+
     }
 }

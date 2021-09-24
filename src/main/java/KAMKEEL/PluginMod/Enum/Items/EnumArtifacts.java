@@ -89,7 +89,17 @@ public enum EnumArtifacts {
     Magma_bucket(77, "magma_bucket"),
     Corleonite(78, "corleonite"),
     Jungle_heart(79, "jungle_heart"),
-    Wither_catalyst(80, "wither_catalyst");
+    Wither_catalyst(80, "wither_catalyst"),
+
+    lava_catalyst(81, "lava_catalyst"),
+    bountyTrophy(82, "bountytrophy"),
+    chilling(83, "chilling"),
+    stew_1(84, "stew_1"),
+    stew_2(85, "stew_2"),
+    flax(86, "flax"),
+    gobletSilver(87, "gobletsilver"),
+    gobletWood(88, "gobletwood"),
+    green_quartz(89, "green_quartz");
 
     private final int meta;
     private final String name;

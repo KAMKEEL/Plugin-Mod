@@ -9,7 +9,7 @@ import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDaggerReversedBrok
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
-import static KAMKEEL.PluginMod.Items.Misc.ToolMaterials.*;
+import static KAMKEEL.PluginMod.Util.PluginMaterials.*;
 
 public class ModWeapons {
 
@@ -35,6 +35,8 @@ public class ModWeapons {
     public static Item GeneralDaggerReversed;
     public static Item GeneralSpear;
     public static Item GeneralStaff;
+    public static Item GeneralKatana;
+    public static Item GeneralShield;
 
     // Custom Weapons
     public static Item DarkDagger;
@@ -91,6 +93,12 @@ public class ModWeapons {
     }
     public static void createBroadsword(String texture, Item.ToolMaterial mat){
         GeneralBroadsword = new ItemBroadSword(mat).setUnlocalizedName(texture).setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/" + texture);
+    }
+    public static void createShield(String texture, EnumToolMaterials mat){
+        GeneralShield = new ItemShield(1, mat).setUnlocalizedName(texture).setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/shields/" + texture);
+    }
+    public static void createRotatedShield(String texture, EnumToolMaterials mat){
+        GeneralShield = new ItemRotatedShield(1, mat).setUnlocalizedName(texture).setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/shields/" + texture);
     }
 
     public static void loadCustomWeapons(){
@@ -156,6 +164,7 @@ public class ModWeapons {
         createDagger("silver_fang", PluginMaterial);
         createDagger("earth_shard", PluginMaterial);
         createDagger("livid_dagger", PluginMaterial);
+
         createDagger("amorth_dagger", PluginMaterial);
         createDagger("barrow_dagger", PluginMaterial);
         createDagger("basrol_dagger", PluginMaterial);
@@ -372,26 +381,43 @@ public class ModWeapons {
         GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("the_vampire").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/the_vampire");
         GeneralSword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("blacksmith_hammer").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/blacksmith_hammer");
 
+        createSword("amorth_sword", PluginMaterial);
+        createSword("blue_steel_sword", PluginMaterial);
         createSword("brass_sword", PluginMaterial);
-        createSword("cutlin_scimitar", PluginMaterial);
+        createSword("corsair_sword", PluginMaterial);
+        createSword("cystel_sword", PluginMaterial);
         createSword("dale_sword", PluginMaterial);
         createSword("dark_steel_sword_2", PluginMaterial);
         createSword("doltek_sword", PluginMaterial);
         createSword("dyvel_sword", PluginMaterial);
         createSword("elvo_sword", PluginMaterial);
         createSword("glamdo_sword", PluginMaterial);
+        createSword("gondor_sword", PluginMaterial);
+        createSword("heavy_orc_sword", PluginMaterial);
         createSword("hell_sword", PluginMaterial);
-        createSword("jungle_katana", PluginMaterial);
+        createSword("invar_sword", PluginMaterial);
+        createSword("jungle_sword", PluginMaterial);
+        createSword("kevlo_sword", PluginMaterial);
+        createSword("light_silver_sword", PluginMaterial);
         createSword("light_sword", PluginMaterial);
-        createSword("orc_scimitar", PluginMaterial);
         createSword("rol_sword", PluginMaterial);
         createSword("ronin_sword", PluginMaterial);
-        createSword("rustic_sickle", PluginMaterial);
         createSword("rustic_sword", PluginMaterial);
+        createSword("silver_sword", PluginMaterial);
         createSword("sinbar_sword", PluginMaterial);
-        createSword("vulcan_scimitar", PluginMaterial);
+        createSword("sinbar_sword_2", PluginMaterial);
         createSword("wildscum_sword", PluginMaterial);
-        createSword("corsair_sword", PluginMaterial);
+
+
+        createSword("vulcan_scimitar", PluginMaterial);
+        createSword("cutlin_scimitar", PluginMaterial);
+        createSword("orc_scimitar", PluginMaterial);
+        createSword("orc_scimitar_2", PluginMaterial);
+        createSword("rock_scimitar", PluginMaterial);
+
+
+        createSword("rustic_sickle", PluginMaterial);
+
 
         createSword("black_steel_mace", PluginMaterial);
         createSword("rock_mace", PluginMaterial);
@@ -401,10 +427,16 @@ public class ModWeapons {
 
 
     }
+    public static void loadKatanas(){
+
+        GeneralKatana = new ItemKatana(1, PluginMaterial).setUnlocalizedName("light_katana").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/light_katana");
+        GeneralKatana = new ItemKatana(1, PluginMaterial).setUnlocalizedName("jungle_katana").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/jungle_katana");
+        GeneralKatana = new ItemKatana(1, PluginMaterial).setUnlocalizedName("wildscum_katana").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/wildscum_katana");
+    }
     public static void loadBroadswords(){
 
-        createBroadsword("dreadlord_broadsword", PluginMaterial);
-        createBroadsword("fel_broadsword", PluginMaterial);
+        GeneralBroadsword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("dreadlord_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dreadlord_sword");
+        GeneralBroadsword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("fel_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/fel_sword");
 
         createBroadsword("amorth_broadsword", PluginMaterial);
         createBroadsword("cystel_broadsword", PluginMaterial);
@@ -458,7 +490,63 @@ public class ModWeapons {
         GeneralBow = new ItemPluginBowInterface("scorpion_bow").setFull3D().setUnlocalizedName("scorpion_bow");
         GeneralBow = new ItemPluginBowInterface("spider_bow").setFull3D().setUnlocalizedName("spider_bow");
     }
-    public static void loadShields(){}
+    public static void loadShields(){
+        createRotatedShield("blackstone_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("blue_steel_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("brass_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("constellas_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("copper_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("corsair_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("cutlin_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("dark_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("dark_steel_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("deep_shield", EnumToolMaterials.PLUGINMATERIAL);
+
+        createRotatedShield("dread_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("electrum_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("elementium_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("elvo_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("ender_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("flux_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("gold_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("hard_diamond_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("heavy_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("heavy_stone_shield", EnumToolMaterials.PLUGINMATERIAL);
+
+        createRotatedShield("invar_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("jungle_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("knight_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("koi_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("lapis_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("lead_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("light_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("manasteel_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("obsidian_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("orc_shield", EnumToolMaterials.PLUGINMATERIAL);
+
+        createRotatedShield("platinum_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("primal_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("rock_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("rol_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("rose_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("royal_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("rune_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("sandstone_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("signalum_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("silver_shield", EnumToolMaterials.PLUGINMATERIAL);
+
+        createRotatedShield("sinbar_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("spectral_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("steel_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("stone_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("terrasteel_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("tin_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("turtle_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("uruk_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createRotatedShield("void_shield", EnumToolMaterials.PLUGINMATERIAL);
+        createShield("wood_shield", EnumToolMaterials.PLUGINMATERIAL);
+
+    }
 
     public static void loadDebugWeapons(){
         // Debug Weapons
@@ -487,6 +575,7 @@ public class ModWeapons {
         loadBattleAxe();
         loadHammers();
         loadSwords();
+        loadKatanas();
         loadBroadswords();
         loadStaffs();
         loadScythes();
