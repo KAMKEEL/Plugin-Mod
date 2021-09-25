@@ -1,8 +1,5 @@
 package KAMKEEL.PluginMod.Items.Weapons;
 
-import KAMKEEL.PluginMod.Items.ModItems;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.CustomItemBroken;
-import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
 

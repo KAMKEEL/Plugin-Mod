@@ -1,3 +1,15 @@
+@ 4.0 o_o
++ Made the Burrito Edible
+(and added bows, weapons, and artifacts)
+-- Fixed Code for Unique Weapons
+
+@ 3.9
++ Over 100 New Weapons
++ 50 Shields
++ 14 God Apple Variants
+-- Fixed Code with Durability Crystal Spear
+-- Fixed Code with Naming
+
 @ 3.81
 -- Fixed Durability Issue
 

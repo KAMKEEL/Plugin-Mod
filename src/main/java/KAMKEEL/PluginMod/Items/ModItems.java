@@ -120,10 +120,11 @@ public class ModItems {
         Item miscItem = new PluginItemInterface(10001).setUnlocalizedName("medkit").setTextureName("plug:extra/medkit").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("bandages").setTextureName("plug:extra/bandages").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("bell").setTextureName("plug:extra/bell").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("burrito").setTextureName("plug:extra/burrito").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("energy_catalyst").setTextureName("plug:materials/catalyst").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("hyper_catalyst").setTextureName("plug:materials/hyper_catalyst").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("horn").setTextureName("plug:extra/horn").setCreativeTab(PluginMod.miscTab);
+
+        miscItem = new PluginItemFoodInterface(10, 0.8F, true).setUnlocalizedName("burrito").setTextureName("plug:extra/burrito").setCreativeTab(PluginMod.miscTab);
 
 
         VoidRasenshuriken = new VoidRasenshuriken(10001, random).setUnlocalizedName("VoidRasenshuriken").setTextureName("plug:energy/voidrasenshuriken");

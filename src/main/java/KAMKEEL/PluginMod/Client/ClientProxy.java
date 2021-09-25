@@ -79,26 +79,13 @@ public class ClientProxy extends CommonProxy {
         MinecraftForgeClient.registerItemRenderer(ModItems.glass_shard, transparentItemRenderer);
 
         MinecraftForgeClient.registerItemRenderer(ModWeapons.CrystalSpear, transparentItemRenderer);
-
-
-        // Debug Item
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDagger, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerReversed, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerBroken, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerReversedBroken, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerEnergized, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.DebugDaggerReversedEnergized, transparentItemRenderer);
-
     }
 
     public void renderBlocks(){
+
         // Render Blocks
         RenderingRegistry.registerBlockHandler((ISimpleBlockRenderingHandler)new RenderBlockFullBright());
         RenderingRegistry.registerBlockHandler((ISimpleBlockRenderingHandler)new RenderBlockColor());
-
-//        for (final BlockColor b : ModBlocks.colorBlocks) {
-//            MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock((Block)b), (IItemRenderer)ClientProxy.renderItemBlockColor);
-//        }
 
     }
 

@@ -99,7 +99,17 @@ public enum EnumArtifacts {
     flax(86, "flax"),
     gobletSilver(87, "gobletsilver"),
     gobletWood(88, "gobletwood"),
-    green_quartz(89, "green_quartz");
+    green_quartz(89, "green_quartz"),
+    rainbow_feather(90, "rainbow_feather"),
+
+    warp_gate(91, "warp_gate"),
+    net_ball(92, "net_ball"),
+    grimoire(93, "grimoire"),
+    soul_crystal(94, "soul_crystal"),
+    judgement_core(95, "judgement_core"),
+    reaper_gem(96, "reaper_gem"),
+    dead_catalyst(97, "dead_catalyst"),
+    ocean_orb(98, "ocean_orb");
 
     private final int meta;
     private final String name;

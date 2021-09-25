@@ -445,6 +445,16 @@ item.plug:gobletsilver.name=Silver Goblet
 item.plug:gobletwood.name=Wooden Goblet
 item.plug:green_quartz.name=Fusion Quartz
 
+item.plug:rainbow_feather.name=Rainbow Feather
+item.plug:warp_gate.name=Warp Gate
+item.plug:net_ball.name=Net Ball
+item.plug:grimoire.name=Grimoire
+item.plug:soul_crystal.name=Soul Crystal
+item.plug:judgement_core.name=Judgement Core
+item.plug:reaper_gem.name=Reaper Gem
+item.plug:dead_catalyst.name=Dead Catalyst
+item.plug:ocean_orb.name=Ocean Orb
+
 ################# Eyes
 item.plug:eyes_sharinganone.name=Basic Sharingan
 item.plug:eyes_sharingantwo.name=Evolved Sharingan
@@ -595,6 +605,7 @@ item.plug:earth_sword.name=Earth Sword
 item.plug:forest_roots.name=Forest Roots
 item.plug:the_vampire.name=The Vampire
 item.plug:crook.name=Crook
+item.plug:soul_crook.name=Soul Crook
 item.plug:heavy_axe.name=Heavy Axe
 item.plug:amorth_dagger.name=Amorth Dagger
 item.plug:reverse_amorth_dagger.name=Reversed Amorth Dagger
@@ -787,6 +798,27 @@ item.plug:vulcan_mace.name=Vulcan Mace
 item.plug:sauro_mace.name=Sauro Mace
 item.plug:blacksmith_hammer.name=Blacksmith Hammer
 
+item.plug:vorpal_katana.name=Vorpal Katana
+item.plug:conjuring.name=Conjuring
+item.plug:ruin_dagger.name=Ruin Dagger
+item.plug:valkyrie.name=Valkyrie
+item.plug:silver_cutlass.name=Silver Cutlass
+item.plug:revenant.name=Revenant
+item.plug:warped_sword.name=Warped Sword
+item.plug:wither_cloak_sword.name=Wither Cloak
+item.plug:crypt_sword.name=Crypt Sword
+item.plug:blaze_sword.name=Blaze Sword
+item.plug:nether_soul_sword.name=Nether Soul
+item.plug:atonement.name=Atonement
+
+item.plug:pig_axe.name=Pig Axe
+item.plug:cow_axe.name=Cow Axe
+item.plug:fungi_cutter.name=Fungi Cutter
+item.plug:jungle_pickaxe.name=Jungle Pickaxe
+
+item.plug:cactus_knife.name=Cactus Knife
+item.plug:reverse_cactus_knife.name=Reversed Cactus Knife
+
 ################# Shields
 item.plug:blackstone_shield.name=Blackstone Shield
 item.plug:blue_steel_shield.name=Blue Steel Shield
@@ -853,6 +885,12 @@ item.plug:magma_bow.name=Magma Bow
 item.plug:mosquito_bow.name=Mosquito Bow
 item.plug:scorpion_bow.name=Scorpion Bow
 item.plug:spider_bow.name=Spider Bow
+item.plug:reaper_bow.name=Reaper Bow
+item.plug:cryptic_bow.name=Cryptic Bow
+item.plug:sniper_bow.name=Sniper Bow
+item.plug:soulstealer_bow.name=Soul Stealer Bow
+item.plug:spirit_bow.name=Spirit Bow
+item.plug:undead_bow.name=Undead Bow
 
 ################# Customs
 item.plug:dark_dagger_custom_broken.name=Broken Dark Dagger
@@ -879,6 +917,9 @@ item.plug:glass_kunai.name=Glass Kunai
 item.plug:reverse_glass_kunai.name=Reveresed Glass Kunai
 item.plug:glass_dagger.name=Glass Dagger
 item.plug:reverse_glass_dagger.name=Reveresed Glass Dagger
+
+item.plug:aurora_katana.name=Aurora Katana
+item.plug:aurora_katana_energized.name=Energized Aurora Katana
 
 ################# Materials
 item.plug:dark_metal.name=Dark Metal Ingot

@@ -1,10 +1,10 @@
 package KAMKEEL.PluginMod.Items.Weapons;
 
-import KAMKEEL.PluginMod.Items.ModItems;
+import KAMKEEL.PluginMod.Items.ItemReversible;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
-public class ItemDagger extends ItemPluginWeaponInterface implements ItemReversable{
+public class ItemDagger extends ItemPluginWeaponInterface implements ItemReversible {
 
     private Item reversed;
 
@@ -32,5 +32,10 @@ public class ItemDagger extends ItemPluginWeaponInterface implements ItemReversa
     @Override
     public void setReverseState(Item newReverse) {
         reversed = newReverse;
+    }
+
+    @Override
+    public boolean canReverse() {
+        return true;
     }
 }

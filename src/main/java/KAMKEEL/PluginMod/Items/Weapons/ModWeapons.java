@@ -1,11 +1,11 @@
 package KAMKEEL.PluginMod.Items.Weapons;
 
 import KAMKEEL.PluginMod.Enum.Items.EnumToolMaterials;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.*;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDagger;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDaggerBroken;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDaggerReversed;
-import KAMKEEL.PluginMod.Items.Weapons.Customs.Debug.ItemDebugDaggerReversedBroken;
+import KAMKEEL.PluginMod.Items.Weapons.Broken.ItemBrokenDagger;
+import KAMKEEL.PluginMod.Items.Weapons.Broken.ItemBrokenJungleAxe;
+import KAMKEEL.PluginMod.Items.Weapons.Broken.ItemBrokenReversedDagger;
+import KAMKEEL.PluginMod.Items.Weapons.Unique.*;
+import KAMKEEL.PluginMod.Items.Weapons.Glass.*;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -38,16 +38,7 @@ public class ModWeapons {
     public static Item GeneralKatana;
     public static Item GeneralShield;
 
-    // Custom Weapons
-    public static Item DarkDagger;
-    public static Item DarkDaggerReversed;
-    public static Item DarkDaggerEnergized;
-    public static Item DarkDaggerReversedEnergized;
-    public static Item DarkDaggerBroken;
-    public static Item DarkDaggerReversedBroken;
-    public static Item BlueLongSword;
-    public static Item BlueLongSwordEnergized;
-    public static Item BlueLongSwordBroken;
+    // Glass Weapons
     public static Item GlassPan;
     public static Item GlassPanEnergized;
     public static Item GlassPanBroken;
@@ -57,12 +48,29 @@ public class ModWeapons {
     public static Item GlassDagger;
     public static Item GlassDaggerReversed;
     public static Item GlassBlade;
+
+    //-----------------------------------------------------------------------//
+    // Unique Weapons
+    //// General Uniques
+    public static Item GeneralUniqueSword;
+    public static Item GeneralUniqueSwordEnergized;
+
+    //// Custom Uniques
+    public static Item DarkDagger;
+    public static Item DarkDaggerReversed;
+    public static Item DarkDaggerEnergized;
+    public static Item DarkDaggerReversedEnergized;
+    public static Item DarkDaggerBroken;
+    public static Item DarkDaggerReversedBroken;
+    public static Item BlueLongSword;
+    public static Item BlueLongSwordEnergized;
+    public static Item BlueLongSwordBroken;
+    public static Item JungleAxeBroken;
     public static Item JungleAxe;
     public static Item JungleAxeEnergized;
-    public static Item JungleAxeBroken;
+    //-----------------------------------------------------------------------//
 
     // Debug Items
-    public static Item TestItem;
     public static Item DebugDagger;
     public static Item DebugDaggerReversed;
     public static Item DebugDaggerEnergized;
@@ -70,6 +78,15 @@ public class ModWeapons {
     public static Item DebugDaggerBroken;
     public static Item DebugDaggerReversedBroken;
 
+    public static void setTransformItems(ItemUniqueWeapon item1, ItemUniqueWeapon item2){
+        item1.setTransformItem(item2);
+        item2.setTransformItem(item1);
+    }
+
+    public static void setReverseState(ItemUniqueWeapon item1, ItemUniqueWeapon item2){
+        item1.setReverseState(item2);
+        item2.setReverseState(item1);
+    }
 
     public static void createDagger(String texture, Item.ToolMaterial mat){
         GeneralDagger = new ItemDagger(26701, mat).setUnlocalizedName(texture).setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/" + texture);
@@ -101,42 +118,71 @@ public class ModWeapons {
         GeneralShield = new ItemRotatedShield(1, mat).setUnlocalizedName(texture).setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/shields/" + texture);
     }
 
-    public static void loadCustomWeapons(){
+    public static void loadDebugWeapons(){
+        // Debug Weapons
+        DebugDaggerBroken = new ItemBrokenDagger(1, random).setFull3D().setUnlocalizedName("debug_dagger_broken").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_broken");
+        DebugDaggerReversedBroken = new ItemBrokenReversedDagger(1, (ItemBrokenDagger) DebugDaggerBroken, random).setFull3D().setUnlocalizedName("reverse_debug_dagger_broken").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_broken");
+        ((ItemBrokenDagger) DebugDaggerBroken).setReverseState(DebugDaggerReversedBroken);
+        ((ItemBrokenReversedDagger) DebugDaggerReversedBroken).setReverseState(DebugDaggerBroken);
+
+        DebugDagger = new ItemUniqueDagger(1, random, true, true, DebugDaggerBroken).setFull3D().setUnlocalizedName("debug_dagger").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger");
+        DebugDaggerReversed = new ItemUniqueDaggerReversed(1, random, true, true, DebugDaggerReversedBroken, (ItemUniqueDagger) DebugDagger).setFull3D().setUnlocalizedName("reverse_" + "debug_dagger").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger");
+        setReverseState((ItemUniqueWeapon)DebugDagger, (ItemUniqueWeapon)DebugDaggerReversed);
+
+        DebugDaggerEnergized = new ItemUniqueDagger(1, random, true, true, DebugDaggerBroken).setFull3D().setUnlocalizedName("debug_dagger_energized").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_energized");
+        DebugDaggerReversedEnergized = new ItemUniqueDaggerReversed(1, random, true, true, DebugDaggerReversedBroken, (ItemUniqueDagger) DebugDaggerEnergized).setFull3D().setUnlocalizedName("reverse_" + "debug_dagger_energized").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_energized");
+        setReverseState((ItemUniqueWeapon)DebugDaggerEnergized, (ItemUniqueWeapon)DebugDaggerReversedEnergized);
+
+        setTransformItems((ItemUniqueWeapon)DebugDagger, (ItemUniqueWeapon)DebugDaggerEnergized);
+        setTransformItems((ItemUniqueWeapon)DebugDaggerReversed, (ItemUniqueWeapon)DebugDaggerReversedEnergized);
+    }
+
+    public static void loadUniqueWeapons(){
+        // Broken Weapons:
+        DarkDaggerBroken = new ItemBrokenDagger(1, brokenTool).setFull3D().setUnlocalizedName("dark_dagger_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_broken");
+        DarkDaggerReversedBroken = new ItemBrokenReversedDagger(1, (ItemBrokenDagger) DarkDaggerBroken, brokenTool).setFull3D().setUnlocalizedName("reverse_" + "dark_dagger_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_broken");
+        ((ItemBrokenDagger) DarkDaggerBroken).setReverseState(DarkDaggerReversedBroken);
+        ((ItemBrokenReversedDagger) DarkDaggerReversedBroken).setReverseState(DarkDaggerBroken);
+
+        BlueLongSwordBroken = new ItemWeaponBroken(1, brokenTool).setFull3D().setUnlocalizedName("blue_longsword_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword_broken");
+        JungleAxeBroken = new ItemBrokenJungleAxe(1, brokenTool).setFull3D().setUnlocalizedName("jungle_axe_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe_broken");
+        GlassPanBroken = new ItemGlassPanBroken(1, brokenTool).setFull3D().setUnlocalizedName("glass_pan_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan_broken");
 
         // Custom Weapons:
-        DarkDagger = new ItemDarkDagger(26703, custom_dark_metal, DarkDaggerBroken).setFull3D().setUnlocalizedName("dark_dagger_custom").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom");
-        DarkDaggerReversed = new ItemDarkDaggerReversed(26704, (ItemDagger) DarkDagger, custom_dark_metal, DarkDagger).setFull3D().setUnlocalizedName("reverse_" + "dark_dagger_custom").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom");
-        ((ItemDarkDagger) DarkDagger).setReverseState(DarkDaggerReversed);
-        ((ItemDarkDagger) DarkDaggerReversed).setReverseState(DarkDagger);
-        DarkDaggerEnergized = new ItemDarkDagger(26703, custom_dark_metal, DarkDaggerBroken, DarkDagger).setFull3D().setUnlocalizedName("dark_dagger_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_energized");
-        DarkDaggerReversedEnergized = new ItemDarkDaggerReversed(26704, (ItemDagger) DarkDaggerEnergized, custom_dark_metal, DarkDaggerReversedBroken, DarkDaggerReversed).setFull3D().setUnlocalizedName("reverse_" + "dark_dagger_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_energized");
-        ((ItemDagger) DarkDaggerEnergized).setReverseState(DarkDaggerReversedEnergized);
-        ((ItemDagger) DarkDaggerReversedEnergized).setReverseState(DarkDaggerEnergized);
-        ((ItemDarkDagger) DarkDagger).setTransformItem(DarkDaggerEnergized);
-        ((ItemDarkDagger) DarkDaggerReversed).setTransformItem(DarkDaggerReversedEnergized);
+        BlueLongSword = new ItemUniqueWeapon(1, custom_blue_steel, true, false, BlueLongSwordBroken).setFull3D().setUnlocalizedName("blue_longsword_custom").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword");
+        BlueLongSwordEnergized = new ItemUniqueWeapon(1, custom_blue_steel, true, false, BlueLongSwordBroken).setFull3D().setUnlocalizedName("blue_longsword_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword_energized");
+        setTransformItems((ItemUniqueWeapon)BlueLongSword, (ItemUniqueWeapon)BlueLongSwordEnergized);
 
-        BlueLongSword = new ItemBlueLongsword(26703, custom_blue_steel, BlueLongSwordBroken).setFull3D().setUnlocalizedName("blue_longsword_custom").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword");
-        BlueLongSwordEnergized = new ItemBlueLongsword(26703, custom_blue_steel, BlueLongSwordBroken, BlueLongSword).setFull3D().setUnlocalizedName("blue_longsword_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword_energized");
-        ((ItemBlueLongsword)BlueLongSword).setTransformItem(BlueLongSwordEnergized);
-
-        JungleAxe = new ItemJungleAxe(26703, custom_jungle, JungleAxeBroken).setFull3D().setUnlocalizedName("jungle_axe_custom").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe");
-        JungleAxeEnergized = new ItemJungleAxe(26703, custom_jungle, JungleAxeBroken, JungleAxe).setFull3D().setUnlocalizedName("jungle_axe_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe_energized");
-        ((ItemJungleAxe)JungleAxe).setTransformItem(JungleAxeEnergized);
+        JungleAxe = new ItemUniqueAxe(1, custom_jungle, true, false, JungleAxeBroken).setFull3D().setUnlocalizedName("jungle_axe_custom").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe");
+        JungleAxeEnergized = new ItemUniqueAxe(1, custom_jungle, true, false, JungleAxeBroken).setFull3D().setUnlocalizedName("jungle_axe_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe_energized");
+        setTransformItems((ItemUniqueWeapon)JungleAxe, (ItemUniqueWeapon)JungleAxeEnergized);
 
         // Glass Items: Register Renderer in ClientProxy
-        GlassPan = new ItemGlassPan(26703, custom_glass, GlassPanBroken).setFull3D().setUnlocalizedName("glass_pan_custom").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan");
-        GlassPanEnergized = new ItemGlassPan(27485, custom_glass, GlassPanBroken, GlassPan).setUnlocalizedName("glass_pan_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan_energized");
-        ((ItemGlassPan)GlassPan).setTransformItem(GlassPanEnergized);
+        GlassPan = new ItemGlassPan(1, custom_glass, true, false,  GlassPanBroken).setFull3D().setUnlocalizedName("glass_pan_custom").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan");
+        GlassPanEnergized = new ItemGlassPan(1, custom_glass, true, false,  GlassPanBroken).setUnlocalizedName("glass_pan_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan_energized");
+        setTransformItems((ItemUniqueWeapon)GlassPan, (ItemUniqueWeapon)GlassPanEnergized);
 
-        // Broken Weapons:
-        DarkDaggerBroken = new ItemDarkDaggerBroken(26703, brokenTool).setFull3D().setUnlocalizedName("dark_dagger_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_broken");
-        DarkDaggerReversedBroken = new ItemDarkDaggerReversedBroken(26704, (ItemDarkDaggerBroken) DarkDaggerBroken, brokenTool).setFull3D().setUnlocalizedName("reverse_" + "dark_dagger_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_broken");
-        BlueLongSwordBroken = new ItemBlueLongswordBroken(26703, brokenTool).setFull3D().setUnlocalizedName("blue_longsword_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword_broken");
-        JungleAxeBroken = new ItemJungleAxeBroken(26703, brokenTool).setFull3D().setUnlocalizedName("jungle_axe_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe_broken");
-        GlassPanBroken = new ItemGlassPanBroken(26703, brokenTool).setFull3D().setUnlocalizedName("glass_pan_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan_broken");
+        DarkScythe = new ItemUniqueScythe(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("dark_scythe").setMaxStackSize(1).setTextureName("plug:weapons/dark_scythe");
+        DarkScytheEnergized = new ItemUniqueScythe(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("dark_scythe_energized").setMaxStackSize(1).setTextureName("plug:weapons/dark_scythe_energized");
+        setTransformItems((ItemUniqueWeapon)DarkScythe, (ItemUniqueWeapon)DarkScytheEnergized);
+
+        // Unique Daggers
+        DarkDagger = new ItemUniqueDagger(1, custom_dark_metal, true, true, DarkDaggerBroken).setFull3D().setUnlocalizedName("dark_dagger_custom").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom");
+        DarkDaggerReversed = new ItemUniqueDaggerReversed(1, custom_dark_metal, true, true, DarkDaggerReversedBroken, (ItemUniqueDagger) DarkDagger).setFull3D().setUnlocalizedName("reverse_" + "dark_dagger_custom").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom");
+        setReverseState((ItemUniqueWeapon)DarkDagger, (ItemUniqueWeapon)DarkDaggerReversed);
+        DarkDaggerEnergized = new ItemUniqueDagger(1, custom_dark_metal, true, true, DarkDaggerBroken).setFull3D().setUnlocalizedName("dark_dagger_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_energized");
+        DarkDaggerReversedEnergized = new ItemUniqueDaggerReversed(1, custom_dark_metal, true, true, DarkDaggerReversedBroken, (ItemUniqueDagger) DarkDaggerEnergized).setFull3D().setUnlocalizedName("reverse_" + "dark_dagger_custom_energized").setMaxStackSize(1).setTextureName("plug:weapons/dark_dagger_custom_energized");
+        setReverseState((ItemUniqueWeapon)DarkDaggerEnergized, (ItemUniqueWeapon)DarkDaggerReversedEnergized);
+        setTransformItems((ItemUniqueWeapon)DarkDagger, (ItemUniqueWeapon)DarkDaggerEnergized);
+        setTransformItems((ItemUniqueWeapon)DarkDaggerReversed, (ItemUniqueWeapon)DarkDaggerReversedEnergized);
 
 
+        // General Customs:
+        GeneralUniqueSword = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("aurora_katana").setMaxStackSize(1).setTextureName("plug:weapons/aurora_katana");
+        GeneralUniqueSwordEnergized = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("aurora_katana_energized").setMaxStackSize(1).setTextureName("plug:weapons/aurora_katana_energized");
+        setTransformItems((ItemUniqueWeapon)GeneralUniqueSword, (ItemUniqueWeapon)GeneralUniqueSwordEnergized);
     }
+
     public static void loadGlassWeapons(){
         Item.ToolMaterial glass = EnumHelper.addToolMaterial("GLASS", EnumToolMaterials.GLASS.getHarvestLevel(), EnumToolMaterials.GLASS.getMaxUses(), EnumToolMaterials.GLASS.getEfficiencyOnProperMaterial(), EnumToolMaterials.GLASS.getDamageVsEntity(), EnumToolMaterials.GLASS.getEnchantability());
 
@@ -193,6 +239,9 @@ public class ModWeapons {
         createDagger("obsidian_dagger", PluginMaterial);
         createDagger("maeve_dagger", PluginMaterial);
         createDagger("brass_dagger", PluginMaterial);
+
+        createDagger("cactus_knife", PluginMaterial);
+
     }
     public static void loadSpears(){
 
@@ -275,7 +324,6 @@ public class ModWeapons {
         createBattleAxe("mayan_pickaxe", PluginMaterial);
         createBattleAxe("heavy_axe", PluginMaterial);
         createBattleAxe("mayan_axe", PluginMaterial);
-
         createBattleAxe("blue_steel_axe", PluginMaterial);
         createBattleAxe("doltek_axe", PluginMaterial);
         createBattleAxe("elvo_axe", PluginMaterial);
@@ -286,7 +334,6 @@ public class ModWeapons {
         createBattleAxe("silver_axe", PluginMaterial);
         createBattleAxe("uruk_axe", PluginMaterial);
         createBattleAxe("wildscum_axe", PluginMaterial);
-
         createBattleAxe("blue_steel__battleaxe", PluginMaterial);
         createBattleAxe("corsair_battleaxe", PluginMaterial);
         createBattleAxe("dol_battleaxe", PluginMaterial);
@@ -294,6 +341,14 @@ public class ModWeapons {
         createBattleAxe("elvo_battleaxe", PluginMaterial);
         createBattleAxe("hell_battleaxe", PluginMaterial);
         createBattleAxe("invar_battleaxe", PluginMaterial);
+
+        createBattleAxe("pig_axe", PluginMaterial);
+        createBattleAxe("cow_axe", PluginMaterial);
+        createBattleAxe("fungi_cutter", PluginMaterial);
+        createBattleAxe("jungle_pickaxe", PluginMaterial);
+
+
+
     }
     public static void loadHammers(){
         createHammer("blue_steel_hammer", PluginMaterial);
@@ -407,23 +462,30 @@ public class ModWeapons {
         createSword("sinbar_sword", PluginMaterial);
         createSword("sinbar_sword_2", PluginMaterial);
         createSword("wildscum_sword", PluginMaterial);
-
-
         createSword("vulcan_scimitar", PluginMaterial);
         createSword("cutlin_scimitar", PluginMaterial);
         createSword("orc_scimitar", PluginMaterial);
         createSword("orc_scimitar_2", PluginMaterial);
         createSword("rock_scimitar", PluginMaterial);
-
-
         createSword("rustic_sickle", PluginMaterial);
-
-
         createSword("black_steel_mace", PluginMaterial);
         createSword("rock_mace", PluginMaterial);
         createSword("burnt_mace", PluginMaterial);
         createSword("vulcan_mace", PluginMaterial);
         createSword("sauro_mace", PluginMaterial);
+
+        createSword("vorpal_katana", PluginMaterial);
+        createSword("conjuring", PluginMaterial);
+        createSword("ruin_dagger", PluginMaterial);
+        createSword("valkyrie", PluginMaterial);
+        createSword("silver_cutlass", PluginMaterial);
+        createSword("revenant", PluginMaterial);
+        createSword("warped_sword", PluginMaterial);
+        createSword("wither_cloak_sword", PluginMaterial);
+        createSword("crypt_sword", PluginMaterial);
+        createSword("blaze_sword", PluginMaterial);
+        createSword("nether_soul_sword", PluginMaterial);
+        createSword("atonement", PluginMaterial);
 
 
     }
@@ -456,9 +518,6 @@ public class ModWeapons {
     }
     public static void loadScythes(){
         BloodScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("blood_scythe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/blood_scythe");
-        DarkScythe = new ItemDarkScythe(1, PluginMaterial).setFull3D().setUnlocalizedName("dark_scythe").setMaxStackSize(1).setTextureName("plug:weapons/dark_scythe");
-        DarkScytheEnergized = new ItemDarkScythe(1, PluginMaterial, DarkScythe).setFull3D().setUnlocalizedName("dark_scythe_energized").setMaxStackSize(1).setTextureName("plug:weapons/dark_scythe_energized");
-        ((ItemDarkScythe)DarkScythe).setTransformItem(DarkScytheEnergized);
 
         GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("ice_scyte").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/ice_scyte");
         GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("frozen_scythe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/frozen_scythe");
@@ -470,13 +529,14 @@ public class ModWeapons {
         GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("evil_scythe").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/evil_scythe");
         GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("crook").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/crook");
 
+        GeneralScythe = new ItemScythe(26701, PluginMaterial).setUnlocalizedName("soul_crook").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/soul_crook");
+
     }
     public static void loadClaws(){
         GeneralClaw = new ItemClaw(1, PluginMaterial).setUnlocalizedName("quartz_claw").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/quartz_claw");
         GeneralClaw = new ItemClaw(1, PluginMaterial).setUnlocalizedName("gold_claws").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/gold_claws");
         GeneralClaw = new ItemClaw(1, PluginMaterial).setUnlocalizedName("serrated_claws").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/serrated_claws");
         GeneralClaw = new ItemClaw(1, PluginMaterial).setUnlocalizedName("iron_claws").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/iron_claws");
-
     }
 
     public static void loadBows(){
@@ -489,6 +549,14 @@ public class ModWeapons {
         GeneralBow = new ItemPluginBowInterface("mosquito_bow").setFull3D().setUnlocalizedName("mosquito_bow");
         GeneralBow = new ItemPluginBowInterface("scorpion_bow").setFull3D().setUnlocalizedName("scorpion_bow");
         GeneralBow = new ItemPluginBowInterface("spider_bow").setFull3D().setUnlocalizedName("spider_bow");
+
+        GeneralBow = new ItemPluginBowInterface("reaper_bow").setFull3D().setUnlocalizedName("reaper_bow");
+        GeneralBow = new ItemPluginBowInterface("cryptic_bow").setFull3D().setUnlocalizedName("cryptic_bow");
+        GeneralBow = new ItemPluginBowInterface("sniper_bow").setFull3D().setUnlocalizedName("sniper_bow");
+        GeneralBow = new ItemPluginBowInterface("soulstealer_bow").setFull3D().setUnlocalizedName("soulstealer_bow");
+        GeneralBow = new ItemPluginBowInterface("spirit_bow").setFull3D().setUnlocalizedName("spirit_bow");
+        GeneralBow = new ItemPluginBowInterface("undead_bow").setFull3D().setUnlocalizedName("undead_bow");
+
     }
     public static void loadShields(){
         createRotatedShield("blackstone_shield", EnumToolMaterials.PLUGINMATERIAL);
@@ -548,25 +616,8 @@ public class ModWeapons {
 
     }
 
-    public static void loadDebugWeapons(){
-        // Debug Weapons
-        TestItem = new ItemPluginBrokenWeaponInterface(26703, random, GlassPanBroken).setFull3D().setUnlocalizedName("debug_item").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan");
-        DebugDaggerBroken = new ItemDebugDaggerBroken(101, random).setFull3D().setUnlocalizedName("debug_dagger_broken").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_broken");
-        DebugDaggerReversedBroken = new ItemDebugDaggerReversedBroken(102, (ItemDebugDaggerBroken) DebugDaggerBroken, random).setFull3D().setUnlocalizedName("reverse_debug_dagger_broken").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_broken");
-        DebugDagger = new ItemDebugDagger(103, random, DebugDaggerBroken).setFull3D().setUnlocalizedName("debug_dagger").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger");
-        DebugDaggerReversed = new ItemDebugDaggerReversed(105, (ItemDagger) DebugDagger, random, DebugDaggerReversedBroken).setFull3D().setUnlocalizedName("reverse_debug_dagger").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger");
-        DebugDaggerEnergized = new ItemDebugDagger(104, random, DebugDaggerBroken, DebugDagger).setFull3D().setUnlocalizedName("debug_dagger_energized").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_energized");
-        DebugDaggerReversedEnergized = new ItemDebugDaggerReversed(106, (ItemDagger) DebugDaggerEnergized, random, DebugDaggerReversedBroken, DebugDaggerReversed).setFull3D().setUnlocalizedName("reverse_debug_dagger_energized").setMaxStackSize(1).setTextureName("plug:weapons/debug_dagger_energized");
-        ((ItemDagger) DebugDagger).setReverseState(DebugDaggerReversed);
-        ((ItemDagger) DebugDaggerReversed).setReverseState(DebugDagger);
-        ((ItemDagger) DebugDaggerEnergized).setReverseState(DebugDaggerReversedEnergized);
-        ((ItemDagger) DebugDaggerReversedEnergized).setReverseState(DebugDaggerEnergized);
-        ((ItemDebugDagger) DebugDagger).setTransformItem(DebugDaggerEnergized);
-        ((ItemDebugDagger) DebugDaggerReversed).setTransformItem(DebugDaggerReversedEnergized);
-    }
-
     public static void init() {
-        loadCustomWeapons();
+        loadUniqueWeapons();
         loadGlassWeapons();
 
         loadDaggers();
@@ -586,6 +637,5 @@ public class ModWeapons {
 
         loadDebugWeapons();
     }
-
 
 }
