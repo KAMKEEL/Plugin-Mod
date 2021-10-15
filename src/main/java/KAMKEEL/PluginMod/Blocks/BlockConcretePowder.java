@@ -24,41 +24,59 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 public class BlockConcretePowder extends BlockFalling {
-    public static final int META_MAX = 15;
+    public static final int META_MAX = 27;
+    public final int META_AMOUNT;
+    public final int META_SET;
 
-    private IIcon[] iicons = new IIcon[META_MAX + 1];
+    public final String blockName;
+    public final Block concrete;
+
+    private IIcon[] iicons;
     public static boolean fallInstantly;
 
-    public BlockConcretePowder() {
+    public BlockConcretePowder(int metaSet, String blockName, Block concrete) {
         super(Material.sand);
         this.setHardness(0.5F);
         this.setStepSound(soundTypeSand);
         this.setCreativeTab(PluginMod.blocksTab);
+
+        this.META_SET = metaSet;
+
+        if(16 * (META_SET + 1) > META_MAX){
+            this.META_AMOUNT = META_MAX % 16;
+        }
+        else {
+            this.META_AMOUNT = 15;
+        }
+
+        this.blockName = blockName;
+        this.concrete = concrete;
+        this.iicons = new IIcon[META_AMOUNT + 1];
     }
 
     public void register() {
-        this.setBlockName(LocalizationHelper.MOD_PREFIX + "concrete_powder");
-        GameRegistry.registerBlock(this, ItemBlockConcrete.class, "concrete_powder");
+        this.setBlockName(LocalizationHelper.MOD_PREFIX + blockName);
+        GameRegistry.registerBlock(this, ItemBlockConcrete.class, blockName, this.META_SET);
     }
 
     @SideOnly(Side.CLIENT)
     @Override
     public void registerBlockIcons(IIconRegister register) {
-        for (int meta = 0; meta <= META_MAX; ++meta) {
-            iicons[meta] = register.registerIcon(LocalizationHelper.MOD_PREFIX + "concrete_powder_" + ColorUtil.concreteToString(meta));
+        for (int meta = 0; meta <= META_AMOUNT; ++meta) {
+            iicons[meta] = register.registerIcon(LocalizationHelper.MOD_PREFIX + "concrete_powder" + "_" + ColorUtil.concreteToString(meta + (16 * META_SET)));
         }
     }
 
     @SideOnly(Side.CLIENT)
     @Override
     public IIcon getIcon(int side, int meta) {
-        return iicons[meta%(META_MAX+1)];
+        return iicons[meta%(META_AMOUNT + 1)];
     }
 
     @SideOnly(Side.CLIENT)
     @Override
     public void getSubBlocks(Item item, CreativeTabs creativeTab, List list) {
-        for (int meta = 0; meta <= META_MAX; ++meta) {
+        for (int meta = 0; meta <= META_AMOUNT; ++meta) {
             list.add(new ItemStack(item, 1, meta));
         }
     }
@@ -70,7 +88,7 @@ public class BlockConcretePowder extends BlockFalling {
 
     @Override
     public MapColor getMapColor(int meta) {
-        return ColorUtil.metaToMapColorConcrete(meta);
+        return ColorUtil.metaToMapColorConcrete(meta + (16 * META_SET));
     }
 
     @Override
@@ -96,7 +114,7 @@ public class BlockConcretePowder extends BlockFalling {
 
         for (int i = 0; i < 5; ++i) {
             if (aroundBlocks[i].getMaterial() == Material.water) {
-                world.setBlock(x, y, z, ModBlocks.concreteBlock, meta, 3);
+                world.setBlock(x, y, z, concrete, meta, 3);
                 return true;
             }
         }

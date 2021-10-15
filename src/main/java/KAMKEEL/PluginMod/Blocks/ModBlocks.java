@@ -35,6 +35,11 @@ public class ModBlocks {
     // Sub-Blocks
     public static BlockConcrete concreteBlock;
     public static BlockConcretePowder concretePowder;
+
+    public static BlockConcrete concreteBlock2;
+    public static BlockConcretePowder concretePowder2;
+
+
     public static BlockEnergy energyBlock;
 
     // Stairs
@@ -54,10 +59,15 @@ public class ModBlocks {
         Dark = new BlockDark();
         GameRegistry.registerBlock(Dark, ItemBlockDark.class, "dark");
 
-        concreteBlock = new BlockConcrete();
+        concreteBlock = new BlockConcrete(0, "concrete");
         concreteBlock.register();
-        concretePowder = new BlockConcretePowder();
+        concretePowder = new BlockConcretePowder(0, "concrete_powder", concreteBlock);
         concretePowder.register();
+
+        concreteBlock2 = new BlockConcrete(1, "concrete2");
+        concreteBlock2.register();
+        concretePowder2 = new BlockConcretePowder(1, "concrete_powder2", concreteBlock2);
+        concretePowder2.register();
 
         energyBlock = new BlockEnergy();
         energyBlock.register();

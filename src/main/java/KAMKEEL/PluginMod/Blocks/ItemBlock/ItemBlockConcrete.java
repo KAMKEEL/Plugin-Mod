@@ -7,12 +7,15 @@ import net.minecraft.item.ItemStack;
 
 public class ItemBlockConcrete extends ItemBlockWithMetadata {
 
-    public ItemBlockConcrete(Block block) {
+    private int META_SET;
+
+    public ItemBlockConcrete(Block block, Integer meta_set) {
         super(block, block);
+        this.META_SET = meta_set;
     }
 
     @Override
     public String getUnlocalizedName(ItemStack itemStack) {
-        return this.getUnlocalizedName() + "." + ColorUtil.concreteToString(itemStack.getItemDamage());
+        return this.getUnlocalizedName() + "." + ColorUtil.concreteToString( (itemStack.getItemDamage() + (16 * META_SET)) );
     }
 }

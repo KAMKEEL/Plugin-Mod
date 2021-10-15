@@ -64,6 +64,32 @@ tile.plug:concrete_powder.plum.name=Plum Concrete Powder
 tile.plug:concrete_powder.avocado.name=Avocado Concrete Powder
 tile.plug:concrete_powder.red_brown.name=Red Brown Concrete Powder
 
+tile.plug:concrete2.ash.name=Ash Concrete
+tile.plug:concrete2.blood.name=Blood Concrete
+tile.plug:concrete2.seafoam.name=Seafoam Concrete
+tile.plug:concrete2.mauve.name=Mauve Concrete
+tile.plug:concrete2.seaweed.name=Seaweed Concrete
+tile.plug:concrete2.carbon.name=Carbon Concrete
+tile.plug:concrete2.khaki.name=Khaki Concrete
+tile.plug:concrete2.indigo.name=Indigo Concrete
+tile.plug:concrete2.ivy.name=Ivy Concrete
+tile.plug:concrete2.ivory.name=Ivory Concrete
+tile.plug:concrete2.camel.name=Camel Concrete
+tile.plug:concrete2.salmon.name=Salmon Concrete
+
+tile.plug:concrete_powder2.ash.name=Ash Concrete Powder
+tile.plug:concrete_powder2.blood.name=Blood Concrete Powder
+tile.plug:concrete_powder2.seafoam.name=Seafoam Concrete Powder
+tile.plug:concrete_powder2.mauve.name=Mauve Concrete Powder
+tile.plug:concrete_powder2.seaweed.name=Seaweed Concrete Powder
+tile.plug:concrete_powder2.carbon.name=Carbon Concrete Powder
+tile.plug:concrete_powder2.khaki.name=Khaki Concrete Powder
+tile.plug:concrete_powder2.indigo.name=Indigo Concrete Powder
+tile.plug:concrete_powder2.ivy.name=Ivy Concrete Powder
+tile.plug:concrete_powder2.ivory.name=Ivory Concrete Powder
+tile.plug:concrete_powder2.camel.name=Camel Concrete Powder
+tile.plug:concrete_powder2.salmon.name=Salmon Concrete Powder
+
 tile.plug:energyBlock.blood_red.name=Blood Red Energy
 tile.plug:energyBlock.baby_blue.name=Baby Blue Energy
 tile.plug:energyBlock.dark_blue.name=Dark Blue Energy

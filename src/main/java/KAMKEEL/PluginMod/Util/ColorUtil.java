@@ -105,57 +105,94 @@ public class ColorUtil {
 
     // Concrete
     public static final int
-            META_BURGUNDY = 0,
-            META_CARAMEL = 1,
-            META_CHOCOLATE = 2,
-            META_DENIM = 3,
-            META_HAZE = 4,
-            META_MINT = 5,
-            META_PEANUT = 6,
-            META_CLOVER = 7,
-            META_PEARL = 8,
-            META_MUSTARD = 9,
-            META_SKY_BLUE = 10,
-            META_PERIWINKLE = 11,
-            META_PEACH = 12,
-            META_PLUM = 13,
-            META_AVOCADO = 14,
-            META_RED_BROWN = 15;
+            CONCRETE_BURGUNDY = 0,
+            CONCRETE_CARAMEL = 1,
+            CONCRETE_CHOCOLATE = 2,
+            CONCRETE_DENIM = 3,
+            CONCRETE_HAZE = 4,
+            CONCRETE_MINT = 5,
+            CONCRETE_PEANUT = 6,
+            CONCRETE_CLOVER = 7,
+            CONCRETE_PEARL = 8,
+            CONCRETE_MUSTARD = 9,
+            CONCRETE_SKY_BLUE = 10,
+            CONCRETE_PERIWINKLE = 11,
+            CONCRETE_PEACH = 12,
+            CONCRETE_PLUM = 13,
+            CONCRETE_AVOCADO = 14,
+            CONCRETE_RED_BROWN = 15,
+
+            CONCRETE_BLOOD = 16,
+            CONCRETE_SEAFOAM = 17,
+            CONCRETE_MAUVE = 18,
+            CONCRETE_SEAWEED = 19,
+            CONCRETE_CARBON = 20,
+            CONCRETE_INDIGO = 21,
+            CONCRETE_KHAKI = 22,
+            CONCRETE_ASH = 23,
+            CONCRETE_IVY = 24,
+            CONCRETE_IVORY = 25,
+            CONCRETE_CAMEL = 26,
+            CONCRETE_SALMON = 27;
 
     public static String concreteToString(int meta) {
         switch(meta) {
-            case META_BURGUNDY:
+            case CONCRETE_BURGUNDY:
                 return "burgundy";
-            case META_CARAMEL:
+            case CONCRETE_CARAMEL:
                 return "caramel";
-            case META_CHOCOLATE:
+            case CONCRETE_CHOCOLATE:
                 return "chocolate";
-            case META_DENIM:
+            case CONCRETE_DENIM:
                 return "denim";
-            case META_HAZE:
+            case CONCRETE_HAZE:
                 return "haze";
-            case META_MINT:
+            case CONCRETE_MINT:
                 return "mint";
-            case META_PEANUT:
+            case CONCRETE_PEANUT:
                 return "peanut";
-            case META_CLOVER:
+            case CONCRETE_CLOVER:
                 return "clover";
-            case META_PEARL:
+            case CONCRETE_PEARL:
                 return "pearl";
-            case META_MUSTARD:
+            case CONCRETE_MUSTARD:
                 return "mustard";
-            case META_SKY_BLUE:
+            case CONCRETE_SKY_BLUE:
                 return "sky_blue";
-            case META_PERIWINKLE:
+            case CONCRETE_PERIWINKLE:
                 return "periwinkle";
-            case META_PEACH:
+            case CONCRETE_PEACH:
                 return "peach";
-            case META_PLUM:
+            case CONCRETE_PLUM:
                 return "plum";
-            case META_AVOCADO:
+            case CONCRETE_AVOCADO:
                 return "avocado";
-            case META_RED_BROWN:
+            case CONCRETE_RED_BROWN:
                 return "red_brown";
+            case CONCRETE_BLOOD:
+                return "blood";
+            case CONCRETE_SEAFOAM:
+                return "seafoam";
+            case CONCRETE_MAUVE:
+                return "mauve";
+            case CONCRETE_SEAWEED:
+                return "seaweed";
+            case CONCRETE_CARBON:
+                return "carbon";
+            case CONCRETE_KHAKI:
+                return "khaki";
+            case CONCRETE_INDIGO:
+                return "indigo";
+            case CONCRETE_ASH:
+                return "ash";
+            case CONCRETE_IVY:
+                return "ivy";
+            case CONCRETE_IVORY:
+                return "ivory";
+            case CONCRETE_CAMEL:
+                return "camel";
+            case CONCRETE_SALMON:
+                return "salmon";
 
             default: return "unknown_color";
         }
@@ -163,40 +200,66 @@ public class ColorUtil {
 
     public static MapColor metaToMapColorConcrete(int meta) {
         switch(meta) {
-            case META_BURGUNDY:
+            case CONCRETE_BURGUNDY:
                 return MapColor.redColor;
-            case META_CARAMEL:
+            case CONCRETE_CARAMEL:
                 return MapColor.brownColor;
-            case META_CHOCOLATE:
+            case CONCRETE_CHOCOLATE:
                 return MapColor.brownColor;
-            case META_DENIM:
+            case CONCRETE_DENIM:
                 return MapColor.blueColor;
-            case META_HAZE:
+            case CONCRETE_HAZE:
                 return MapColor.purpleColor;
-            case META_MINT:
+            case CONCRETE_MINT:
                 return MapColor.grassColor;
-            case META_PEANUT:
+            case CONCRETE_PEANUT:
                 return MapColor.sandColor;
-            case META_CLOVER:
+            case CONCRETE_CLOVER:
                 return MapColor.greenColor;
-            case META_PEARL:
+            case CONCRETE_PEARL:
                 return MapColor.sandColor;
-            case META_MUSTARD:
+            case CONCRETE_MUSTARD:
                 return MapColor.yellowColor;
-            case META_SKY_BLUE:
+            case CONCRETE_SKY_BLUE:
                 return MapColor.lightBlueColor;
-            case META_PERIWINKLE:
+            case CONCRETE_PERIWINKLE:
                 return MapColor.purpleColor;
-            case META_PEACH:
+            case CONCRETE_PEACH:
                 return MapColor.clayColor;
-            case META_PLUM:
+            case CONCRETE_PLUM:
                 return MapColor.purpleColor;
-            case META_AVOCADO:
+            case CONCRETE_AVOCADO:
                 return MapColor.grassColor;
-            case META_RED_BROWN:
+            case CONCRETE_RED_BROWN:
                 return MapColor.brownColor;
+            case CONCRETE_BLOOD:
+                return MapColor.brownColor;
+            case CONCRETE_MAUVE:
+                return MapColor.pinkColor;
+            case CONCRETE_SEAFOAM:
+                return MapColor.blueColor;
+            case CONCRETE_CARBON:
+                return MapColor.grayColor;
+            case CONCRETE_KHAKI:
+                return MapColor.brownColor;
+            case CONCRETE_INDIGO:
+                return MapColor.blueColor;
+            case CONCRETE_ASH:
+                return MapColor.grayColor;
+            case CONCRETE_SEAWEED:
+                return MapColor.greenColor;
+            case CONCRETE_IVY:
+                return MapColor.greenColor;
+            case CONCRETE_IVORY:
+                return MapColor.sandColor;
+            case CONCRETE_CAMEL:
+                return MapColor.sandColor;
+            case CONCRETE_SALMON:
+                return MapColor.pinkColor;
 
             default: return MapColor.airColor;
         }
     }
+
+
 }
