@@ -142,7 +142,7 @@ public class BlockConcretePowder extends BlockFalling {
                     double posY = (double) ((float) y + 0.5F);
                     double posZ = (double) ((float) z + 0.5F);
                     int meta = world.getBlockMetadata(x, y, z);
-                    EntityFallingConcretePowderBlock entityfallingblock = new EntityFallingConcretePowderBlock(world, posX, posY, posZ, meta);
+                    EntityFallingConcretePowderBlock entityfallingblock = new EntityFallingConcretePowderBlock(world, posX, posY, posZ, this, meta);
                     func_149829_a(entityfallingblock);
                     world.spawnEntityInWorld(entityfallingblock);
                 }

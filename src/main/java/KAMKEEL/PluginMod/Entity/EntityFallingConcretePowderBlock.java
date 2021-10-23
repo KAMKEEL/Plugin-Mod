@@ -2,6 +2,7 @@ package KAMKEEL.PluginMod.Entity;
 
 import KAMKEEL.PluginMod.Blocks.ModBlocks;
 import KAMKEEL.PluginMod.PluginMod;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.item.EntityFallingBlock;
 import net.minecraft.util.MathHelper;
@@ -21,6 +22,11 @@ public class EntityFallingConcretePowderBlock extends EntityFallingBlock {
 	
 	public EntityFallingConcretePowderBlock(World world, double posX, double posY, double posZ, int meta) {
 		super(world, posX, posY, posZ, ModBlocks.concretePowder, meta);
+		this.meta = meta;
+	}
+
+	public EntityFallingConcretePowderBlock(World world, double posX, double posY, double posZ, Block concrete, int meta) {
+		super(world, posX, posY, posZ, concrete, meta);
 		this.meta = meta;
 	}
 	
