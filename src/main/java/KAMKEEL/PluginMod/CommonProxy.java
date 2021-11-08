@@ -9,7 +9,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 
-public class CommonProxy{
+public class CommonProxy {
 
     public static int fullBrightBlockID;
     public static int colorBlockID;

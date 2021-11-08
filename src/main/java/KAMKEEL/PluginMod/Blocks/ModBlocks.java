@@ -1,18 +1,13 @@
 package KAMKEEL.PluginMod.Blocks;
 
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockColor;
+import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockCaveVines;
+import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockCaveVinesGrowing;
 import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockDark;
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockSlab;
 import KAMKEEL.PluginMod.LocalizationHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.tileentity.TileEntity;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static cpw.mods.fml.common.registry.GameRegistry.registerBlock;
 
@@ -31,6 +26,10 @@ public class ModBlocks {
     public static Block Barrel;
     public static Block ColoredCobble;
     public static Block colorBlockData;
+
+    public static Block caveVines;
+    public static Block caveVinesGrowing;
+
 
     // Sub-Blocks
     public static BlockConcrete concreteBlock;
@@ -59,6 +58,9 @@ public class ModBlocks {
         Dark = new BlockDark();
         GameRegistry.registerBlock(Dark, ItemBlockDark.class, "dark");
 
+        caveVines = registerBlock(new BlockCaveVines().setBlockName(LocalizationHelper.MOD_PREFIX + "caveVines"), (Class<? extends ItemBlock>) ItemBlockCaveVines.class);
+        caveVinesGrowing = registerBlock(new BlockCaveVinesGrowing().setBlockName(LocalizationHelper.MOD_PREFIX + "caveVinesGrowing"), (Class<? extends ItemBlock>) ItemBlockCaveVinesGrowing.class);
+
         concreteBlock = new BlockConcrete(0, "concrete");
         concreteBlock.register();
         concretePowder = new BlockConcretePowder(0, "concrete_powder", concreteBlock);
@@ -71,12 +73,6 @@ public class ModBlocks {
 
         energyBlock = new BlockEnergy();
         energyBlock.register();
-
-//        BlockPlugSlab singleSlab = (BlockPlugSlab)new BlockPlugSlab(false, Material.wood, BlockPlugSlab.SlabCategory.REGULAR).setBlockName(LocalizationHelper.MOD_PREFIX + "regularSingleSlab");
-//        BlockPlugSlab doubleSlab = (BlockPlugSlab)new BlockPlugSlab(true, Material.wood, BlockPlugSlab.SlabCategory.REGULAR).setBlockName(LocalizationHelper.MOD_PREFIX + "regularDoubleSlab");
-//
-//        regularSingleSlab = BlockPlugSlab.registerBlock(singleSlab, ItemBlockSlab.class, singleSlab, doubleSlab);
-//        regularDoubleSlab = BlockPlugSlab.registerBlock(doubleSlab, ItemBlockSlab.class, singleSlab, doubleSlab);
 
         //////////////////////////////////////
         //             BARRELS

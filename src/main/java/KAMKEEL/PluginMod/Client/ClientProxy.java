@@ -1,8 +1,5 @@
 package KAMKEEL.PluginMod.Client;
 
-import KAMKEEL.PluginMod.Blocks.BlockColor;
-import KAMKEEL.PluginMod.Blocks.BlockColorStair;
-import KAMKEEL.PluginMod.Blocks.ModBlocks;
 import KAMKEEL.PluginMod.Client.Render.*;
 import KAMKEEL.PluginMod.CommonProxy;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
@@ -13,11 +10,9 @@ import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
-import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 public class ClientProxy extends CommonProxy {

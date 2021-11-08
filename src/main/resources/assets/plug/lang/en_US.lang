@@ -124,6 +124,11 @@ tile.plug:colorBlock.13.name=Colored BLOCKNAME (Green Frequency)
 tile.plug:colorBlock.14.name=Colored BLOCKNAME (Red Frequency)
 tile.plug:colorBlock.15.name=Colored BLOCKNAME (Black Frequency)
 
+tile.plug:caveVines_head.name=Cave Vines
+tile.plug:caveVines_body.name=Cave Vines
+tile.plug:caveVinesGrowing_head.name=Cave Vines (Growing)
+tile.plug:caveVinesGrowing_body.name=Cave Vines (Growing)
+
 # Biome's O Plenty
 
 tile.plug:stair_limestone.name=Limestone Stair
