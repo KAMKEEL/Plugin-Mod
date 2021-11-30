@@ -993,6 +993,11 @@ item.plug:element_apple.name=Element Apple
 item.plug:full_apple.name=Full Apple
 item.plug:drunk_apple.name=Drunk Apple
 item.plug:tank_apple.name=Tank Apple
+item.plug:rotten_apple.name=Rotten Apple
+item.plug:corrupt_apple.name=Corrupt Apple
+item.plug:reinforced_apple.name=Reinforced Apple
+item.plug:toxic_apple.name=Toxic Apple
+item.plug:odd_apple.name=Odd Apple
 
 ################# Keybinds
 key.plug.orient=Orient

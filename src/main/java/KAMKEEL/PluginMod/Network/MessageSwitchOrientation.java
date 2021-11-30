@@ -2,6 +2,7 @@ package KAMKEEL.PluginMod.Network;
 
 import KAMKEEL.PluginMod.Items.ItemReversible;
 import KAMKEEL.PluginMod.Items.ItemTransform;
+import KAMKEEL.PluginMod.Items.Weapons.ItemUniqueWeapon;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;

@@ -1,9 +1,20 @@
+@ 4.4
++ Added 5 new Apple Types
++ Added Plug Repair Ingot
+- Reworked Timings on Apples
+- Fixed Vintage Apple mistake
+- Changed Drunk Apple [Strength, Regen] -> [Speed, Regen]
+
+@ 4.3
++ Added New Stage System to Weapon Durability
+-- Fixed Issue with Durability in Unique Weapons
+
 @ 4.2
 + Added Cave Vines (Growing/No Growth)
 -- Fixed Falling Concrete turning to Concrete Metadata
 
 @ 4.1.1
-+ Fixed Falling Concrete Powder
+-- Fixed Falling Concrete Powder
 
 @ 4.1
 + Added More Concrete Variants

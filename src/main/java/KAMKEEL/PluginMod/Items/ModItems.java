@@ -49,6 +49,7 @@ public class ModItems {
     public static Item damascus_ingot;
     public static Item deep_ingot;
     public static Item energy_quartz;
+    public static Item plug_ingot;
 
     // Custom Weapon Parts
     public static Item BlueLongSwordBlade;
@@ -78,6 +79,7 @@ public class ModItems {
         blue_steel_ingot = new PluginItemInterface(26700).setUnlocalizedName("blue_steel").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/blue_steel");
         jungle_ingot = new PluginItemInterface(26700).setUnlocalizedName("jungle_ingot").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/jungle_ingot");
         glass_shard = new PluginItemInterface(26700).setUnlocalizedName("glass_shard").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/glass_shard");
+        plug_ingot = new PluginItemInterface(26712).setUnlocalizedName("plug_ingot").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/plug_ingot");
 
         // Load Weapons
         ModWeapons.init();
@@ -157,6 +159,8 @@ public class ModItems {
         custom_jungle.customCraftingMaterial = jungle_ingot;
         blue_steel.customCraftingMaterial = blue_steel_ingot;
         custom_blue_steel.customCraftingMaterial = blue_steel_ingot;
+        PluginMaterial.customCraftingMaterial = plug_ingot;
+
         OreDictCompact.registerOres();
     }
 

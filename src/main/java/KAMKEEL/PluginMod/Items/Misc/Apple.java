@@ -88,17 +88,20 @@ public class Apple extends ItemFood {
 
             int dmg = p_77849_1_.getItemDamage();
 
+            // Total = Instant + Regen
+
             if(dmg == 2){
                 // Vintage
-                // Total Health = 144 +  96 = 280
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 34, 0));
+                // Total Health = 96 +  144 = 280
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 24, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 900, 3));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
             }
             else if(dmg == 3){
                 // Rage
+                // Strength: 45s
                 // Total Health = 52 +  96 = 148
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 600, 2));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 900, 2));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -114,7 +117,7 @@ public class Apple extends ItemFood {
             else if(dmg == 5){
                 // Shield
                 // Total Health = 24 +  96 = 120
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 600, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 1));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 6, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -122,15 +125,16 @@ public class Apple extends ItemFood {
             }
             else if(dmg == 6){
                 // Buffer
+                // Regen: 45s
                 // Total Health = 80 +  144 = 224
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 20, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 900, 3));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 9));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 900, 9));
             }
             else if(dmg == 7){
                 // Swift
                 // Total Health = 52 +  96 = 148
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 600, 2));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 600, 3));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -147,7 +151,7 @@ public class Apple extends ItemFood {
                 // Alert
                 // Total Health = 52 +  96 = 148
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.nightVision.id, 1800, 0));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 1800, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 1800, 1));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -174,11 +178,12 @@ public class Apple extends ItemFood {
             }
             else if(dmg == 12){
                 // Drunk
-                // Total Health = 52 +  165 = 217
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.confusion.id, 600, 1));
+                // Total Health = 52 +  165 = 148
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.confusion.id, 900, 1));
 
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 600, 2));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 900, 3));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 400, 4));
+
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -186,12 +191,63 @@ public class Apple extends ItemFood {
             else if(dmg == 13){
                 // Tank
                 // Total Health = 24 +  96 = 120
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 600, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 900, 1));
 
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 600, 1));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 9));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 900, 9));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 6, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 600, 3));
+            }
+            else if(dmg == 14){
+                // Rotten
+                // Total Health = 160 +  96 = 256
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.hunger.id, 900, 4));
+
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 40, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 900, 2));
+
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 600, 3));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
+            }
+            else if(dmg == 15){
+                // Corrupt
+                // Total Health = 52 +  96 = 148
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 600, 3));
+
+                useRandomEffect(p_77849_3_);
+            }
+            else if(dmg == 16){
+                // Reinforced
+                // Total Health = 52 +  96 = 148
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.weakness.id, 900, 1));
+
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 2));
+
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 600, 3));
+            }
+            else if(dmg == 17){
+                // Toxic
+                // Total Health = 52 +  96 = 148
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.poison.id, 900, 1));
+
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76443_y.id, 3600, 0));
+
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 110, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
+            }
+            else if(dmg == 18){
+                // Odd
+                // Total Health = 52 +  96 = 148
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 1800, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.nightVision.id, 1800, 0));
+
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 600, 3));
             }
             else {
@@ -210,6 +266,71 @@ public class Apple extends ItemFood {
     public void getSubItems(Item item, CreativeTabs tab, List list){
         for (EnumApples apple: EnumApples.values()){
             list.add(new ItemStack(item, 1, apple.getMeta()));
+        }
+    }
+
+    public static void useRandomEffect(EntityPlayer player){
+        int r = player.getRNG().nextInt(20);
+        if(r == 1){
+            player.addPotionEffect(new PotionEffect(Potion.field_76443_y.id, 7200, 0));
+        }
+        else if(r == 2){
+            player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 7200, 1));
+        }
+        else if(r == 3){
+            player.addPotionEffect(new PotionEffect(Potion.poison.id, 900, 3));
+            player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 1, 7));
+        }
+        else if(r == 4){
+            player.addPotionEffect(new PotionEffect(Potion.confusion.id, 900, 3));
+        }
+        else if(r == 5){
+            player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 7200, 0));
+        }
+        else if(r == 6){
+            player.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 900, 2));
+        }
+        else if(r == 7){
+            player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 900, 4));
+        }
+        else if(r == 8){
+            player.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 900, 3));
+        }
+        else if(r == 9){
+            player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 900, 4));
+        }
+        else if(r == 10){
+            player.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 900, 3));
+        }
+        else if(r == 11){
+            player.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 3));
+        }
+        else if(r == 12){
+            player.addPotionEffect(new PotionEffect(Potion.weakness.id, 900, 2));
+        }
+        else if(r == 13){
+            player.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 3));
+        }
+        else if(r == 14){
+            player.addPotionEffect(new PotionEffect(Potion.hunger.id, 900, 6));
+        }
+        else if(r == 15){
+            player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 7200, 0));
+        }
+        else if(r == 16){
+            player.addPotionEffect(new PotionEffect(Potion.heal.id, 110, 0));
+        }
+        else if(r == 17){
+            player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 7200, 0));
+        }
+        else if(r == 18){
+            player.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 900, 19));
+        }
+        else if(r == 19){
+            player.addPotionEffect(new PotionEffect(Potion.blindness.id, 900, 0));
+        }
+        else {
+            player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 7200, 0));
         }
     }
 

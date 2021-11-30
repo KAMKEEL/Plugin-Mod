@@ -13,7 +13,7 @@ public enum EnumToolMaterials
     GLASS(1, 20, 16.0F, 10, 26),
     BLUE_STEEL(3, 1200, 8.0F, 7, 20),
     PLUGINMATERIAL(2, 20000, 6.0F, 7, 0),
-    UNIQUEMATERIAL(2, 100000, 6.0F, 7, 0);
+    UNIQUEMATERIAL(2, 32000, 6.0F, 7, 0);
 
     /**
      * The level of material this tool can harvest (3 = DIAMOND, 2 = IRON, 1 = STONE, 0 = IRON/GOLD)

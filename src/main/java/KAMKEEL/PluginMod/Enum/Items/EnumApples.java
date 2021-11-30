@@ -2,20 +2,25 @@ package KAMKEEL.PluginMod.Enum.Items;
 
 public enum EnumApples {
 
-    Classic(0, "Classic"),   // Regular
-    Founding(1, "Founding"), // Crafting Apple
-    Vintage(2, "Vintage"),   // Stronger Regular
-    Rage(3, "Rage"),         // Strength Apple
-    Mend(4, "Mend"),         // More Regen
-    Shield(5, "Shield"),     // More Resistance
-    Buffer(6, "Buffer"),     // More Absorption
-    Swift(7, "Swift"),       // More Speed
-    Boost(8, "Boost"),       // More Instant Health
-    Alert(9, "Alert"),       // Night Vision, Haste
-    Element(10, "Element"),  // Water Breathing, Fire Resistance
-    Full(11, "Full"),        // Saturation Apple
-    Drunk(12, "Drunk"),      // Strong Boost   ---  Nausea
-    Tank(13, "Tank");        // Resistance, Absorption --- Slowness
+    Classic(0, "Classic"),          // Regular
+    Founding(1, "Founding"),        // Crafting Apple
+    Vintage(2, "Vintage"),          // Stronger Regular
+    Rage(3, "Rage"),                // Strength
+    Mend(4, "Mend"),                // + Regen
+    Shield(5, "Shield"),            // Resistance
+    Buffer(6, "Buffer"),            // + Absorption
+    Swift(7, "Swift"),              // Speed
+    Boost(8, "Boost"),              // + Instant Health [IntHealth]
+    Alert(9, "Alert"),              // Night Vision, Haste
+    Element(10, "Element"),         // Water Breathing, Fire Resistance
+    Full(11, "Full"),               // Saturation
+    Drunk(12, "Drunk"),             // Strength, Speed          --- Nausea
+    Tank(13, "Tank"),               // Resistance, Absorption   --- Slowness
+    Rotten(14, "Rotten"),           // Regen, IntHealth         --- Hunger
+    Corrupt(15, "Corrupt"),         // Random Effect [Stronger]
+    Reinforced(16, "Reinforced"),   // Resistance III           --- Weakness
+    Toxic(17, "Toxic"),             // Saturation, IntHealth    --- Poison
+    Odd(18, "Odd");                 // NightVis, FireRes
 
     private final int meta;
     private final String name;
