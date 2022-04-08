@@ -3,6 +3,8 @@ package KAMKEEL.PluginMod;
 import KAMKEEL.PluginMod.Blocks.ModBlocks;
 import KAMKEEL.PluginMod.Compat.CompatibilityBiomesOPlenty;
 import KAMKEEL.PluginMod.Compat.CompatibilityExtraUtilities;
+import KAMKEEL.PluginMod.Config.ConfigLoader;
+import KAMKEEL.PluginMod.Config.ConfigProp;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Network.NetworkHandler;
 import cpw.mods.fml.common.Loader;
@@ -16,13 +18,17 @@ import KAMKEEL.PluginMod.Items.ModItems;
 import cpw.mods.fml.common.network.FMLEventChannel;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
+import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.MinecraftServer;
 import org.lwjgl.Sys;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "4.4")
+import java.io.File;
+
+@Mod(modid = "plug", name = "The Plugin Mod", version = "4.5")
 public class PluginMod {
 
     @SidedProxy(clientSide = "KAMKEEL.PluginMod.Client.ClientProxy", serverSide = "KAMKEEL.PluginMod.CommonProxy")
@@ -34,6 +40,21 @@ public class PluginMod {
     private static int NewEntityStartId = 0;
 
     public static PluginMod instance;
+
+    // Config
+    public static File Dir;
+    public static ConfigLoader Config;
+
+
+//    @ConfigProp(info = "Disable Concrete Blocks")
+//    public static boolean EnableConcrete = true;
+//
+//    @ConfigProp(info = "Disable Barrels")
+//    public static boolean EnableBarrels = true;
+//
+//    @ConfigProp(info = "Disable Energy Blocks")
+//    public static boolean EnableEnergy = true;
+
 
     public PluginMod() {
         instance = this;
@@ -47,7 +68,21 @@ public class PluginMod {
 
         NetworkHandler.init();
 
+        MinecraftServer server = MinecraftServer.getServer();
+        String dir = "";
+        if (server != null) {
+            dir = new File(".").getAbsolutePath();
+        } else {
+            dir = Minecraft.getMinecraft().mcDataDir.getAbsolutePath();
+        }
+        Dir = new File(dir, "PluginMod");
+        Dir.mkdir();
+
+        Config = new ConfigLoader(this.getClass(), new File(dir, "config"), "PluginMod");
+        Config.loadConfig();
+
         proxy.preInnit();
+
     }
 
     @Mod.EventHandler

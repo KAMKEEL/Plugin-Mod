@@ -181,6 +181,10 @@ public class ModWeapons {
         GeneralUniqueSword = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("aurora_katana").setMaxStackSize(1).setTextureName("plug:weapons/aurora_katana");
         GeneralUniqueSwordEnergized = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("aurora_katana_energized").setMaxStackSize(1).setTextureName("plug:weapons/aurora_katana_energized");
         setTransformItems((ItemUniqueWeapon)GeneralUniqueSword, (ItemUniqueWeapon)GeneralUniqueSwordEnergized);
+
+        GeneralUniqueSword = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("codium_longsword").setMaxStackSize(1).setTextureName("plug:weapons/codium_longsword");
+        GeneralUniqueSwordEnergized = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("codium_longsword_energized").setMaxStackSize(1).setTextureName("plug:weapons/codium_longsword_energized");
+        setTransformItems((ItemUniqueWeapon)GeneralUniqueSword, (ItemUniqueWeapon)GeneralUniqueSwordEnergized);
     }
 
     public static void loadGlassWeapons(){
@@ -497,8 +501,8 @@ public class ModWeapons {
     }
     public static void loadBroadswords(){
 
-        GeneralBroadsword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("dreadlord_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dreadlord_sword");
-        GeneralBroadsword = new ItemPluginWeaponInterface(1, PluginMaterial).setUnlocalizedName("fel_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/fel_sword");
+        GeneralBroadsword = new ItemBroadSword(PluginMaterial).setUnlocalizedName("dreadlord_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/dreadlord_sword");
+        GeneralBroadsword = new ItemBroadSword(PluginMaterial).setUnlocalizedName("fel_broadsword").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/fel_sword");
 
         createBroadsword("amorth_broadsword", PluginMaterial);
         createBroadsword("cystel_broadsword", PluginMaterial);

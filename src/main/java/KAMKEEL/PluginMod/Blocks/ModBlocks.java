@@ -24,8 +24,6 @@ public class ModBlocks {
     // Blocks
     public static Block Dark;
     public static Block Barrel;
-    public static Block ColoredCobble;
-    public static Block colorBlockData;
 
     public static Block caveVines;
     public static Block caveVinesGrowing;

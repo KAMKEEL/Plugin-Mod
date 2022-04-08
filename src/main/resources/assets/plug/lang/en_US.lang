@@ -935,6 +935,9 @@ item.plug:blue_longsword_custom_broken.name=Broken Blue Longsword
 item.plug:blue_longsword_custom.name=Blue Longsword
 item.plug:blue_longsword_custom_energized.name=Energized Blue Longsword
 
+item.plug:codium_longsword.name=Codium Longsword
+item.plug:codium_longsword_energized.name=Energized Codium Longsword
+
 item.plug:jungle_axe_custom_broken.name=Broken Jungle Axe
 item.plug:jungle_axe_custom.name=Jungle Axe
 item.plug:jungle_axe_custom_energized.name=Energized Jungle Axe
@@ -958,6 +961,7 @@ item.plug:blue_steel.name=Blue Steel Ingot
 item.plug:jungle_ingot.name=Jungle Ingot
 item.plug:codium_ingot.name=Codium Ingot
 item.plug:deep_ingot.name=Deep Ingot
+item.plug:plug_ingot.name=Plug Ingot
 item.plug:damascus_ingot.name=Damascus Ingot
 item.plug:energy_quartz.name=Energy Quartz
 item.plug:energy_catalyst.name=Energy Catalyst
