@@ -1,9 +1,10 @@
 @ 4.5
 + Updated Blue Longsword Textured
 + Added Plug Ingot Text Data
-+ 
++ Ton of New Artifacts
++ Painkiller / Rope
++ 3 Swords + 1 Dagger
 -- Converted 32x Spears to 16x Variants (Partially)
-
 
 @ 4.4
 + Added 5 new Apple Types

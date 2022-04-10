@@ -246,6 +246,7 @@ public class ModWeapons {
 
         createDagger("cactus_knife", PluginMaterial);
 
+        createDagger("ritual_dagger", PluginMaterial);
     }
     public static void loadSpears(){
 
@@ -491,7 +492,9 @@ public class ModWeapons {
         createSword("nether_soul_sword", PluginMaterial);
         createSword("atonement", PluginMaterial);
 
-
+        createSword("valonite_sword", PluginMaterial);
+        createSword("corrosive_sword", PluginMaterial);
+        createSword("kuruzi_bat", PluginMaterial);
     }
     public static void loadKatanas(){
 

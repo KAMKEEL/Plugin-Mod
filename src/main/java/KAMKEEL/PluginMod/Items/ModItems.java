@@ -125,6 +125,8 @@ public class ModItems {
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("energy_catalyst").setTextureName("plug:materials/catalyst").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("hyper_catalyst").setTextureName("plug:materials/hyper_catalyst").setCreativeTab(PluginMod.miscTab);
         miscItem = new PluginItemInterface(10001).setUnlocalizedName("horn").setTextureName("plug:extra/horn").setCreativeTab(PluginMod.miscTab);
+        miscItem = new PluginItemInterface(10001).setUnlocalizedName("rope").setTextureName("plug:extra/rope").setCreativeTab(PluginMod.miscTab);
+        miscItem = new PluginItemInterface(10001).setUnlocalizedName("painkiller").setTextureName("plug:extra/painkiller").setCreativeTab(PluginMod.miscTab);
 
         miscItem = new PluginItemFoodInterface(10, 0.8F, true).setUnlocalizedName("burrito").setTextureName("plug:extra/burrito").setCreativeTab(PluginMod.miscTab);
 
