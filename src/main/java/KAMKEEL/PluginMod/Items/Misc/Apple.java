@@ -92,9 +92,9 @@ public class Apple extends ItemFood {
 
             if(dmg == 2){
                 // Vintage
-                // Total Health = 96 +  144 = 280
+                // Total Health = 96 +  192 = 288
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 24, 0));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 900, 3));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.regeneration.id, 1200, 3));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
             }
             else if(dmg == 3){
@@ -134,7 +134,7 @@ public class Apple extends ItemFood {
             else if(dmg == 7){
                 // Swift
                 // Total Health = 52 +  96 = 148
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 600, 3));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 900, 3));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -150,8 +150,8 @@ public class Apple extends ItemFood {
             else if(dmg == 9){
                 // Alert
                 // Total Health = 52 +  96 = 148
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.nightVision.id, 1800, 0));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 1800, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.nightVision.id, 3600, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 3600, 1));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -160,8 +160,8 @@ public class Apple extends ItemFood {
             else if(dmg == 10){
                 // Element
                 // Total Health = 52 +  96 = 148
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 1800, 0));
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 1800, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 3600, 0));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 3600, 0));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -178,7 +178,7 @@ public class Apple extends ItemFood {
             }
             else if(dmg == 12){
                 // Drunk
-                // Total Health = 52 +  165 = 148
+                // Total Health = 52 +  165 = 217
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.confusion.id, 900, 1));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 900, 3));

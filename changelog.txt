@@ -1,3 +1,6 @@
+@ 4.6
+-- Fixed Apples
+
 @ 4.5
 + Updated Blue Longsword Textured
 + Added Plug Ingot Text Data

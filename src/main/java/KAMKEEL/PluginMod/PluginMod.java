@@ -28,7 +28,7 @@ import org.lwjgl.Sys;
 
 import java.io.File;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "4.5")
+@Mod(modid = "plug", name = "The Plugin Mod", version = "4.6")
 public class PluginMod {
 
     @SidedProxy(clientSide = "KAMKEEL.PluginMod.Client.ClientProxy", serverSide = "KAMKEEL.PluginMod.CommonProxy")
