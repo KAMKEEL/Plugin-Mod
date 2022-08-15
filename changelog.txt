@@ -1,6 +1,6 @@
 @ 4.7
 + Treasure Cutlass
-+ Trasure Cutlass Parts
++ Treasure Cutlass Parts
 + Imperial Gold
 
 @ 4.6
