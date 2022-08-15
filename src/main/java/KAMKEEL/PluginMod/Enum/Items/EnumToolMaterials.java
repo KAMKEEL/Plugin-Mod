@@ -12,6 +12,7 @@ public enum EnumToolMaterials
     JUNGLE(2, 560, 6.0F, 7, 14),
     GLASS(1, 20, 16.0F, 10, 26),
     BLUE_STEEL(3, 1200, 8.0F, 7, 20),
+    IMPERIAL_GOLD(3, 1200, 8.0F, 7, 20),
     PLUGINMATERIAL(2, 20000, 6.0F, 7, 0),
     UNIQUEMATERIAL(2, 32000, 6.0F, 7, 0);
 

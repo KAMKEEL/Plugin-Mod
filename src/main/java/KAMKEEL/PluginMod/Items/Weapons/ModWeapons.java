@@ -68,6 +68,9 @@ public class ModWeapons {
     public static Item JungleAxeBroken;
     public static Item JungleAxe;
     public static Item JungleAxeEnergized;
+    public static Item TreasureCutlass;
+    public static Item TreasureCutlassEnergized;
+    public static Item TreasureCutlassBroken;
     //-----------------------------------------------------------------------//
 
     // Debug Items
@@ -147,6 +150,7 @@ public class ModWeapons {
         BlueLongSwordBroken = new ItemWeaponBroken(1, brokenTool).setFull3D().setUnlocalizedName("blue_longsword_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword_broken");
         JungleAxeBroken = new ItemBrokenJungleAxe(1, brokenTool).setFull3D().setUnlocalizedName("jungle_axe_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe_broken");
         GlassPanBroken = new ItemGlassPanBroken(1, brokenTool).setFull3D().setUnlocalizedName("glass_pan_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan_broken");
+        TreasureCutlassBroken = new ItemWeaponBroken(1, brokenTool).setFull3D().setUnlocalizedName("treasure_cutlass_broken").setMaxStackSize(1).setTextureName("plug:weapons/treasure_cutlass_broken");
 
         // Custom Weapons:
         BlueLongSword = new ItemUniqueWeapon(1, custom_blue_steel, true, false, BlueLongSwordBroken).setFull3D().setUnlocalizedName("blue_longsword_custom").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword");
@@ -176,6 +180,9 @@ public class ModWeapons {
         setTransformItems((ItemUniqueWeapon)DarkDagger, (ItemUniqueWeapon)DarkDaggerEnergized);
         setTransformItems((ItemUniqueWeapon)DarkDaggerReversed, (ItemUniqueWeapon)DarkDaggerReversedEnergized);
 
+        TreasureCutlass = new ItemUniqueWeapon(1, custom_imperial_gold, true, false, TreasureCutlassBroken).setFull3D().setUnlocalizedName("treasure_cutlass").setMaxStackSize(1).setTextureName("plug:weapons/treasure_cutlass");
+        TreasureCutlassEnergized = new ItemUniqueWeapon(1, custom_imperial_gold, true, false, TreasureCutlassBroken).setFull3D().setUnlocalizedName("treasure_cutlass_energized").setMaxStackSize(1).setTextureName("plug:weapons/treasure_cutlass_energized");
+        setTransformItems((ItemUniqueWeapon)TreasureCutlass, (ItemUniqueWeapon)TreasureCutlassEnergized);
 
         // General Customs:
         GeneralUniqueSword = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("aurora_katana").setMaxStackSize(1).setTextureName("plug:weapons/aurora_katana");
@@ -495,6 +502,8 @@ public class ModWeapons {
         createSword("valonite_sword", PluginMaterial);
         createSword("corrosive_sword", PluginMaterial);
         createSword("kuruzi_bat", PluginMaterial);
+
+        createSword("nether_cutlass", PluginMaterial);
     }
     public static void loadKatanas(){
 

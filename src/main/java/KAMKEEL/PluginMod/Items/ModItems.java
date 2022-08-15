@@ -44,6 +44,7 @@ public class ModItems {
     public static Item blue_steel_ingot;
     public static Item jungle_ingot;
     public static Item glass_shard;
+    public static Item imperial_gold_ingot;
 
     public static Item codium_ingot;
     public static Item damascus_ingot;
@@ -64,6 +65,9 @@ public class ModItems {
     public static Item JungleAxeHead;
     public static Item JungleAxeBinding;
     public static Item JungleAxeRod;
+    public static Item TreasureCutlassBlade;
+    public static Item TreasureCutlassHandle;
+    public static Item TreasureCutlassBinding;
 
     /**
      * Declare and register items. Do NOT add recipes here!
@@ -80,6 +84,7 @@ public class ModItems {
         jungle_ingot = new PluginItemInterface(26700).setUnlocalizedName("jungle_ingot").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/jungle_ingot");
         glass_shard = new PluginItemInterface(26700).setUnlocalizedName("glass_shard").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/glass_shard");
         plug_ingot = new PluginItemInterface(26712).setUnlocalizedName("plug_ingot").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/plug_ingot");
+        imperial_gold_ingot = new PluginItemInterface(26713).setUnlocalizedName("imperial_gold").setCreativeTab(PluginMod.miscTab).setTextureName("plug:materials/imperial_gold");
 
         // Load Weapons
         ModWeapons.init();
@@ -97,6 +102,10 @@ public class ModItems {
         JungleAxeHead = new PluginItemInterface(26709).setUnlocalizedName("jungle_axe_head").setCreativeTab(PluginMod.miscTab).setTextureName("plug:weapons/parts/jungle_axe_head");
         JungleAxeBinding = new PluginItemInterface(26710).setUnlocalizedName("jungle_axe_binding").setCreativeTab(PluginMod.miscTab).setTextureName("plug:weapons/parts/jungle_axe_binding");
         JungleAxeRod = new PluginItemInterface(26711).setUnlocalizedName("jungle_axe_rod").setCreativeTab(PluginMod.miscTab).setTextureName("plug:weapons/parts/jungle_axe_rod");
+        TreasureCutlassBlade = new PluginItemInterface(26709).setUnlocalizedName("treasure_cutlass_blade").setCreativeTab(PluginMod.miscTab).setTextureName("plug:weapons/parts/treasure_cutlass_blade");
+        TreasureCutlassBinding = new PluginItemInterface(26710).setUnlocalizedName("treasure_cutlass_binding").setCreativeTab(PluginMod.miscTab).setTextureName("plug:weapons/parts/treasure_cutlass_binding");
+        TreasureCutlassHandle = new PluginItemInterface(26711).setUnlocalizedName("treasure_cutlass_handle").setCreativeTab(PluginMod.miscTab).setTextureName("plug:weapons/parts/treasure_cutlass_handle");
+
 
         // Metadata Items:
         Pills = new Pills();
@@ -161,6 +170,8 @@ public class ModItems {
         custom_jungle.customCraftingMaterial = jungle_ingot;
         blue_steel.customCraftingMaterial = blue_steel_ingot;
         custom_blue_steel.customCraftingMaterial = blue_steel_ingot;
+        imperial_gold.customCraftingMaterial = imperial_gold_ingot;
+        custom_imperial_gold.customCraftingMaterial = imperial_gold_ingot;
         PluginMaterial.customCraftingMaterial = plug_ingot;
 
         OreDictCompact.registerOres();
@@ -177,6 +188,7 @@ public class ModItems {
         GameRegistry.addRecipe(new ItemStack(ModWeapons.JungleAxe), "  1", " 2 ", "34 ", '1', ModItems.JungleAxeHead, '2', ModItems.JungleAxeBinding, '3', ModItems.JungleAxeRod, '4', Items.lava_bucket);
         GameRegistry.addRecipe(new ItemStack(ModWeapons.DarkDagger), "  1", " 2 ", "34 ", '1', ModItems.DarkDaggerBlade, '2', ModItems.VoidCharm, '3', ModItems.DarkDaggerHandle, '4', Items.lava_bucket);
         GameRegistry.addRecipe(new ItemStack(ModWeapons.GlassPan), "  1", " 2 ", "34 ", '1', ModItems.GlassDisc, '2', ModItems.GlassPanBinding, '3', ModItems.GlassPanHandle, '4', Items.lava_bucket);
+        GameRegistry.addRecipe(new ItemStack(ModWeapons.TreasureCutlass), "  1", " 2 ", "34 ", '1', ModItems.TreasureCutlassBlade, '2', ModItems.TreasureCutlassBinding, '3', ModItems.TreasureCutlassHandle, '4', Items.lava_bucket);
 
         // Apple Recipes
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Apples, 1, 0), new ItemStack(Items.golden_apple, 1, 1));

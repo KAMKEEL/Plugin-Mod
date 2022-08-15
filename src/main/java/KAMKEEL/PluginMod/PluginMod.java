@@ -28,7 +28,7 @@ import org.lwjgl.Sys;
 
 import java.io.File;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "4.6")
+@Mod(modid = "plug", name = "The Plugin Mod", version = "4.7")
 public class PluginMod {
 
     @SidedProxy(clientSide = "KAMKEEL.PluginMod.Client.ClientProxy", serverSide = "KAMKEEL.PluginMod.CommonProxy")
@@ -42,7 +42,6 @@ public class PluginMod {
     public static PluginMod instance;
 
     // Config
-    public static File Dir;
     public static ConfigLoader Config;
 
 
@@ -75,8 +74,6 @@ public class PluginMod {
         } else {
             dir = Minecraft.getMinecraft().mcDataDir.getAbsolutePath();
         }
-        Dir = new File(dir, "PluginMod");
-        Dir.mkdir();
 
         Config = new ConfigLoader(this.getClass(), new File(dir, "config"), "PluginMod");
         Config.loadConfig();

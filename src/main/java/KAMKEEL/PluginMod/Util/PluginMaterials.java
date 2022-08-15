@@ -11,6 +11,7 @@ public class PluginMaterials {
 
     public static Item.ToolMaterial dark_metal = EnumHelper.addToolMaterial("DARK_METAL", EnumToolMaterials.DARK_METAL.getHarvestLevel(), EnumToolMaterials.DARK_METAL.getMaxUses(), EnumToolMaterials.DARK_METAL.getEfficiencyOnProperMaterial(), EnumToolMaterials.DARK_METAL.getDamageVsEntity(), EnumToolMaterials.DARK_METAL.getEnchantability());
     public static Item.ToolMaterial blue_steel = EnumHelper.addToolMaterial("BLUE_STEEL", EnumToolMaterials.BLUE_STEEL.getHarvestLevel(), EnumToolMaterials.BLUE_STEEL.getMaxUses(), EnumToolMaterials.BLUE_STEEL.getEfficiencyOnProperMaterial(), EnumToolMaterials.BLUE_STEEL.getDamageVsEntity(), EnumToolMaterials.BLUE_STEEL.getEnchantability());
+    public static Item.ToolMaterial imperial_gold = EnumHelper.addToolMaterial("IMPERIAL_GOLD", EnumToolMaterials.IMPERIAL_GOLD.getHarvestLevel(), EnumToolMaterials.IMPERIAL_GOLD.getMaxUses(), EnumToolMaterials.IMPERIAL_GOLD.getEfficiencyOnProperMaterial(), EnumToolMaterials.IMPERIAL_GOLD.getDamageVsEntity(), EnumToolMaterials.IMPERIAL_GOLD.getEnchantability());
     public static Item.ToolMaterial jungle = EnumHelper.addToolMaterial("JUNGLE", EnumToolMaterials.JUNGLE.getHarvestLevel(), EnumToolMaterials.JUNGLE.getMaxUses(), EnumToolMaterials.JUNGLE.getEfficiencyOnProperMaterial(), EnumToolMaterials.JUNGLE.getDamageVsEntity(), EnumToolMaterials.JUNGLE.getEnchantability());
     public static Item.ToolMaterial glass = EnumHelper.addToolMaterial("GLASS", EnumToolMaterials.GLASS.getHarvestLevel(), EnumToolMaterials.GLASS.getMaxUses(), EnumToolMaterials.GLASS.getEfficiencyOnProperMaterial(), EnumToolMaterials.GLASS.getDamageVsEntity(), EnumToolMaterials.GLASS.getEnchantability());
 
@@ -18,6 +19,7 @@ public class PluginMaterials {
     public static Item.ToolMaterial custom_blue_steel = EnumHelper.addToolMaterial("BLUE_STEEL", EnumToolMaterials.BLUE_STEEL.getHarvestLevel(), EnumToolMaterials.UNIQUEMATERIAL.getMaxUses(), EnumToolMaterials.BLUE_STEEL.getEfficiencyOnProperMaterial(), 7, 0);
     public static Item.ToolMaterial custom_jungle = EnumHelper.addToolMaterial("JUNGLE", EnumToolMaterials.JUNGLE.getHarvestLevel(), EnumToolMaterials.UNIQUEMATERIAL.getMaxUses(), EnumToolMaterials.JUNGLE.getEfficiencyOnProperMaterial(), 7, 0);
     public static Item.ToolMaterial custom_glass = EnumHelper.addToolMaterial("GLASS", EnumToolMaterials.GLASS.getHarvestLevel(), EnumToolMaterials.UNIQUEMATERIAL.getMaxUses(), EnumToolMaterials.GLASS.getEfficiencyOnProperMaterial(), 7, 0);
+    public static Item.ToolMaterial custom_imperial_gold = EnumHelper.addToolMaterial("IMPERIAL_GOLD", EnumToolMaterials.IMPERIAL_GOLD.getHarvestLevel(), EnumToolMaterials.UNIQUEMATERIAL.getMaxUses(), EnumToolMaterials.IMPERIAL_GOLD.getEfficiencyOnProperMaterial(), 7, 0);
     public static Item.ToolMaterial random = EnumHelper.addToolMaterial("RANDOM", EnumToolMaterials.GLASS.getHarvestLevel(), 5, EnumToolMaterials.GLASS.getEfficiencyOnProperMaterial(), 7, 0);
 
     public static Item.ToolMaterial brokenTool = EnumHelper.addToolMaterial("BROKEN", Item.ToolMaterial.IRON.getHarvestLevel(), 0, Item.ToolMaterial.IRON.getEfficiencyOnProperMaterial(), 1, 0);

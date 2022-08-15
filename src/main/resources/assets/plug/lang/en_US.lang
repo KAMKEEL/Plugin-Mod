@@ -949,6 +949,8 @@ item.plug:valonite_sword.name=Valonite Sword
 item.plug:corrosive_sword.name=Corrosive Sword
 item.plug:kuruzi_bat.name=Kuruzi Bat
 
+item.plug:nether_cutlass.name=Nether Cutlass
+
 ################# Shields
 item.plug:blackstone_shield.name=Blackstone Shield
 item.plug:blue_steel_shield.name=Blue Steel Shield
@@ -1054,6 +1056,10 @@ item.plug:reverse_glass_dagger.name=Reveresed Glass Dagger
 item.plug:aurora_katana.name=Aurora Katana
 item.plug:aurora_katana_energized.name=Energized Aurora Katana
 
+item.plug:treasure_cutlass_broken.name=Broken Treasure Cutlass
+item.plug:treasure_cutlass.name=Treasure Cutlass
+item.plug:treasure_cutlass_energized.name=Energized Treasure Cutlass
+
 ################# Materials
 item.plug:dark_metal.name=Dark Metal Ingot
 item.plug:blue_steel.name=Blue Steel Ingot
@@ -1061,6 +1067,7 @@ item.plug:jungle_ingot.name=Jungle Ingot
 item.plug:codium_ingot.name=Codium Ingot
 item.plug:deep_ingot.name=Deep Ingot
 item.plug:plug_ingot.name=Plug Ingot
+item.plug:imperial_gold.name=Imperial Gold
 item.plug:damascus_ingot.name=Damascus Ingot
 item.plug:energy_quartz.name=Energy Quartz
 item.plug:energy_catalyst.name=Energy Catalyst
@@ -1080,6 +1087,9 @@ item.plug:glass_pan_binding.name=Glass Weapon Binding
 item.plug:jungle_axe_head.name=Jungle Axe Head
 item.plug:jungle_axe_binding.name=Vine Binding
 item.plug:jungle_axe_rod.name=Jungle Axe Rod
+item.plug:treasure_cutlass_blade.name=Imperial Edge
+item.plug:treasure_cutlass_binding.name=Root Binding
+item.plug:treasure_cutlass_handle.name=Pirate Handle
 
 ################# Apples
 item.plug:classic_apple.name=Classic Apple
