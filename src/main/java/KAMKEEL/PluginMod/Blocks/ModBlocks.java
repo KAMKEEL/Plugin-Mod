@@ -47,6 +47,9 @@ public class ModBlocks {
      * Declare and register items. Do NOT add recipes here!
      */
     public static void init() {
+        if(ConfigBlocks.DisableAllBlocks){
+           return;
+        }
 
         // Blocks:
         if(ConfigBlocks.DarkBlocks){

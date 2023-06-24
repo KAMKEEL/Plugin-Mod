@@ -16,6 +16,9 @@ public class ConfigBlocks
     /**
      *  General Properties
      **/
+    public static Property DisableAllBlocksProperty;
+    public static boolean DisableAllBlocks = false;
+
     public static Property DarkBlocksProperty;
     public static boolean DarkBlocks = true;
 
@@ -40,6 +43,9 @@ public class ConfigBlocks
             config.load();
 
             // General
+            DisableAllBlocksProperty = config.get(GENERAL, "Disable All Blocks", false);
+            DisableAllBlocks = DisableAllBlocksProperty.getBoolean(false);
+
             DarkBlocksProperty = config.get(GENERAL, "Enable Dark", true);
             DarkBlocks = DarkBlocksProperty.getBoolean(true);
 
