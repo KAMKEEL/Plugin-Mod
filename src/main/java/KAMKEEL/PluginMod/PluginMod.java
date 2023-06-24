@@ -3,8 +3,7 @@ package KAMKEEL.PluginMod;
 import KAMKEEL.PluginMod.Blocks.ModBlocks;
 import KAMKEEL.PluginMod.Compat.CompatibilityBiomesOPlenty;
 import KAMKEEL.PluginMod.Compat.CompatibilityExtraUtilities;
-import KAMKEEL.PluginMod.Config.ConfigLoader;
-import KAMKEEL.PluginMod.Config.ConfigProp;
+import KAMKEEL.PluginMod.Config.LoadConfiguration;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Network.NetworkHandler;
 import cpw.mods.fml.common.Loader;
@@ -24,11 +23,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
-import org.lwjgl.Sys;
 
 import java.io.File;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "4.7")
+@Mod(modid = "plug", name = "The Plugin Mod", version = "5.0")
 public class PluginMod {
 
     @SidedProxy(clientSide = "KAMKEEL.PluginMod.Client.ClientProxy", serverSide = "KAMKEEL.PluginMod.CommonProxy")
@@ -38,21 +36,10 @@ public class PluginMod {
     public static FMLEventChannel ChannelPlayer;
 
     private static int NewEntityStartId = 0;
-
     public static PluginMod instance;
 
     // Config
-    public static ConfigLoader Config;
-
-
-//    @ConfigProp(info = "Disable Concrete Blocks")
-//    public static boolean EnableConcrete = true;
-//
-//    @ConfigProp(info = "Disable Barrels")
-//    public static boolean EnableBarrels = true;
-//
-//    @ConfigProp(info = "Disable Energy Blocks")
-//    public static boolean EnableEnergy = true;
+    public static String configPath;
 
 
     public PluginMod() {
@@ -67,19 +54,11 @@ public class PluginMod {
 
         NetworkHandler.init();
 
-        MinecraftServer server = MinecraftServer.getServer();
-        String dir = "";
-        if (server != null) {
-            dir = new File(".").getAbsolutePath();
-        } else {
-            dir = Minecraft.getMinecraft().mcDataDir.getAbsolutePath();
-        }
-
-        Config = new ConfigLoader(this.getClass(), new File(dir, "config"), "PluginMod");
-        Config.loadConfig();
+        configPath = event.getModConfigurationDirectory() + File.separator + "PluginMod";
+        configPath += File.separator;
+        LoadConfiguration.init(configPath);
 
         proxy.preInnit();
-
     }
 
     @Mod.EventHandler
