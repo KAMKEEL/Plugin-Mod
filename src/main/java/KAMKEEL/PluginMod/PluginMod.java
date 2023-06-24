@@ -3,6 +3,7 @@ package KAMKEEL.PluginMod;
 import KAMKEEL.PluginMod.Blocks.ModBlocks;
 import KAMKEEL.PluginMod.Compat.CompatibilityBiomesOPlenty;
 import KAMKEEL.PluginMod.Compat.CompatibilityExtraUtilities;
+import KAMKEEL.PluginMod.Config.ConfigCompat;
 import KAMKEEL.PluginMod.Config.LoadConfiguration;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Network.NetworkHandler;
@@ -65,11 +66,14 @@ public class PluginMod {
     public void init(FMLInitializationEvent event) {
         //Proxy, TitleEntity, Entity, GUI and Packet Register
         proxy.load();
-
         registerNewEntity(EntityProjectile.class, "throwableitem", 64, 3, true);
 
-        registerCompat(CompatibilityExtraUtilities.class, "ExtraUtilities");
-        registerCompat(CompatibilityBiomesOPlenty.class, "BiomesOPlenty");
+        if(ConfigCompat.BiomesOPlenty){
+            registerCompat(CompatibilityBiomesOPlenty.class, "BiomesOPlenty");
+        }
+        if(ConfigCompat.ExtraUtilities){
+            registerCompat(CompatibilityExtraUtilities.class, "ExtraUtilities");
+        }
     }
 
     @Mod.EventHandler
