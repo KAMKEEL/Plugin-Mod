@@ -21,6 +21,7 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
@@ -102,9 +103,13 @@ public class PluginMod {
         }
     };
 
+
     public static CreativeTabs blocksTab = new CreativeTabs(LocalizationHelper.MOD_PREFIX + "blocks") {
         @Override
         public Item getTabIconItem() {
+            if(ModBlocks.Cherry_Barrel == null){
+                return new ItemStack(Blocks.enchanting_table).getItem();
+            }
             return new ItemStack(ModBlocks.Cherry_Barrel).getItem();
         }
     };

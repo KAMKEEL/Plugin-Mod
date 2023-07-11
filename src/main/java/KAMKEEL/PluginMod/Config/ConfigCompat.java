@@ -40,7 +40,7 @@ public class ConfigCompat
         }
         catch (Exception e)
         {
-            FMLLog.log(Level.ERROR, e, "PluginMod has had a problem loading its main configuration");
+            FMLLog.log(Level.ERROR, e, "PluginMod has had a problem loading its compat configuration");
         }
         finally
         {
