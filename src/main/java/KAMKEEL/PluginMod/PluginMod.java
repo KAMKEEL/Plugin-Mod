@@ -4,6 +4,7 @@ import KAMKEEL.PluginMod.Blocks.ModBlocks;
 import KAMKEEL.PluginMod.Compat.CompatibilityBiomesOPlenty;
 import KAMKEEL.PluginMod.Compat.CompatibilityExtraUtilities;
 import KAMKEEL.PluginMod.Config.ConfigCompat;
+import KAMKEEL.PluginMod.Config.ConfigItems;
 import KAMKEEL.PluginMod.Config.LoadConfiguration;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Network.NetworkHandler;
@@ -85,21 +86,34 @@ public class PluginMod {
     public static CreativeTabs cardsTab = new CreativeTabs(LocalizationHelper.MOD_PREFIX + "playingCardTab") {
         @Override
         public Item getTabIconItem() {
-            return new ItemStack(ModItems.CardIcon).getItem();
+            if (ConfigItems.CardItems) {
+                return new ItemStack(ModItems.CardIcon).getItem();
+            } else {
+                return new ItemStack(net.minecraft.init.Items.stick).getItem();
+            }
         }
     };
-
     public static CreativeTabs miscTab = new CreativeTabs(LocalizationHelper.MOD_PREFIX + "misc") {
         @Override
         public Item getTabIconItem() {
-            return new ItemStack(ModItems.TreasureMap).getItem();
+            if (ConfigItems.MiscItems) {
+                return new ItemStack(ModItems.TreasureMap).getItem();
+            } else {
+                return new ItemStack(net.minecraft.init.Items.stick).getItem();
+            }
+
         }
     };
 
     public static CreativeTabs weaponTab = new CreativeTabs(LocalizationHelper.MOD_PREFIX + "weapons") {
         @Override
         public Item getTabIconItem() {
-            return new ItemStack(ModItems.PaperBomb).getItem();
+            if (ConfigItems.MiscItems) {
+                return new ItemStack(ModItems.PaperBomb).getItem();
+            } else {
+                return new ItemStack(net.minecraft.init.Items.diamond_sword).getItem();
+            }
+
         }
     };
 
