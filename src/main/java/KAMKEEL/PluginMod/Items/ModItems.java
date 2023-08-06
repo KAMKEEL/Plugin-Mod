@@ -1,5 +1,6 @@
 package KAMKEEL.PluginMod.Items;
 
+import KAMKEEL.PluginMod.Config.ConfigItem;
 import KAMKEEL.PluginMod.Items.Cards.*;
 import KAMKEEL.PluginMod.Items.Misc.*;
 import KAMKEEL.PluginMod.Items.Weapons.*;
@@ -108,57 +109,72 @@ public class ModItems {
 
 
         // Metadata Items:
-        Pills = new Pills();
-        GameRegistry.registerItem(Pills, "pills");
+        if(ConfigItem.EnablePills) {
+            Pills = new Pills();
+            GameRegistry.registerItem(Pills, "pills");
+        }
         Coins = new Coins();
         GameRegistry.registerItem(Coins, "coins");
-        Eyes = new Eyes();
-        GameRegistry.registerItem(Eyes, "eyes");
-        Balls = new Balls();
-        GameRegistry.registerItem(Balls, "balls");
-        Artifacts = new Artifacts();
-        GameRegistry.registerItem(Artifacts, "artifacts");
-        EnergyAttacks = new Energy();
-        GameRegistry.registerItem(EnergyAttacks, "energy");
-        Apples = new Apple(4, 1.2F, false);
-        GameRegistry.registerItem(Apples, "apples");
+        if(ConfigItem.EnableEyes) {
+            Eyes = new Eyes();
+            GameRegistry.registerItem(Eyes, "eyes");
+        }
+        if(ConfigItem.EnableBalls) { //0.o
+            Balls = new Balls();
+            GameRegistry.registerItem(Balls, "balls");
+        }
+        if(ConfigItem.EnableArtifacts) {
+            Artifacts = new Artifacts();
+            GameRegistry.registerItem(Artifacts, "artifacts");
+        }
+        if(ConfigItem.EnableEnergyAttacks) {
+            EnergyAttacks = new Energy();
+            GameRegistry.registerItem(EnergyAttacks, "energy");
+        }
+        if(ConfigItem.EnableApples) {
+            Apples = new Apple(4, 1.2F, false);
+            GameRegistry.registerItem(Apples, "apples");
+        }
 
-        TreasureMap = new TreasureMap().setUnlocalizedName("TreasureMap").setTextureName("plug:extra/treasuremap");
-        GameRegistry.registerItem(TreasureMap, TreasureMap.getUnlocalizedName());
-        PaperBomb = new PaperBomb().setUnlocalizedName("PaperBomb").setTextureName("plug:weapons/paperbomb");
-        GameRegistry.registerItem(PaperBomb, PaperBomb.getUnlocalizedName());
+        if(ConfigItem.EnableMisc) {
+            TreasureMap = new TreasureMap().setUnlocalizedName("TreasureMap").setTextureName("plug:extra/treasuremap");
+            GameRegistry.registerItem(TreasureMap, TreasureMap.getUnlocalizedName());
+            PaperBomb = new PaperBomb().setUnlocalizedName("PaperBomb").setTextureName("plug:weapons/paperbomb");
+            GameRegistry.registerItem(PaperBomb, PaperBomb.getUnlocalizedName());
 
-        Item miscItem = new PluginItemInterface(10001).setUnlocalizedName("medkit").setTextureName("plug:extra/medkit").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("bandages").setTextureName("plug:extra/bandages").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("bell").setTextureName("plug:extra/bell").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("energy_catalyst").setTextureName("plug:materials/catalyst").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("hyper_catalyst").setTextureName("plug:materials/hyper_catalyst").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("horn").setTextureName("plug:extra/horn").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("rope").setTextureName("plug:extra/rope").setCreativeTab(PluginMod.miscTab);
-        miscItem = new PluginItemInterface(10001).setUnlocalizedName("painkiller").setTextureName("plug:extra/painkiller").setCreativeTab(PluginMod.miscTab);
+            Item miscItem = new PluginItemInterface(10001).setUnlocalizedName("medkit").setTextureName("plug:extra/medkit").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemInterface(10001).setUnlocalizedName("bandages").setTextureName("plug:extra/bandages").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemInterface(10001).setUnlocalizedName("bell").setTextureName("plug:extra/bell").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemInterface(10001).setUnlocalizedName("energy_catalyst").setTextureName("plug:materials/catalyst").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemInterface(10001).setUnlocalizedName("hyper_catalyst").setTextureName("plug:materials/hyper_catalyst").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemInterface(10001).setUnlocalizedName("horn").setTextureName("plug:extra/horn").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemInterface(10001).setUnlocalizedName("rope").setTextureName("plug:extra/rope").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemInterface(10001).setUnlocalizedName("painkiller").setTextureName("plug:extra/painkiller").setCreativeTab(PluginMod.miscTab);
 
-        miscItem = new PluginItemFoodInterface(10, 0.8F, true).setUnlocalizedName("burrito").setTextureName("plug:extra/burrito").setCreativeTab(PluginMod.miscTab);
+            miscItem = new PluginItemFoodInterface(10, 0.8F, true).setUnlocalizedName("burrito").setTextureName("plug:extra/burrito").setCreativeTab(PluginMod.miscTab);
 
+            VoidRasenshuriken = new VoidRasenshuriken(10001, random).setUnlocalizedName("VoidRasenshuriken").setTextureName("plug:energy/voidrasenshuriken");
+            MassiveRasengan = new MassiveRasengan().setUnlocalizedName("massiverasengan").setTextureName("plug:energy/massive_rasengan");
+            MassiveRasenganSpin = new MassiveRasengan().setUnlocalizedName("massiverasengan_spin").setTextureName("plug:energy/massive_rasengan_spin");
+        }
 
-        VoidRasenshuriken = new VoidRasenshuriken(10001, random).setUnlocalizedName("VoidRasenshuriken").setTextureName("plug:energy/voidrasenshuriken");
-        MassiveRasengan = new MassiveRasengan().setUnlocalizedName("massiverasengan").setTextureName("plug:energy/massive_rasengan");
-        MassiveRasenganSpin = new MassiveRasengan().setUnlocalizedName("massiverasengan_spin").setTextureName("plug:energy/massive_rasengan_spin");
-
-        // Cards
-        HeartCard = new HeartCard();
-        GameRegistry.registerItem(HeartCard, "hearts_card");
-        DiamondCard = new DiamondCard();
-        GameRegistry.registerItem(DiamondCard, "diamond_card");
-        SpadeCard = new SpadeCard();
-        GameRegistry.registerItem(SpadeCard, "spade_card");
-        ClubsCard = new ClubsCard();
-        GameRegistry.registerItem(ClubsCard, "clubs_card");
-        JokerCard = new JokerCard();
-        GameRegistry.registerItem(JokerCard, "joker_card");
-        CardIcon = new CardIcon().setUnlocalizedName("CardIcon").setTextureName("plug:cards/plugcard");
-        GameRegistry.registerItem(CardIcon, CardIcon.getUnlocalizedName());
-        AddonCard = new AddonCard();
-        GameRegistry.registerItem(AddonCard, "addon_card");
+        if(ConfigItem.EnableCards) {
+            // Cards
+            HeartCard = new HeartCard();
+            GameRegistry.registerItem(HeartCard, "hearts_card");
+            DiamondCard = new DiamondCard();
+            GameRegistry.registerItem(DiamondCard, "diamond_card");
+            SpadeCard = new SpadeCard();
+            GameRegistry.registerItem(SpadeCard, "spade_card");
+            ClubsCard = new ClubsCard();
+            GameRegistry.registerItem(ClubsCard, "clubs_card");
+            JokerCard = new JokerCard();
+            GameRegistry.registerItem(JokerCard, "joker_card");
+            CardIcon = new CardIcon().setUnlocalizedName("CardIcon").setTextureName("plug:cards/plugcard");
+            GameRegistry.registerItem(CardIcon, CardIcon.getUnlocalizedName());
+            AddonCard = new AddonCard();
+            GameRegistry.registerItem(AddonCard, "addon_card");
+        }
 
         // Ingot Assignment
         dark_metal.customCraftingMaterial = dark_metal_ingot;
