@@ -22,6 +22,9 @@ public class ConfigBlocks
     public static Property DarkBlocksProperty;
     public static boolean DarkBlocks = true;
 
+    public static Property MidnightBlocksProperty;
+    public static boolean MidnightBlocks = true;
+
     public static Property CaveVinesBlocksProperty;
     public static boolean CaveVinesBlocks = true;
 
@@ -48,6 +51,9 @@ public class ConfigBlocks
 
             DarkBlocksProperty = config.get(GENERAL, "Enable Dark", true);
             DarkBlocks = DarkBlocksProperty.getBoolean(true);
+
+            MidnightBlocksProperty = config.get(GENERAL, "Enable Midnight", true);
+            MidnightBlocks = MidnightBlocksProperty.getBoolean(true);
 
             CaveVinesBlocksProperty = config.get(GENERAL, "Enable Cave Vines", true);
             CaveVinesBlocks = CaveVinesBlocksProperty.getBoolean(true);

@@ -3,6 +3,7 @@ package KAMKEEL.PluginMod.Blocks;
 import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockCaveVines;
 import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockCaveVinesGrowing;
 import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockDark;
+import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockMidnight;
 import KAMKEEL.PluginMod.Config.ConfigBlocks;
 import KAMKEEL.PluginMod.LocalizationHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -24,6 +25,7 @@ public class ModBlocks {
 
     // Blocks
     public static Block Dark;
+    public static Block Midnight;
     public static Block Barrel;
 
     public static Block caveVines;
@@ -55,6 +57,11 @@ public class ModBlocks {
         if(ConfigBlocks.DarkBlocks){
             Dark = new BlockDark();
             GameRegistry.registerBlock(Dark, ItemBlockDark.class, "dark");
+        }
+
+        if(ConfigBlocks.MidnightBlocks){
+            Midnight = new BlockMidnight();
+            GameRegistry.registerBlock(Midnight, ItemBlockMidnight.class, "midnight");
         }
 
 
