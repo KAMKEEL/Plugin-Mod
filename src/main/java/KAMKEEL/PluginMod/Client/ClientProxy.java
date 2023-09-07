@@ -2,6 +2,7 @@ package KAMKEEL.PluginMod.Client;
 
 import KAMKEEL.PluginMod.Client.Render.*;
 import KAMKEEL.PluginMod.CommonProxy;
+import KAMKEEL.PluginMod.Config.ConfigItems;
 import KAMKEEL.PluginMod.Entity.EntityProjectile;
 import KAMKEEL.PluginMod.Items.ModItems;
 import KAMKEEL.PluginMod.Items.Weapons.ModWeapons;
@@ -61,19 +62,25 @@ public class ClientProxy extends CommonProxy {
         // Transparent Item Renderer
         TransparentItemRenderer transparentItemRenderer = new TransparentItemRenderer(mc.gameSettings, mc.getTextureManager());
 
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassBlade, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassKunai, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassKunaiReversed, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassDagger, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassDaggerReversed, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.GlassDisc, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPan, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPanEnergized, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPanBroken, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassCutlass, transparentItemRenderer);
-        MinecraftForgeClient.registerItemRenderer(ModItems.glass_shard, transparentItemRenderer);
+        if(!ConfigItems.DisableAllItems){
+            if(ConfigItems.GlassWeapons && !ConfigItems.DisableAllWeapons){
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassBlade, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassKunai, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassKunaiReversed, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassDagger, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassDaggerReversed, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModItems.GlassDisc, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPan, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPanEnergized, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassPanBroken, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.GlassCutlass, transparentItemRenderer);
+                MinecraftForgeClient.registerItemRenderer(ModWeapons.CrystalSpear, transparentItemRenderer);
+            }
 
-        MinecraftForgeClient.registerItemRenderer(ModWeapons.CrystalSpear, transparentItemRenderer);
+            if(ConfigItems.SpecialWeaponItems && !ConfigItems.DisableAllWeapons){
+                MinecraftForgeClient.registerItemRenderer(ModItems.glass_shard, transparentItemRenderer);
+            }
+        }
     }
 
     public void renderBlocks(){

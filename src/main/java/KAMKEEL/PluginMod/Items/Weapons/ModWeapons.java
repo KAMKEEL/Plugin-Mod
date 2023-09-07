@@ -1,5 +1,6 @@
 package KAMKEEL.PluginMod.Items.Weapons;
 
+import KAMKEEL.PluginMod.Config.ConfigItems;
 import KAMKEEL.PluginMod.Enum.Items.EnumToolMaterials;
 import KAMKEEL.PluginMod.Items.Weapons.Broken.ItemBrokenDagger;
 import KAMKEEL.PluginMod.Items.Weapons.Broken.ItemBrokenJungleAxe;
@@ -206,7 +207,6 @@ public class ModWeapons {
         ((ItemGlassDagger) GlassDagger).setReverseState(GlassDaggerReversed);
 
         CrystalSpear = new ItemCrystalSpear(glass).setUnlocalizedName("crystal_spear").setFull3D().setMaxStackSize(1).setTextureName("plug:weapons/crystal_spear");
-
     }
 
     public static void loadDaggers(){
@@ -633,25 +633,57 @@ public class ModWeapons {
     }
 
     public static void init() {
-        loadUniqueWeapons();
-        loadGlassWeapons();
+        if(ConfigItems.SpecialWeaponItems){
+            loadUniqueWeapons();
+        }
 
-        loadDaggers();
-        loadSpears();
-        loadWarAxes();
-        loadBattleAxe();
-        loadHammers();
-        loadSwords();
-        loadKatanas();
-        loadBroadswords();
-        loadStaffs();
-        loadScythes();
-        loadClaws();
+        if(ConfigItems.GlassWeapons) {
+            loadGlassWeapons();
+        }
 
-        loadBows();
-        loadShields();
+        if(ConfigItems.DaggerWeapons){
+            loadDaggers();
+        }
+        if(ConfigItems.SpearWeapons){
+            loadSpears();
+        }
+        if(ConfigItems.WarAxeWeapons){
+            loadWarAxes();
+        }
+        if(ConfigItems.BattleAxeWeapons){
+            loadBattleAxe();
+        }
+        if(ConfigItems.HammerWeapons){
+            loadHammers();
+        }
+        if(ConfigItems.SwordWeapons){
+            loadSwords();
+        }
+        if(ConfigItems.KatanaWeapons){
+            loadKatanas();
+        }
+        if(ConfigItems.BroadswordWeapons){
+            loadBroadswords();
+        }
+        if(ConfigItems.StaffWeapons){
+            loadStaffs();
+        }
+        if(ConfigItems.ScytheWeapons){
+            loadScythes();
+        }
+        if(ConfigItems.ClawWeapons){
+            loadClaws();
+        }
+        if(ConfigItems.BowWeapons){
+            loadBows();
+        }
+        if(ConfigItems.ShieldWeapons){
+            loadShields();
+        }
+        if(ConfigItems.SpecialWeaponItems){
+            loadDebugWeapons();
+        }
 
-        loadDebugWeapons();
     }
 
 }
