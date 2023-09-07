@@ -10,6 +10,28 @@ tile.plug:dark_puresignature.name=Signature Pure Dark
 tile.plug:dark_impure.name=Impure Dark
 tile.plug:dark_pure.name=Pure Dark
 
+tile.plug:midnight_base.name=Midnight
+tile.plug:midnight_natural.name=Natural Midnight
+tile.plug:midnight_pure.name=Pure Midnight
+tile.plug:midnight_hyper.name=Hyper Midnight
+tile.plug:midnight_compressed.name=Compressed Midnight
+
+tile.plug:deepcrystal_dark.name=Dark Crystal
+tile.plug:deepcrystal_puredark.name=Pure Dark Crystal
+tile.plug:deepcrystal_toxic.name=Toxic Crystal
+tile.plug:deepcrystal_void.name=Void Crystal
+tile.plug:deepcrystal_purevoid.name=Pure Void Crystal
+tile.plug:deepcrystal_ovy.name=Ovy Crystal
+tile.plug:deepcrystal_rune.name=Rune Crystal
+tile.plug:deepcrystal_grey.name=Grey Crystal
+
+tile.plug:rage_lucid.name=Lucid
+tile.plug:rage_base.name=Rage
+tile.plug:rage_natural.name=Natural Rage
+tile.plug:rage_pure.name=Pure Rage
+tile.plug:rage_danger.name=Danger Rage
+tile.plug:rage_compressed.name=Compressed Rage
+
 tile.plug:jungle_barrel.name=Jungle Barrel
 tile.plug:spruce_barrel.name=Spruce Barrel
 tile.plug:birch_barrel.name=Birch Barrel
