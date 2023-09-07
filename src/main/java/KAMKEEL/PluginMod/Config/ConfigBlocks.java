@@ -25,6 +25,12 @@ public class ConfigBlocks
     public static Property MidnightBlocksProperty;
     public static boolean MidnightBlocks = true;
 
+    public static Property RageBlocksProperty;
+    public static boolean RageBlocks = true;
+
+    public static Property DeepCrystalBlocksProperty;
+    public static boolean DeepCrystalBlocks = true;
+
     public static Property CaveVinesBlocksProperty;
     public static boolean CaveVinesBlocks = true;
 
@@ -54,6 +60,12 @@ public class ConfigBlocks
 
             MidnightBlocksProperty = config.get(GENERAL, "Enable Midnight", true);
             MidnightBlocks = MidnightBlocksProperty.getBoolean(true);
+
+            RageBlocksProperty = config.get(GENERAL, "Enable Rage", true);
+            RageBlocks = RageBlocksProperty.getBoolean(true);
+
+            DeepCrystalBlocksProperty = config.get(GENERAL, "Enable Deep Crystal", true);
+            DeepCrystalBlocks = DeepCrystalBlocksProperty.getBoolean(true);
 
             CaveVinesBlocksProperty = config.get(GENERAL, "Enable Cave Vines", true);
             CaveVinesBlocks = CaveVinesBlocksProperty.getBoolean(true);

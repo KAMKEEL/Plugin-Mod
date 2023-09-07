@@ -1,6 +1,6 @@
 package KAMKEEL.PluginMod.Blocks;
 
-import KAMKEEL.PluginMod.Enum.Blocks.EnumMidnight;
+import KAMKEEL.PluginMod.Enum.Blocks.EnumRage;
 import KAMKEEL.PluginMod.PluginMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -12,11 +12,11 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class BlockMidnight extends Block {
+public class BlockRage extends Block {
 
     protected IIcon[] icons;
 
-    public BlockMidnight(){
+    public BlockRage(){
         super(Material.rock);
 
         this.setHardness(3.0f);
@@ -24,8 +24,8 @@ public class BlockMidnight extends Block {
         this.setStepSound(Block.soundTypeStone);
         this.setCreativeTab(PluginMod.blocksTab);
 
-        for(EnumMidnight midnight : EnumMidnight.values()){
-            this.setHarvestLevel("pickaxe", midnight.getHarvestLevel(), midnight.getMeta());
+        for(EnumRage rage : EnumRage.values()){
+            this.setHarvestLevel("pickaxe", rage.getHarvestLevel(), rage.getMeta());
         }
 
     }
@@ -38,26 +38,26 @@ public class BlockMidnight extends Block {
 
     @Override
     public void getSubBlocks(Item item, CreativeTabs tab, List list){
-        for (EnumMidnight midnight: EnumMidnight.values()){
-            list.add(new ItemStack(item, 1, midnight.getMeta()));
+        for (EnumRage rage: EnumRage.values()){
+            list.add(new ItemStack(item, 1, rage.getMeta()));
         }
     }
 
     @Override
     public void registerBlockIcons(IIconRegister reg){
 
-        icons = new IIcon[EnumMidnight.count()];
-        String prefix = "plug:midnight_";
+        icons = new IIcon[EnumRage.count()];
+        String prefix = "plug:rage_";
 
-        for(EnumMidnight midnight : EnumMidnight.values()){
-            icons[midnight.getMeta()] = reg.registerIcon(prefix + midnight.getName().toLowerCase());
+        for(EnumRage rage : EnumRage.values()){
+            icons[rage.getMeta()] = reg.registerIcon(prefix + rage.getName().toLowerCase());
         }
     }
 
     @Override
     public IIcon getIcon(int side, int meta){
 
-        if(meta >= 0 && meta < EnumMidnight.count()){
+        if(meta >= 0 && meta < EnumRage.count()){
             return icons[meta];
         }
         return null;

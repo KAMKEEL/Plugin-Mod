@@ -1,13 +1,11 @@
 package KAMKEEL.PluginMod.Blocks;
 
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockCaveVines;
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockCaveVinesGrowing;
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockDark;
-import KAMKEEL.PluginMod.Blocks.ItemBlock.ItemBlockMidnight;
+import KAMKEEL.PluginMod.Blocks.ItemBlock.*;
 import KAMKEEL.PluginMod.Config.ConfigBlocks;
 import KAMKEEL.PluginMod.LocalizationHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.tileentity.TileEntity;
 
@@ -26,6 +24,8 @@ public class ModBlocks {
     // Blocks
     public static Block Dark;
     public static Block Midnight;
+    public static Block Rage;
+    public static Block DeepCrystal;
     public static Block Barrel;
 
     public static Block caveVines;
@@ -64,6 +64,15 @@ public class ModBlocks {
             GameRegistry.registerBlock(Midnight, ItemBlockMidnight.class, "midnight");
         }
 
+        if(ConfigBlocks.RageBlocks){
+            Rage = new BlockRage();
+            GameRegistry.registerBlock(Rage, ItemBlockRage.class, "rage");
+        }
+
+        if(ConfigBlocks.DeepCrystalBlocks){
+            DeepCrystal = new BlockDeepCrystal();
+            GameRegistry.registerBlock(DeepCrystal, ItemBlockDeepCrystal.class, "deep_crystal");
+        }
 
         if(ConfigBlocks.CaveVinesBlocks){
             caveVines = registerBlock(new BlockCaveVines().setBlockName(LocalizationHelper.MOD_PREFIX + "caveVines"), (Class<? extends ItemBlock>) ItemBlockCaveVines.class);
