@@ -1,3 +1,9 @@
+@ 5.0
++ Added Config
++ Added Midnight Block
++ Added Rage Block
++ Added Deep Crystal Block
+
 @ 4.7
 + Treasure Cutlass
 + Treasure Cutlass Parts
