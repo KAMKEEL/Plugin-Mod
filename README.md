@@ -2,7 +2,7 @@
 
 ### Description
 
-1.7.10 Minecraft Mod created by Kam (M.C Username) / @KAMKEEL for RPG/Storytelling Servers.
+1.7.10 Minecraft Mod created by Kam (M.C Username) / @kamkeel for RPG/Storytelling Servers.
 
 This mod adds various weapons and aestetic items to minecraft 1.7.10 for the sole purpose of allowing RPG Servers to rename and use these items in various forms of story telling. Some of these items do have custom effects and abilities like allowing for reversed orientation of daggers or throwable kunai.
 
