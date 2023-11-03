@@ -11,7 +11,15 @@ public class ConfigCompat
 {
     public static Configuration config;
 
+    public final static String SERVER = "SERVER";
     public final static String GENERAL = "General";
+
+
+    /**
+     *  Client Properties
+     **/
+    public static Property KeybindingsProperty;
+    public static boolean Keybindings = true;
 
     /**
      *  General Properties
@@ -29,6 +37,9 @@ public class ConfigCompat
         try
         {
             config.load();
+
+            KeybindingsProperty = config.get(SERVER, "Enable Keybinds", true, "Client should also disable this for visual look");
+            Keybindings = KeybindingsProperty.getBoolean(true);
 
             // General
             ExtraUtilitiesProperty = config.get(GENERAL, "Enable Extra Utilities Compat", true);

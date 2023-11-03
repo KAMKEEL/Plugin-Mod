@@ -2,6 +2,7 @@ package kamkeel.plugin.Client;
 
 import kamkeel.plugin.Client.Render.*;
 import kamkeel.plugin.CommonProxy;
+import kamkeel.plugin.Config.ConfigCompat;
 import kamkeel.plugin.Config.ConfigItems;
 import kamkeel.plugin.Entity.EntityProjectile;
 import kamkeel.plugin.Items.ModItems;
@@ -30,12 +31,16 @@ public class ClientProxy extends CommonProxy {
     public void preInnit() {
         super.preInnit();
 
-        // Register KeyHandler
-        for(Keybindings key : Keybindings.values()) {
-            ClientRegistry.registerKeyBinding(key.getKeybind());
+
+        if(ConfigCompat.Keybindings){
+            // Register KeyHandler
+            for(Keybindings key : Keybindings.values()) {
+                ClientRegistry.registerKeyBinding(key.getKeybind());
+            }
+
+            FMLCommonHandler.instance().bus().register(new KeyInputHandler());
         }
 
-        FMLCommonHandler.instance().bus().register(new KeyInputHandler());
         RenderingRegistry.registerEntityRenderingHandler(EntityProjectile.class, new RenderProjectile());
     }
 

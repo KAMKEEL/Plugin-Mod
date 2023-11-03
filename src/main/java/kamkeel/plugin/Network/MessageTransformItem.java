@@ -1,5 +1,7 @@
 package kamkeel.plugin.Network;
 
+import kamkeel.plugin.Client.Keybindings;
+import kamkeel.plugin.Config.ConfigCompat;
 import kamkeel.plugin.Items.ItemTransform;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;
@@ -26,17 +28,20 @@ public class MessageTransformItem extends MessageBase<MessageTransformItem> {
 
     @Override
     public void handleServerSide(MessageTransformItem message, EntityPlayer player) {
-        if(player.getHeldItem() != null){
-            ItemStack currentItemStack = player.getHeldItem();
-            Item currentItem = currentItemStack.getItem();
-            if(currentItem instanceof ItemTransform){
-                if(((ItemTransform) currentItem).canTransform()) {
-                    ItemStack replace = new ItemStack(((ItemTransform) currentItemStack.getItem()).getTransformItem(), 1);
-                    replace.setItemDamage(currentItemStack.getItemDamage());
-                    replace.setTagCompound(currentItemStack.getTagCompound());
-                    player.inventory.setInventorySlotContents(player.inventory.currentItem, replace);
+        if(ConfigCompat.Keybindings) {
+            if(player.getHeldItem() != null){
+                ItemStack currentItemStack = player.getHeldItem();
+                Item currentItem = currentItemStack.getItem();
+                if(currentItem instanceof ItemTransform){
+                    if(((ItemTransform) currentItem).canTransform()) {
+                        ItemStack replace = new ItemStack(((ItemTransform) currentItemStack.getItem()).getTransformItem(), 1);
+                        replace.setItemDamage(currentItemStack.getItemDamage());
+                        replace.setTagCompound(currentItemStack.getTagCompound());
+                        player.inventory.setInventorySlotContents(player.inventory.currentItem, replace);
+                    }
                 }
             }
         }
+
     }
 }

@@ -1,5 +1,6 @@
 package kamkeel.plugin.Client;
 
+import kamkeel.plugin.Config.ConfigCompat;
 import kamkeel.plugin.Network.MessageSwitchOrientation;
 import kamkeel.plugin.Network.MessageTransformItem;
 import kamkeel.plugin.Network.NetworkHandler;
@@ -16,15 +17,17 @@ public class KeyInputHandler{
 
     @SubscribeEvent
     public void handleKeyInputEvent(InputEvent.KeyInputEvent event){
-        Keybindings key = getPressedKey();
-        if(key != null) {
-            switch(key){
-                case ORIENT:
-                    NetworkHandler.sendToServer(new MessageSwitchOrientation());
-                    break;
-                case TRANSFORM:
-                    NetworkHandler.sendToServer(new MessageTransformItem());
-                    break;
+        if(ConfigCompat.Keybindings){
+            Keybindings key = getPressedKey();
+            if(key != null) {
+                switch(key){
+                    case ORIENT:
+                        NetworkHandler.sendToServer(new MessageSwitchOrientation());
+                        break;
+                    case TRANSFORM:
+                        NetworkHandler.sendToServer(new MessageTransformItem());
+                        break;
+                }
             }
         }
     }
