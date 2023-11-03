@@ -114,7 +114,7 @@ public class Apple extends ItemFood {
             else if(dmg == 5){
                 // Shield
                 // Total Health = 24 +  96 = 120
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 3));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 6, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -190,7 +190,7 @@ public class Apple extends ItemFood {
                 // Total Health = 24 +  96 = 120
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 900, 1));
 
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 1));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 3));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 900, 9));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 6, 0));
@@ -221,7 +221,7 @@ public class Apple extends ItemFood {
                 // Total Health = 52 +  96 = 148
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.weakness.id, 900, 1));
 
-                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 2));
+                p_77849_3_.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 5));
 
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.heal.id, 13, 0));
                 p_77849_3_.addPotionEffect(new PotionEffect(Potion.field_76444_x.id, 600, 1));
@@ -300,7 +300,7 @@ public class Apple extends ItemFood {
             player.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 900, 3));
         }
         else if(r == 11){
-            player.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 3));
+            player.addPotionEffect(new PotionEffect(Potion.resistance.id, 900, 7));
         }
         else if(r == 12){
             player.addPotionEffect(new PotionEffect(Potion.weakness.id, 900, 2));
