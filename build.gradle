@@ -23,7 +23,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "5.1"
+version = "5.2"
 group= "com.kamkeel.plugin" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PluginMod"
 

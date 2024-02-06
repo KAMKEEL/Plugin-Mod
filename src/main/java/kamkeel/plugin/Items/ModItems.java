@@ -198,20 +198,18 @@ public class ModItems {
 
         if(ConfigItems.SpecialWeaponItems && !ConfigItems.DisableAllWeapons){
             // Ingot Assignment
-            dark_metal.customCraftingMaterial = dark_metal_ingot;
-            custom_dark_metal.customCraftingMaterial = dark_metal_ingot;
-            glass.customCraftingMaterial = glass_shard;
-            custom_glass.customCraftingMaterial = glass_shard;
-            random.customCraftingMaterial = glass_shard;
-            jungle.customCraftingMaterial = jungle_ingot;
-            custom_jungle.customCraftingMaterial = jungle_ingot;
-            blue_steel.customCraftingMaterial = blue_steel_ingot;
-            custom_blue_steel.customCraftingMaterial = blue_steel_ingot;
-            imperial_gold.customCraftingMaterial = imperial_gold_ingot;
-            custom_imperial_gold.customCraftingMaterial = imperial_gold_ingot;
-            PluginMaterial.customCraftingMaterial = plug_ingot;
-
-            OreDictCompact.registerOres();
+            dark_metal.setRepairItem(new ItemStack(dark_metal_ingot));
+            custom_dark_metal.setRepairItem(new ItemStack(dark_metal_ingot));
+            glass.setRepairItem(new ItemStack(glass_shard));
+            custom_glass.setRepairItem(new ItemStack(glass_shard));
+            random.setRepairItem(new ItemStack(glass_shard));
+            jungle.setRepairItem(new ItemStack(jungle_ingot));
+            custom_jungle.setRepairItem(new ItemStack(jungle_ingot));
+            blue_steel.setRepairItem(new ItemStack(blue_steel_ingot));
+            custom_blue_steel.setRepairItem(new ItemStack(blue_steel_ingot));
+            imperial_gold.setRepairItem(new ItemStack(imperial_gold_ingot));
+            custom_imperial_gold.setRepairItem(new ItemStack(imperial_gold_ingot));
+            PluginMaterial.setRepairItem(new ItemStack(plug_ingot));
         }
     }
 
