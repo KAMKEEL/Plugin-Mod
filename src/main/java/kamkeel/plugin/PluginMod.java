@@ -27,7 +27,7 @@ import net.minecraft.item.ItemStack;
 
 import java.io.File;
 
-@Mod(modid = "plug", name = "The Plugin Mod", version = "5.2")
+@Mod(modid = "plug", name = "The Plugin Mod", version = "5.3")
 public class PluginMod {
 
     @SidedProxy(clientSide = "kamkeel.plugin.Client.ClientProxy", serverSide = "kamkeel.plugin.CommonProxy")
