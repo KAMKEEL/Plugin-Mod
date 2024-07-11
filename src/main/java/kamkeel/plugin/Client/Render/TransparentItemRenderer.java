@@ -65,7 +65,6 @@ public class TransparentItemRenderer implements IItemRenderer {
      */
 	@Override
 	public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-
 		if (type == ItemRenderType.EQUIPPED_FIRST_PERSON) {
 			// render item
             customRender(item);

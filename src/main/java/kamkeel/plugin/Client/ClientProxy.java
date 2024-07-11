@@ -102,7 +102,9 @@ public class ClientProxy extends CommonProxy {
     }
 
     @Override
-    public void registerItem(Item item) { MinecraftForgeClient.registerItemRenderer(item, new PluginItemRenderer()); }
+    public void registerItem(Item item) {
+        MinecraftForgeClient.registerItemRenderer(item, new PluginItemRenderer());
+    }
 
     @Override
     public void registerBow(Item item) { MinecraftForgeClient.registerItemRenderer(item, new ItemBowRenderer()); }

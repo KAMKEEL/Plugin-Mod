@@ -6,6 +6,8 @@ import net.minecraftforge.common.config.Property;
 import org.apache.logging.log4j.Level;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ConfigItems
 {
@@ -53,6 +55,12 @@ public class ConfigItems
     // Weapons
     public static Property AllWeaponsProperty;
     public static boolean DisableAllWeapons = false;
+
+    public static Property GenericWeaponDamageProperty;
+    public static double PluginWeaponDamage = 7.0F;
+
+    public static Property GenericWeaponDurabilityProperty;
+    public static int PluginWeaponDurability = 20000;
 
     public static Property KnifeWeaponsProperty;
     public static boolean KnifeWeapons = true;
@@ -141,8 +149,15 @@ public class ConfigItems
 
 
             // Weapons
+            config.setCategoryPropertyOrder(WEAPONS, new ArrayList<>(Arrays.asList("Disable All Weapons", "Generic Damage", "Generic Durability")));
             AllWeaponsProperty = config.get(WEAPONS, "Disable All Weapons", false);
             DisableAllWeapons = AllWeaponsProperty.getBoolean(false);
+
+            GenericWeaponDamageProperty = config.get(WEAPONS, "Generic Damage", 7.0F, "The Damage Float inputted is always + 4.0F which is default MC Weapon Damage");
+            PluginWeaponDamage = GenericWeaponDamageProperty.getDouble(7.0F);
+
+            GenericWeaponDurabilityProperty = config.get(WEAPONS, "Generic Durability", 20000, "The amount of durability for all generic weapons");
+            PluginWeaponDurability = GenericWeaponDurabilityProperty.getInt(20000);
 
             SpecialWeaponItemsProperty = config.get(WEAPONS, "Enable Special Weapons", true, "Includes Ingots, Parts and Materials for Special Weapons");
             SpecialWeaponItems = SpecialWeaponItemsProperty.getBoolean(true);

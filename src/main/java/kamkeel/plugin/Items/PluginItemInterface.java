@@ -54,5 +54,4 @@ public class PluginItemInterface extends Item implements ItemRenderInterface {
     public boolean consumeItem(EntityPlayer player, Item item) {
         return player.inventory.consumeInventoryItem(item);
     }
-
 }
