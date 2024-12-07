@@ -9,7 +9,9 @@ public enum EnumDeepCrystal {
     PureVoid(4, "PureVoid", 1),
     Ovy(5, "Ovy", 1),
     Rune(6, "Rune", 1),
-    Grey(7, "Grey", 1);
+    Grey(7, "Grey", 1),
+    Shadow(8, "Shadow", 1),
+    Destox(9, "Destox", 1);
 
     private final int meta;
     private final String name;
