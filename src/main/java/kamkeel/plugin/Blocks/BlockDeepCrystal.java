@@ -29,7 +29,6 @@ public class BlockDeepCrystal extends BlockGlass {
         for(EnumDeepCrystal deepCrystal : EnumDeepCrystal.values()){
             this.setHarvestLevel("pickaxe", deepCrystal.getHarvestLevel(), deepCrystal.getMeta());
         }
-
     }
 
     @Override

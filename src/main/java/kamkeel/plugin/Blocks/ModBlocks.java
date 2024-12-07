@@ -2,13 +2,15 @@ package kamkeel.plugin.Blocks;
 
 import kamkeel.plugin.Blocks.ItemBlock.*;
 import kamkeel.plugin.Config.ConfigBlocks;
+import kamkeel.plugin.Enum.Blocks.EnumAncientStone;
+import kamkeel.plugin.Enum.Blocks.EnumCreate;
+import kamkeel.plugin.Enum.Blocks.EnumEldritch;
+import kamkeel.plugin.Enum.Blocks.EnumLightStone;
 import kamkeel.plugin.LocalizationHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.tileentity.TileEntity;
-
-import static cpw.mods.fml.common.registry.GameRegistry.registerBlock;
 
 
 /**
@@ -25,7 +27,22 @@ public class ModBlocks {
     public static Block Midnight;
     public static Block Rage;
     public static Block DeepCrystal;
+    public static Block Eldritch;
+    public static Block AncientStone;
+    public static Block Lightstone;
     public static Block Barrel;
+
+    // Create
+    public static Block Asurine;
+    public static Block Crimsite;
+    public static Block Deepslate;
+    public static Block Dripstone;
+    public static Block Limestone;
+    public static Block Tuff;
+    public static Block Ochrum;
+    public static Block Veridium;
+    public static Block Scoria;
+    public static Block Scorchia;
 
     public static Block caveVines;
     public static Block caveVinesGrowing;
@@ -94,6 +111,54 @@ public class ModBlocks {
             energyBlock = new BlockEnergy();
             energyBlock.register();
         }
+
+        if(ConfigBlocks.EldritchBlocks){
+            Eldritch = new BlockEldritch("eldritch", EnumEldritch.class);
+            GameRegistry.registerBlock(Eldritch, ItemBlockEldritch.class, "eldritch");
+        }
+
+        if (ConfigBlocks.AncientStoneBlocks) {
+            AncientStone = new BlockAncientStone("ancient_stone", EnumAncientStone.class);
+            GameRegistry.registerBlock(AncientStone, ItemBlockAncientStone.class, "ancient_stone");
+        }
+
+        if (ConfigBlocks.LightstoneBlocks) {
+            Lightstone = new BlockLightStone("lightstone", EnumLightStone.class);
+            GameRegistry.registerBlock(Lightstone, ItemBlockLightStone.class, "lightstone");
+        }
+
+        if (ConfigBlocks.CreateBlocks) {
+            Crimsite = new BlockBase("crimsite", EnumCreate.class);
+            GameRegistry.registerBlock(Crimsite, ItemBlockCreateCrimsite.class, "crimsite");
+
+            Deepslate = new BlockBase("deepslate", EnumCreate.class);
+            GameRegistry.registerBlock(Deepslate, ItemBlockCreateDeepslate.class, "deepslate");
+
+            Asurine = new BlockBase("asurine", EnumCreate.class);
+            GameRegistry.registerBlock(Asurine, ItemBlockCreateAsurine.class, "asurine");
+
+            Dripstone = new BlockBase("dripstone", EnumCreate.class);
+            GameRegistry.registerBlock(Dripstone, ItemBlockCreateDripstone.class, "dripstone");
+
+            Limestone = new BlockBase("limestone", EnumCreate.class);
+            GameRegistry.registerBlock(Limestone, ItemBlockCreateLimestone.class, "limestone");
+
+            Tuff = new BlockBase("tuff", EnumCreate.class);
+            GameRegistry.registerBlock(Tuff, ItemBlockCreateTuff.class, "tuff");
+
+            Ochrum = new BlockBase("ochrum", EnumCreate.class);
+            GameRegistry.registerBlock(Ochrum, ItemBlockCreateOchrum.class, "ochrum");
+
+            Veridium = new BlockBase("veridium", EnumCreate.class);
+            GameRegistry.registerBlock(Veridium, ItemBlockCreateVeridium.class, "veridium");
+
+            Scoria = new BlockBase("scoria", EnumCreate.class);
+            GameRegistry.registerBlock(Scoria, ItemBlockCreateScoria.class, "scoria");
+
+            Scorchia = new BlockBase("scorchia", EnumCreate.class);
+            GameRegistry.registerBlock(Scorchia, ItemBlockCreateScorchia.class, "scorchia");
+        }
+
 
         if(ConfigBlocks.BarrelBlocks){
             //////////////////////////////////////

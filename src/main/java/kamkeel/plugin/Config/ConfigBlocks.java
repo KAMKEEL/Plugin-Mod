@@ -43,6 +43,15 @@ public class ConfigBlocks
     public static Property BarrelBlocksProperty;
     public static boolean BarrelBlocks = true;
 
+    public static Property EldritchBlocksProperty;
+    public static boolean EldritchBlocks = true;
+
+    public static Property AncientStoneBlocksProperty;
+    public static boolean AncientStoneBlocks = true;
+
+    public static boolean LightstoneBlocks = true;
+    public static boolean CreateBlocks = true;
+
     public static void init(File configFile)
     {
         config = new Configuration(configFile);
@@ -75,6 +84,16 @@ public class ConfigBlocks
 
             EnergyBlocksProperty = config.get(GENERAL, "Enable Energy", true);
             EnergyBlocks = EnergyBlocksProperty.getBoolean(true);
+
+            EldritchBlocksProperty = config.get(GENERAL, "Enable Eldritch", true);
+            EldritchBlocks = EldritchBlocksProperty.getBoolean(true);
+
+            AncientStoneBlocksProperty = config.get(GENERAL, "Enable Ancient Stone", true);
+            AncientStoneBlocks = AncientStoneBlocksProperty.getBoolean(true);
+
+            LightstoneBlocks = config.get(GENERAL, "Enable Lightstone", true).getBoolean(true);
+
+            CreateBlocks = config.get(GENERAL, "Enable Create", true).getBoolean(true);
 
             BarrelBlocksProperty = config.get(GENERAL, "Enable Barrel", true, "These are cosmetic only. They do not open or close.");
             BarrelBlocks = BarrelBlocksProperty.getBoolean(true);
