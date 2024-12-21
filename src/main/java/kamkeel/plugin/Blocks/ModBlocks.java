@@ -128,34 +128,34 @@ public class ModBlocks {
         }
 
         if (ConfigBlocks.CreateBlocks) {
-            Crimsite = new BlockBase("crimsite", EnumCreate.class);
+            Crimsite = new BlockCreate("crimsite", EnumCreate.class);
             GameRegistry.registerBlock(Crimsite, ItemBlockCreateCrimsite.class, "crimsite");
 
-            Deepslate = new BlockBase("deepslate", EnumCreate.class);
+            Deepslate = new BlockCreate("deepslate", EnumCreate.class);
             GameRegistry.registerBlock(Deepslate, ItemBlockCreateDeepslate.class, "deepslate");
 
-            Asurine = new BlockBase("asurine", EnumCreate.class);
+            Asurine = new BlockCreate("asurine", EnumCreate.class);
             GameRegistry.registerBlock(Asurine, ItemBlockCreateAsurine.class, "asurine");
 
-            Dripstone = new BlockBase("dripstone", EnumCreate.class);
+            Dripstone = new BlockCreate("dripstone", EnumCreate.class);
             GameRegistry.registerBlock(Dripstone, ItemBlockCreateDripstone.class, "dripstone");
 
-            Limestone = new BlockBase("limestone", EnumCreate.class);
+            Limestone = new BlockCreate("limestone", EnumCreate.class);
             GameRegistry.registerBlock(Limestone, ItemBlockCreateLimestone.class, "limestone");
 
-            Tuff = new BlockBase("tuff", EnumCreate.class);
+            Tuff = new BlockCreate("tuff", EnumCreate.class);
             GameRegistry.registerBlock(Tuff, ItemBlockCreateTuff.class, "tuff");
 
-            Ochrum = new BlockBase("ochrum", EnumCreate.class);
+            Ochrum = new BlockCreate("ochrum", EnumCreate.class);
             GameRegistry.registerBlock(Ochrum, ItemBlockCreateOchrum.class, "ochrum");
 
-            Veridium = new BlockBase("veridium", EnumCreate.class);
+            Veridium = new BlockCreate("veridium", EnumCreate.class);
             GameRegistry.registerBlock(Veridium, ItemBlockCreateVeridium.class, "veridium");
 
-            Scoria = new BlockBase("scoria", EnumCreate.class);
+            Scoria = new BlockCreate("scoria", EnumCreate.class);
             GameRegistry.registerBlock(Scoria, ItemBlockCreateScoria.class, "scoria");
 
-            Scorchia = new BlockBase("scorchia", EnumCreate.class);
+            Scorchia = new BlockCreate("scorchia", EnumCreate.class);
             GameRegistry.registerBlock(Scorchia, ItemBlockCreateScorchia.class, "scorchia");
         }
 

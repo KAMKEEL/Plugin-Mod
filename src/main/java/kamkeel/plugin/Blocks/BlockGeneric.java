@@ -14,9 +14,9 @@ import java.util.List;
 
 public class BlockGeneric<T extends Enum<T> & IBlockEnum> extends Block {
 
-    private final T[] variants;
-    private final String blockName;
-    private IIcon[] icons;
+    protected final T[] variants;
+    protected final String blockName;
+    protected IIcon[] icons;
 
     public BlockGeneric(String blockName, Class<T> enumClass, Material material) {
         super(material);
