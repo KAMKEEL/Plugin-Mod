@@ -72,6 +72,9 @@ public class ModWeapons {
     public static Item TreasureCutlass;
     public static Item TreasureCutlassEnergized;
     public static Item TreasureCutlassBroken;
+    public static Item AdaptorsSpear;
+    public static Item AdaptorsSpearEnergized;
+    public static Item AdaptorsSpearBroken;
     //-----------------------------------------------------------------------//
 
     // Debug Items
@@ -152,6 +155,7 @@ public class ModWeapons {
         JungleAxeBroken = new ItemBrokenJungleAxe(1, brokenTool).setFull3D().setUnlocalizedName("jungle_axe_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/jungle_axe_broken");
         GlassPanBroken = new ItemGlassPanBroken(1, brokenTool).setFull3D().setUnlocalizedName("glass_pan_custom_broken").setMaxStackSize(1).setTextureName("plug:weapons/glass_pan_broken");
         TreasureCutlassBroken = new ItemWeaponBroken(1, brokenTool).setFull3D().setUnlocalizedName("treasure_cutlass_broken").setMaxStackSize(1).setTextureName("plug:weapons/treasure_cutlass_broken");
+        AdaptorsSpearBroken = new ItemWeaponBroken(1, brokenTool).setFull3D().setUnlocalizedName("adaptors_spear_broken").setMaxStackSize(1).setTextureName("plug:weapons/adaptors_spear_broken");
 
         // Custom Weapons:
         BlueLongSword = new ItemUniqueWeapon(1, custom_blue_steel, true, false, BlueLongSwordBroken).setFull3D().setUnlocalizedName("blue_longsword_custom").setMaxStackSize(1).setTextureName("plug:weapons/blue_longsword");
@@ -184,6 +188,10 @@ public class ModWeapons {
         TreasureCutlass = new ItemUniqueWeapon(1, custom_imperial_gold, true, false, TreasureCutlassBroken).setFull3D().setUnlocalizedName("treasure_cutlass").setMaxStackSize(1).setTextureName("plug:weapons/treasure_cutlass");
         TreasureCutlassEnergized = new ItemUniqueWeapon(1, custom_imperial_gold, true, false, TreasureCutlassBroken).setFull3D().setUnlocalizedName("treasure_cutlass_energized").setMaxStackSize(1).setTextureName("plug:weapons/treasure_cutlass_energized");
         setTransformItems((ItemUniqueWeapon)TreasureCutlass, (ItemUniqueWeapon)TreasureCutlassEnergized);
+
+        AdaptorsSpear = new ItemUniqueSpear(1, custom_aqua, true, false, AdaptorsSpearBroken).setFull3D().setUnlocalizedName("adaptors_spear").setMaxStackSize(1).setTextureName("plug:weapons/adaptors_spear");
+        AdaptorsSpearEnergized = new ItemUniqueSpear(1, custom_aqua, true, false, AdaptorsSpearBroken).setFull3D().setUnlocalizedName("adaptors_spear_energized").setMaxStackSize(1).setTextureName("plug:weapons/adaptors_spear_energized");
+        setTransformItems((ItemUniqueWeapon)AdaptorsSpear, (ItemUniqueWeapon)AdaptorsSpearEnergized);
 
         // General Customs:
         GeneralUniqueSword = new ItemUniqueWeapon(1, PluginMaterial, true, false).setFull3D().setUnlocalizedName("aurora_katana").setMaxStackSize(1).setTextureName("plug:weapons/aurora_katana");

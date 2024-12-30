@@ -11,6 +11,6 @@ public class ItemBlockEldritch extends ItemBlockEnum {
 
 
     public ItemBlockEldritch(Block block) {
-        super(block, EnumEldritch.class, "eldrich");
+        super(block, EnumEldritch.class, "eldritch");
     }
 }

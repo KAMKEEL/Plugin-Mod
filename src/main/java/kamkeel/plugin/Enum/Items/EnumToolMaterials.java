@@ -15,6 +15,7 @@ public enum EnumToolMaterials
     GLASS(1, 20, 16.0F, 10F, 26),
     BLUE_STEEL(3, 1200, 8.0F, 7F, 20),
     IMPERIAL_GOLD(3, 1200, 8.0F, 7F, 20),
+    AQUA(3, 1200, 8.0F, 7F, 20),
     PLUGINMATERIAL(2, PluginWeaponDurability, 6.0F, (float) PluginWeaponDamage, 0),
     UNIQUEMATERIAL(2, 32000, 6.0F, 7F, 0);
 
