@@ -7,8 +7,7 @@ public enum EnumCreate implements IBlockEnum {
     Layer(2, "Layer", 1),
     Brick(3, "Brick", 1),
     Small_Brick(4, "Small_Brick", 1),
-    Cut(5, "Cut", 1),
-    Pillar(6, "Pillar", 1);
+    Cut(5, "Cut", 1);
 
     private final int meta;
     private final String name;

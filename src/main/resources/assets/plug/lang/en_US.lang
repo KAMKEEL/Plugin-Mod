@@ -151,6 +151,102 @@ tile.plug:caveVines_body.name=Cave Vines
 tile.plug:caveVinesGrowing_head.name=Cave Vines (Growing)
 tile.plug:caveVinesGrowing_body.name=Cave Vines (Growing)
 
+tile.plug:crimsite.raw.name=Raw Crimsite
+tile.plug:crimsite.polished.name=Polished Crimsite
+tile.plug:crimsite.layer.name=Layer Crimsite
+tile.plug:crimsite.brick.name=Brick Crimsite
+tile.plug:crimsite.small_brick.name=Small Brick Crimsite
+tile.plug:crimsite.cut.name=Cut Crimsite
+
+tile.plug:deepslate.raw.name=Raw Deepslate
+tile.plug:deepslate.polished.name=Polished Deepslate
+tile.plug:deepslate.layer.name=Layer Deepslate
+tile.plug:deepslate.brick.name=Brick Deepslate
+tile.plug:deepslate.small_brick.name=Small Brick Deepslate
+tile.plug:deepslate.cut.name=Cut Deepslate
+
+tile.plug:asurine.raw.name=Raw Asurine
+tile.plug:asurine.polished.name=Polished Asurine
+tile.plug:asurine.layer.name=Layer Asurine
+tile.plug:asurine.brick.name=Brick Asurine
+tile.plug:asurine.small_brick.name=Small Brick Asurine
+tile.plug:asurine.cut.name=Cut Asurine
+
+tile.plug:dripstone.raw.name=Raw Dripstone
+tile.plug:dripstone.polished.name=Polished Dripstone
+tile.plug:dripstone.layer.name=Layer Dripstone
+tile.plug:dripstone.brick.name=Brick Dripstone
+tile.plug:dripstone.small_brick.name=Small Brick Dripstone
+tile.plug:dripstone.cut.name=Cut Dripstone
+
+tile.plug:limestone.raw.name=Raw Limestone
+tile.plug:limestone.polished.name=Polished Limestone
+tile.plug:limestone.layer.name=Layer Limestone
+tile.plug:limestone.brick.name=Brick Limestone
+tile.plug:limestone.small_brick.name=Small Brick Limestone
+tile.plug:limestone.cut.name=Cut Limestone
+
+tile.plug:tuff.raw.name=Raw Tuff
+tile.plug:tuff.polished.name=Polished Tuff
+tile.plug:tuff.layer.name=Layer Tuff
+tile.plug:tuff.brick.name=Brick Tuff
+tile.plug:tuff.small_brick.name=Small Brick Tuff
+tile.plug:tuff.cut.name=Cut Tuff
+
+tile.plug:ochrum.raw.name=Raw Ochrum
+tile.plug:ochrum.polished.name=Polished Ochrum
+tile.plug:ochrum.layer.name=Layer Ochrum
+tile.plug:ochrum.brick.name=Brick Ochrum
+tile.plug:ochrum.small_brick.name=Small Brick Ochrum
+tile.plug:ochrum.cut.name=Cut Ochrum
+
+tile.plug:veridium.raw.name=Raw Veridium
+tile.plug:veridium.polished.name=Polished Veridium
+tile.plug:veridium.layer.name=Layer Veridium
+tile.plug:veridium.brick.name=Brick Veridium
+tile.plug:veridium.small_brick.name=Small Brick Veridium
+tile.plug:veridium.cut.name=Cut Veridium
+
+tile.plug:scoria.raw.name=Raw Scoria
+tile.plug:scoria.polished.name=Polished Scoria
+tile.plug:scoria.layer.name=Layer Scoria
+tile.plug:scoria.brick.name=Brick Scoria
+tile.plug:scoria.small_brick.name=Small Brick Scoria
+tile.plug:scoria.cut.name=Cut Scoria
+
+tile.plug:scorchia.raw.name=Raw Scorchia
+tile.plug:scorchia.polished.name=Polished Scorchia
+tile.plug:scorchia.layer.name=Layer Scorchia
+tile.plug:scorchia.brick.name=Brick Scorchia
+tile.plug:scorchia.small_brick.name=Small Brick Scorchia
+tile.plug:scorchia.cut.name=Cut Scorchia
+
+tile.plug:eldritch.base.name=Base Eldritch
+tile.plug:eldritch.natural.name=Natural Eldritch
+tile.plug:eldritch.engraved.name=Engraved Eldritch
+tile.plug:eldritch.brick.name=Brick Eldritch
+tile.plug:eldritch.tile.name=Tile Eldritch
+tile.plug:eldritch.stone.name=Stone Eldritch
+tile.plug:eldritch.lamp.name=Lamp Eldritch
+
+tile.plug:ancient_stone.base.name=Base Ancient Stone
+tile.plug:ancient_stone.bricks.name=Bricks Ancient Stone
+tile.plug:ancient_stone.sigil.name=Sigil Ancient Stone
+tile.plug:ancient_stone.tiles.name=Tiles Ancient Stone
+tile.plug:ancient_stone.embossed.name=Embossed Ancient Stone
+tile.plug:ancient_stone.tile.name=Tile Ancient Stone
+
+tile.plug:lightstone.cobble.name=Cobble Lightstone
+tile.plug:lightstone.brick.name=Brick Lightstone
+tile.plug:lightstone.bismuth.name=Bismuth Lightstone
+tile.plug:lightstone.layer.name=Layer Lightstone
+tile.plug:lightstone.neon.name=Neon Lightstone
+tile.plug:lightstone.prism.name=Prism Lightstone
+tile.plug:lightstone.spiral.name=Spiral Lightstone
+tile.plug:lightstone.tile.name=Tile Lightstone
+tile.plug:lightstone.raw.name=Raw Lightstone
+tile.plug:lightstone.crack.name=Crack Lightstone
+
 # Biome's O Plenty
 
 tile.plug:stair_limestone.name=Limestone Stair

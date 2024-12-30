@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 public class BlockCreate extends BlockGeneric {
 
     private static final String[] blockTextures = new String[]{
-            "raw", "polished", "layer", "brick", "small_brick", "cut", "pillar", "pillar"
+            "raw", "polished", "layer", "brick", "small_brick", "cut",
     };
 
     @SideOnly(Side.CLIENT)
@@ -24,25 +24,25 @@ public class BlockCreate extends BlockGeneric {
         this.textureName = blockName;
     }
 
-    @Override
-    public int getRenderType() {
-        return 39; // Custom Quartz-like render type
-    }
+//    @Override
+//    public int getRenderType() {
+//        return 39;
+//    }
 
     @SideOnly(Side.CLIENT)
     @Override
     public IIcon getIcon(int side, int meta) {
-        if (meta == 6 || meta == 7 || meta == 8) { // Handle pillar orientations
-            if (meta == 6) { // Vertical pillar
-                return (side == 0 || side == 1) ? this.pillarTop : this.blockIcons[6];
-            }
-            if (meta == 7) { // East-west pillar
-                return (side == 4 || side == 5) ? this.pillarTop : rotateSideIcon(side, meta);
-            }
-            if (meta == 8) { // North-south pillar
-                return (side == 2 || side == 3) ? this.pillarTop : rotateSideIcon(side, meta);
-            }
-        }
+//        if (meta == 6 || meta == 7 || meta == 8) { // Handle pillar orientations
+//            if (meta == 6) { // Vertical pillar
+//                return (side == 0 || side == 1) ? this.pillarTop : this.blockIcons[6];
+//            }
+//            if (meta == 7) { // East-west pillar
+//                return (side == 4 || side == 5) ? this.pillarTop : rotateSideIcon(side, meta);
+//            }
+//            if (meta == 8) { // North-south pillar
+//                return (side == 2 || side == 3) ? this.pillarTop : rotateSideIcon(side, meta);
+//            }
+//        }
 
         if (meta < 0 || meta >= blockIcons.length) {
             meta = 0;
@@ -56,32 +56,32 @@ public class BlockCreate extends BlockGeneric {
      * @param meta The block metadata.
      * @return The rotated side icon.
      */
-    @SideOnly(Side.CLIENT)
-    private IIcon rotateSideIcon(int side, int meta) {
-        if (meta == 7) { // East-west orientation
-            return (side == 2 || side == 3) ? this.blockIcons[6] : this.blockIcons[7]; // Rotate sides for east-west
-        }
-        if (meta == 8) { // North-south orientation
-            return (side == 4 || side == 5) ? this.blockIcons[6] : this.blockIcons[7]; // Rotate sides for north-south
-        }
-        return this.blockIcons[6];
-    }
+//    @SideOnly(Side.CLIENT)
+//    private IIcon rotateSideIcon(int side, int meta) {
+//        if (meta == 7) { // East-west orientation
+//            return (side == 2 || side == 3) ? this.blockIcons[6] : this.blockIcons[7]; // Rotate sides for east-west
+//        }
+//        if (meta == 8) { // North-south orientation
+//            return (side == 4 || side == 5) ? this.blockIcons[6] : this.blockIcons[7]; // Rotate sides for north-south
+//        }
+//        return this.blockIcons[6];
+//    }
 
     @Override
     public int onBlockPlaced(World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ, int meta) {
-        if (meta == 6) { // Handle pillar placement logic
-            switch (side) {
-                case 0:
-                case 1:
-                    return 6; // Vertical orientation
-                case 2:
-                case 3:
-                    return 8; // North-south orientation
-                case 4:
-                case 5:
-                    return 7; // East-west orientation
-            }
-        }
+//        if (meta == 6) { // Handle pillar placement logic
+//            switch (side) {
+//                case 0:
+//                case 1:
+//                    return 6; // Vertical orientation
+//                case 2:
+//                case 3:
+//                    return 8; // North-south orientation
+//                case 4:
+//                case 5:
+//                    return 7; // East-west orientation
+//            }
+//        }
         return meta;
     }
 
