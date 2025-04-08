@@ -24,6 +24,8 @@ tile.plug:deepcrystal_purevoid.name=Pure Void Crystal
 tile.plug:deepcrystal_ovy.name=Ovy Crystal
 tile.plug:deepcrystal_rune.name=Rune Crystal
 tile.plug:deepcrystal_grey.name=Grey Crystal
+tile.plug:deepcrystal_shadow.name=Shadow Crystal
+tile.plug:deepcrystal_destox.name=Destox Crystal
 
 tile.plug:rage_lucid.name=Lucid
 tile.plug:rage_base.name=Rage
@@ -1217,6 +1219,7 @@ item.plug:deep_ingot.name=Deep Ingot
 item.plug:plug_ingot.name=Plug Ingot
 item.plug:imperial_gold.name=Imperial Gold
 item.plug:damascus_ingot.name=Damascus Ingot
+item.plug:aqua_ingot.name=Aqua Ingot
 item.plug:energy_quartz.name=Energy Quartz
 item.plug:energy_catalyst.name=Energy Catalyst
 item.plug:hyper_catalyst.name=Hyper Catalyst
