@@ -108,7 +108,7 @@ public class BlockCaveVines extends BlockBush
 
     public static boolean canPlaceRootBelow(final World world, final int x, final int y, final int z) {
         final Block blockAbove = world.getBlock(x, y, z);
-        return blockAbove.getMaterial() == Material.rock || blockAbove.getMaterial() == Material.wood || blockAbove == ModBlocks.caveVines || blockAbove == Blocks.soul_sand || blockAbove instanceof BlockGrass || blockAbove instanceof BlockDirt;
+        return blockAbove.getMaterial() != Material.leaves;
     }
 
     public boolean canPlaceBlockAt(final World world, final int x, final int y, final int z) {
