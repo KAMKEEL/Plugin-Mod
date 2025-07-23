@@ -5,8 +5,8 @@ import kamkeel.plugin.PluginMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockPistonBase;
+import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,7 +16,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 
-public class BlockBarrel extends Block {
+public class BlockBarrel extends BlockRotatedPillar {
 
     public IIcon top;
     public IIcon bottom;
@@ -43,26 +43,46 @@ public class BlockBarrel extends Block {
         return 16;
     }
 
-    public void onBlockPlacedBy(World p_149689_1_, int p_149689_2_, int p_149689_3_, int p_149689_4_, EntityLivingBase p_149689_5_, ItemStack p_149689_6_)
+    @Override
+    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase placer, ItemStack stack)
     {
-        int l = BlockPistonBase.determineOrientation(p_149689_1_, p_149689_2_, p_149689_3_, p_149689_4_, p_149689_5_);
-        p_149689_1_.setBlockMetadataWithNotify(p_149689_2_, p_149689_3_, p_149689_4_, l, 2);
+        int orientation = BlockPistonBase.determineOrientation(world, x, y, z, placer);
+        world.setBlockMetadataWithNotify(x, y, z, orientation, 2);
     }
 
 
+    @Override
     public void registerBlockIcons(IIconRegister iconRegister) {
-
         top = iconRegister.registerIcon(getTextureName() + "/top/" + name);
         bottom = iconRegister.registerIcon(getTextureName() + "/bottom/" + name);
         blockIcon = iconRegister.registerIcon(getTextureName() + "/side/" + name);
+    }
 
+    @Override
+    protected IIcon func_150163_b(int meta) {
+        return blockIcon;
+    }
+
+    @Override
+    protected IIcon func_150161_d(int meta) {
+        return top;
+    }
+
+    @Override
+    public int damageDropped(int meta) {
+        return 0;
     }
 
 
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int p_149691_1_, int p_149691_2_)
+    @Override
+    public IIcon getIcon(int side, int meta)
     {
-        int k = BlockPistonBase.getPistonOrientation(p_149691_2_);
-        return k > 5 ? this.top : (p_149691_1_ == k ?  this.top : (p_149691_1_ == Facing.oppositeSide[k] ? this.bottom : this.blockIcon));
+        int k = BlockPistonBase.getPistonOrientation(meta);
+        if (k > 5)
+            return top;
+        if (side == k)
+            return top;
+        return side == Facing.oppositeSide[k] ? bottom : blockIcon;
     }
 }
