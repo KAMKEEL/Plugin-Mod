@@ -14,10 +14,19 @@ public class ItemBlockEnum<E extends Enum<E>> extends ItemBlock {
         super(block);
         this.enumClass = enumClass;
         this.blockPrefix = blockPrefix;
+
+        // Ensure this ItemBlock keeps metadata for each variant
+        this.setHasSubtypes(true);
+        this.setMaxDamage(0);
     }
 
     @Override
     public int getMetadata(int meta) {
+        // Clamp the metadata to valid bounds. This prevents out of range
+        // values from dropping incorrect variants.
+        if (meta < 0 || meta >= enumClass.getEnumConstants().length) {
+            return 0;
+        }
         return meta;
     }
 
