@@ -5,8 +5,8 @@ import kamkeel.plugin.PluginMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockPistonBase;
+import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,7 +16,12 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 
-public class BlockBarrel extends Block {
+/**
+ * Barrel block that behaves similarly to a {@link BlockRotatedPillar} so it can be rotated
+ * like vanilla pillars. The original orientation and texture logic is preserved so the
+ * block still renders the correct top and bottom faces regardless of placement direction.
+ */
+public class BlockBarrel extends BlockRotatedPillar {
 
     public IIcon top;
     public IIcon bottom;
@@ -64,5 +69,17 @@ public class BlockBarrel extends Block {
     {
         int k = BlockPistonBase.getPistonOrientation(p_149691_2_);
         return k > 5 ? this.top : (p_149691_1_ == k ?  this.top : (p_149691_1_ == Facing.oppositeSide[k] ? this.bottom : this.blockIcon));
+    }
+
+    @Override
+    protected IIcon getSideIcon(int meta)
+    {
+        return this.blockIcon;
+    }
+
+    @Override
+    protected IIcon getTopIcon(int meta)
+    {
+        return this.top;
     }
 }
